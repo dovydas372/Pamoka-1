@@ -1,0 +1,37 @@
+body {
+  background-color: #f2e9d8;
+}
+
+h1,
+h2,
+h3 {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+body > table {
+  background-image: url(https://www.psichologijatau.lt/wp-content/uploads/elke-karin-lugert-125493-unsplash-scaled.jpg);
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.4);
+  background-blend-mode: lighten;
+}
+
+td {
+  color: rgb(91, 39, 2);
+}
+
+td.langeliai {
+  color: rgb(255, 255, 255);
+}
+
+p#pirmas-paragrafas mark {
+  color: rgb(37, 211, 54);
+  background: none;
+}
+
+a {
+  color: #ed0a3f;
+}
+
+a:hover {
+  color: #0aed4e;
+}
