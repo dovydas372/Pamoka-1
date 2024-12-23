@@ -1,37 +1,66 @@
-body {
-  background-color: #f2e9d8;
+.playwrite-mx-guides-regular {
+  font-family: "Playwrite MX Guides", serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
-h1,
-h2,
-h3 {
-  color: rgba(0, 0, 0, 0.2);
-}
-
-body > table {
-  background-image: url(https://www.psichologijatau.lt/wp-content/uploads/elke-karin-lugert-125493-unsplash-scaled.jpg);
-  background-size: cover;
-  background-color: rgba(255, 255, 255, 0.4);
-  background-blend-mode: lighten;
-}
-
-td {
-  color: rgb(91, 39, 2);
-}
-
-td.langeliai {
-  color: rgb(255, 255, 255);
-}
-
-p#pirmas-paragrafas mark {
-  color: rgb(37, 211, 54);
-  background: none;
+p {
+  font-family: "Playwrite MX Guides", serif;
+  font-weight: 300;
+  font-size: 1.5em;
+  text-align: right;
+  font-style: italic;
 }
 
 a {
-  color: #ed0a3f;
+  font-weight: 300;
+  text-decoration: none;
 }
 
-a:hover {
-  color: #0aed4e;
+table {
+  text-align: center;
+  font-size: 1.8em;
+  width: 500px;
+  height: 200px;
+}
+
+li {
+  text-transform: lowercase;
+}
+
+img {
+  height: 200px;
+}
+
+table tr td {
+  border: 2px solid red;
+  border-collapse: collapse;
+}
+
+#pirma-lentele td {
+  vertical-align: top;
+}
+
+ol li::before {
+  content: "\0024";
+  color: blue;
+  padding: 10px;
+}
+
+ol > li {
+  list-style-type: none;
+}
+
+ul.done > li {
+  list-style-type: square;
+}
+
+ul li:nth-child(7) {
+  list-style-type: none;
+}
+
+ul li.saraso-elementai,
+li.saraso-elementai {
+  list-style-type: none;
+  border-bottom: 2px solid silver;
 }
