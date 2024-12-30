@@ -49,3 +49,9 @@ input {
   display: block;
   margin: 5px;
 }
+
+button.pozicija {
+  position: relative;
+  left: 50px;
+  bottom: 2px;
+}

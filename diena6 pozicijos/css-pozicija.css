@@ -1,0 +1,37 @@
+div#pozicija p,
+div#pozicija a {
+  font-size: 2em;
+}
+
+div#pozicija mark:hover {
+  position: relative;
+  bottom: 20px;
+}
+
+div#pozicija a:hover {
+  position: relative;
+  left: 20px;
+}
+
+#virsus-blokas {
+  background-color: aquamarine;
+  padding: 1em;
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  margin: 0;
+}
+
+#pozicija2 {
+  background-color: bisque;
+  text-decoration: none;
+}
+
+header {
+  background-image: url(https://i.pinimg.com/originals/15/f6/a3/15f6a3aac562ee0fadbbad3d4cdf47bc.jpg);
+  background-size: cover;
+}
+
+body {
+  font-family: Arial;
+}

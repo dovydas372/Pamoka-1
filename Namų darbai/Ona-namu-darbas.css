@@ -7,9 +7,10 @@ tr.pirmas-pav {
 
 table {
   border: none;
-  margin: 50px 60px 0px;
+  margin: 50px auto;
   box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.3);
   border-collapse: collapse;
+  width: 400px;
 }
 
 body {
@@ -22,7 +23,7 @@ body {
 
 div {
   background-color: white;
-  margin: 300px 240px 0px 0px;
+  margin: 300px 0px 0px 0px;
   width: fit-content;
   padding: 10px 10px 10px 10px;
 }
