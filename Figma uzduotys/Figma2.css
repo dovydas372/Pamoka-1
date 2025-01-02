@@ -1,0 +1,82 @@
+body,
+html {
+  padding: 0px;
+  margin: 0px;
+  background-color: #e2e1e1;
+  align-content: center;
+  align-items: center;
+  font-family: "Inter";
+  font-style: normal;
+}
+
+.conteineris {
+  position: relative;
+  left: 5%;
+  right: 5%;
+  height: 355px;
+  text-align: center;
+  width: 796px;
+  margin: 50px auto;
+}
+
+.tekstas1 {
+  /* Headline */
+
+  position: relative;
+  width: 76px;
+  margin: 0 auto;
+  /* top: 25.63%;
+  bottom: 68.17%; */
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  /* identical to box height, or 110% */
+  text-align: center;
+  letter-spacing: 0.2px;
+
+  /* Black/400 (Gray) */
+  color: #959393;
+}
+
+.tekstas2 {
+  /* Title */
+
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+  /* top: 26.48%;
+  bottom: 37.46%;
+  margin: auto; */
+
+  font-weight: 700;
+  font-size: 128px;
+  line-height: 100%;
+  color: #121212;
+}
+
+.zvaigzde svg {
+  position: absolute;
+  right: -7px;
+  bottom: -2px;
+
+  border-radius: 1.75164px;
+  transform: rotate(1.51deg);
+}
+
+.tekstas3 {
+  /* Active creators in your country. */
+
+  position: relative;
+  width: 302px;
+  height: 22px;
+
+  margin: 39px auto;
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: 0.2px;
+
+  color: #373636;
+}

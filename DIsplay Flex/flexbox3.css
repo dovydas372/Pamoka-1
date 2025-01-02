@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.antraste {
+  padding: 20px 0;
+  background-color: bisque;
+  display: flex;
+  justify-content: space-between;
+}
+
+.antraste > div {
+  margin: 0 20px;
+}
+
+.nuorodos > a {
+  padding: 20px 20px;
+}
+
+.antraste2 {
+  background-color: blueviolet;
+  padding: 20px;
+}
+
+.antraste2 > p {
+  color: aliceblue;
+  width: 80%;
+  margin: auto;
+}
