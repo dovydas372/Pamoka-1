@@ -12,16 +12,10 @@ body {
 }
 
 div.langas1 {
-  /* Card */
-
-  /* Auto layout */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 0px auto;
   margin: 0px auto;
 
-  position: absolute;
+  position: relative;
   width: 276px;
   height: 345px;
   top: 90px;
@@ -141,16 +135,11 @@ div.tekstas {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px 40px;
+  padding: 0px;
   gap: 4px;
 
   width: 250px;
   height: 74px;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 div.antraste {
@@ -191,44 +180,30 @@ div.info {
 
   /* Black/700 (Black) */
   color: #121212;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
 }
 
 div.zenklai {
   /* Buttons */
-  position: relative;
-  /* Auto layout */
-  padding: 16px 0px;
-  gap: 12px;
 
+  position: relative;
+  padding: 0px;
   width: 76px;
   height: 64px;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
+  display: inline-block;
+  bottom: -10px;
 }
 
 div.zenklas-vienas {
   /* Button */
 
-  position: relative;
-
-  box-sizing: border-box;
-
   width: 32px;
   height: 32px;
+}
 
-  border: 1px solid #959393;
-  border-radius: 200px;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+div.zenklas-du {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  left: 40px;
+  top: -34px;
 }
