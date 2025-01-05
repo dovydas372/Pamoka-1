@@ -28,4 +28,50 @@ body {
   color: aliceblue;
   width: 80%;
   margin: auto;
+  text-align: center;
+}
+
+.straipsniai1 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(228, 224, 224);
+}
+
+.straipsniai2,
+.straipsniai3 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.straipsniai2 > div,
+.straipsniai3 > div {
+  background-color: aliceblue;
+  height: 200px;
+  width: 30%;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid;
+}
+
+.poraste {
+  display: flex;
+
+  justify-content: space-around;
+  background-color: blueviolet;
+
+  padding: 20px 0px;
+}
+
+.poraste > div {
+  color: aliceblue;
+}
+
+.poraste2 {
+  display: flex;
+  justify-content: space-between;
+  background-color: bisque;
+}
+
+.poraste2 > div {
+  padding: 20px;
 }
