@@ -1,0 +1,150 @@
+h1 {
+  font-weight: 700;
+  font-size: 72px;
+}
+.konteineris {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0px auto;
+  width: 95%;
+  font-family: "Inter";
+  font-style: normal;
+}
+
+.bloko-blokas {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 1px solid;
+}
+
+.blokas {
+  font-family: "Inter";
+  font-style: normal;
+  box-sizing: border-box;
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+
+  width: 24%;
+
+  background: #ffffff;
+  border: 1px solid #84ad40;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+}
+
+.pav {
+  width: 100%;
+  height: 400px;
+  background: url(https://s3-alpha-sig.figma.com/img/5846/35d6/80147faad158eec9812bd211e8267280?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qFfJzq9VVK8su4XQYspCDS2msJEj0DJlcetYemBxUYcKAb9RjqFuFiKNau81NzP5AvIdXLDOLdKSfV5u1Ihx7B78eBDNfwZ~qYR3-8a1Q2C3DZDVCJtxAK2cL9~xUzbu~Aow6eK~O3D15O5NahmwOkiDI0VVnnJ~IBuzjNKoKxyCA5hmP1j6Muhggmt53Eb-a~3n7AFu3LJ8aA5Tk0zbQANZX6PxrZKN4rhA7BAOmIV3te57E2ojZ9MRbVIjsJKNSO1JgP5SmY9X13CdzsQfHAi-RhY7BCMhNdD~tYMidk-iX~Vp4TlwzELe2xTd0K-qcVfkibQtiIbusKI1hxgUfg__);
+  border-radius: 16px 16px 0 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.tekst {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+
+  margin: 0 auto;
+}
+
+.vazono-spalva {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 0 10px 0;
+  width: 90%;
+  flex-wrap: wrap;
+}
+
+button {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #ffffff;
+
+  margin: 0 auto;
+  width: 100px;
+  height: 41px;
+
+  background: #84ad40;
+  border-radius: 4px;
+  border-color: transparent;
+}
+
+.vazono-spalva > div > div:first-child {
+  color: #84ad40;
+}
+
+.spalvos {
+  padding: 0 10px 0 0;
+}
+
+h2 {
+  margin: 20px 0 0 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .bloko-blokas {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .blokas {
+    width: calc(50% - 10px);
+    margin: 0 0 20px 0;
+  }
+  body {
+    margin: 0;
+  }
+  .konteineris {
+    margin: 0 auto;
+    width: 99%;
+  }
+  h1 {
+    font-weight: 700;
+    font-size: 62px;
+    line-height: 150%;
+  }
+
+  .pav {
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .bloko-blokas {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .blokas {
+    width: 343px;
+    margin: 0 0 20px 0;
+  }
+  body {
+    margin: 0;
+  }
+  .konteineris {
+    margin: 0 auto;
+    width: 99%;
+  }
+  h1 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+  }
+}
