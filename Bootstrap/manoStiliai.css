@@ -1,0 +1,9 @@
+.col-8 > div.row > div {
+  background-color: rgb(58, 27, 235);
+  border: 1px solid white;
+}
+
+.antra-eilute > div {
+  background-color: blue;
+  border: 1px solid white;
+}
