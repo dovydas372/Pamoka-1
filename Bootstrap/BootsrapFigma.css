@@ -1,0 +1,145 @@
+body {
+  font-family: "Roboto";
+  font-style: normal;
+}
+
+.reklama {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 30px;
+
+  color: #878b9b;
+}
+
+a.nav-link {
+  margin: 0px 25px;
+}
+
+a.nav-link:hover {
+  color: #43c45f;
+}
+
+.konteineris1 {
+  background-image: url(/Bootstrap/Rectangle\ 1.png);
+  background-position: center;
+  background-size: cover;
+  padding: 200px 0;
+}
+
+.head1 {
+  font-weight: 500;
+  font-size: 70px;
+  color: #ffffff;
+}
+
+.tekstas1 {
+  font-weight: 400;
+  font-size: 26px;
+  color: #d5d7d8;
+}
+
+.mygtukas1 {
+  width: 191px;
+  height: 47px;
+  left: 865px;
+  top: 568px;
+  background-color: #43c45f;
+  color: #ffffff;
+  border-radius: 5px;
+  border: none;
+}
+
+.konteineris2 > h3 {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 25px;
+  color: #404445;
+}
+
+.konteineris2 > p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #5f6b81;
+}
+
+.konteineris2 > svg {
+  margin: 20px 0;
+}
+
+.konteineris2 > img {
+  height: 350px;
+}
+
+@media screen and (max-width: 550px) {
+  .konteineris2 > img {
+    height: 185px;
+  }
+}
+
+.konteineris3 > img {
+  height: 483px;
+}
+
+.konteinerispagr3 {
+  background-color: #f1f8ff;
+  padding: 112px 0;
+}
+
+.konteineris3 > h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  color: #404445;
+}
+.konteineris3 > p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #5f6b81;
+  max-width: 648px;
+}
+
+.konteinerispagr4 {
+  padding: 112px 0;
+}
+
+.konteineris4 > h4 {
+  margin-bottom: 28px;
+}
+
+.konteineris4 > p {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 127.19%;
+  color: #404445;
+
+  margin-bottom: 53px;
+}
+
+.konteineris4 > hr {
+  margin-bottom: 53px;
+}
+
+.konteineris4antras > svg {
+  width: 41.3px;
+  height: 40px;
+  margin-bottom: 15px;
+}
+
+.konteineris4antras > h4 {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 127.19%;
+  color: #404445;
+  margin-bottom: 10px;
+}
+
+.konteineris4antras p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 127.19%;
+  color: #5f6b81;
+}
