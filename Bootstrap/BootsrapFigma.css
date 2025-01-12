@@ -34,7 +34,7 @@ a.nav-link:hover {
   color: #ffffff;
 }
 
-.tekstas1 {
+.konteineris1 p {
   font-weight: 400;
   font-size: 26px;
   color: #d5d7d8;
@@ -88,11 +88,18 @@ a.nav-link:hover {
   padding: 112px 0;
 }
 
+@media screen and (max-width: 576px) {
+  .konteineris3 img {
+    height: 217px;
+  }
+}
+
 .konteineris3 > h1 {
   font-weight: 700;
   font-size: 40px;
   line-height: 47px;
   color: #404445;
+  margin-bottom: 25px;
 }
 .konteineris3 > p {
   font-weight: 400;
@@ -100,6 +107,7 @@ a.nav-link:hover {
   line-height: 23px;
   color: #5f6b81;
   max-width: 648px;
+  margin-bottom: 54px;
 }
 
 .konteinerispagr4 {
@@ -142,4 +150,152 @@ a.nav-link:hover {
   font-size: 18px;
   line-height: 127.19%;
   color: #5f6b81;
+}
+
+.konteinerispagr5 {
+  background-color: #f1f8ff;
+  padding: 112px 0;
+}
+
+.konteineris5 .paveikslelis {
+  height: 262px;
+  background-image: url(https://s3-alpha-sig.figma.com/img/b5d2/60fb/303c9676b59ad0e28e4b58f814c0c2ab?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=oN5EJ9KHJVeOVaRmybqH1TtEzb3D-IYyqJ9dgGjaY2QpM40GuPpJ0fqNLwUECEmol9EjrA5Im60o6m8nCZCTIwTSDpJAL6mg83aSXRwUwuQbTTE8j6yhv-yS0pXrY7tnw1-Io~IUTPBC17h1suekS5wOvX5Qdgn8vLQQtZTQLjPyiEYMsqp72p1gfiH-u5Z9j9PKjd8pnyrIGwcWi9lP1xEqJcVZzfT3iEbUp8Zwk4FfihgeLMqyTWUvCwMjP3U7cICLVC2~868EvoJustxTvN~CTfg997Ym5aELhJ9C2jvBf2U5xHCVW-rl8GlGQKV2uOW2CxWbSHwNAP4edlt3Ig__);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 33px;
+}
+
+.konteineris5 > div:first-child p {
+  max-width: 648px;
+  margin-top: 25px;
+  margin-bottom: 69px;
+}
+
+.konteineris5 > div:last-child p {
+  margin-top: 18px;
+}
+
+.konteinerispagr6 {
+  background-color: #5f6b81;
+  padding: 112px 0 138px;
+}
+
+.input-group {
+  max-width: 540px;
+}
+
+.konteineris6 .Langas {
+  height: 63px;
+  background: #ffffff;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.Langas::placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #d8d8d8;
+}
+
+.input-group span {
+  width: 179px;
+  height: 63px;
+  background: #43c45f;
+  border-radius: 0px 5px 5px 0px;
+  border-color: transparent;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+  text-align: center;
+  padding: 0 35px;
+}
+
+.konteinerispagr6 p {
+  max-width: 648px;
+  color: white;
+}
+
+.konteinerispagr6 h1 {
+  color: white;
+}
+
+@media screen and (max-width: 575px) {
+  .konteineris6 .Langas {
+    width: 100%;
+    margin: 20px;
+  }
+}
+
+.konteinerispagr7 .paveikslelis {
+  height: 392px;
+  background-image: url(https://s3-alpha-sig.figma.com/img/188e/23fc/a540f66f750998e323b68f3de19f36a8?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KAfoE5NKwAPmSd~yp~crHKw7~T2NCNwlAuvV~3rI0a6~-5DdvEgmX3Ou0itu2p6B5J5QnfFUMkwMXD6ZvWeEdAmSyINwDU43iUKr2rLabE~JMJteI3Ep2dSbqtbkowqZj~FgAxCCHb96~SFi-AEN-pjWuGjAd9AdjJsUhwL3XcvRYZJnKiGB68AT5gArF~4HDbN3ysNHFjjmHF4Wuq-ek9QU4II1NyzyQg~yGMH3BtX-kR5zVppxnmE6R5NFCDjtcxqXd0px6oCFFSODv~brJKku4Hj~1M0nagEye2E-w5QSaJE3r0OWMke-ih7o6CQoliFOHR45uUfmMrNmIiU7bw__);
+  background-size: cover;
+  background-position: center;
+}
+
+.konteinerispagr7 .p {
+  background-color: #eeeeee;
+}
+
+.konteinerispagr7 > div:first-child p {
+  margin: 30px 0;
+  max-width: 648px;
+}
+
+.konteinerispagr7 > div:last-child p {
+  margin: 0;
+}
+
+.konteineris8 {
+  padding: 112px 0;
+}
+
+.konteineris8 p {
+  max-width: 648px;
+}
+
+.konteineris9 {
+  background-color: #2f323b;
+  padding: 67px 0 137px;
+}
+
+.konteineris9 h3 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+
+.konteineris9 p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #7a7c88;
+  max-width: 200px;
+  margin-top: 20px;
+}
+
+footer {
+  padding: 24px 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #7a7c88;
+}
+
+@media screen and (max-width: 575px) {
+  div {
+    text-align: center;
+  }
+
+  p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .konteineris9 p {
+    max-width: 343px;
+  }
 }
