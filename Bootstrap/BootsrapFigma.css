@@ -225,6 +225,16 @@ a.nav-link:hover {
     width: 100%;
     margin: 20px;
   }
+
+  .mygtukas span {
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 5px;
+    text-align: center;
+  }
+  .mygtukas {
+    width: 100%;
+  }
 }
 
 .konteinerispagr7 .paveikslelis {
