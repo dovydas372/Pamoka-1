@@ -72,7 +72,8 @@ button {
 .konteineris3 h1,
 .konteineris4 h1,
 .konteineris5 h1,
-.konteineris6 h1 {
+.konteineris6 h1,
+.konteineris7 h1 {
   font-weight: 700;
   font-size: 50px;
   line-height: 59px;
@@ -234,4 +235,27 @@ button {
 
 .konteineris6 {
   background: rgba(235, 87, 87, 0.1);
+}
+
+.konteineris7 {
+  background: rgba(248, 248, 248, 1);
+  padding-top: 151px;
+  padding-bottom: 70px;
+}
+
+.konteineris7 form input {
+  height: 40px;
+  width: 100%;
+  border: none;
+  background: #ffffff;
+  margin-bottom: 30px;
+}
+
+.konteineris7 form button,
+.konteineris7 form div {
+  width: 216px;
+  height: 41.9px;
+  border: none;
+  background: rgba(235, 87, 87, 1);
+  color: white;
 }

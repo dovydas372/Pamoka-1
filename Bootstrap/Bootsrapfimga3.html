@@ -29,19 +29,22 @@
                 <div>Festivalis ABC</div>
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-5">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#Festivalis">Pradžia</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#Atlikėjai">Atlikėjai</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#Kaip">Kaip rasti?</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#Galerija">Galerija</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#Bilietai">Bilietai</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#Susisiekti">Susisiekti</a>
                     </li>
                 </ul>
 
@@ -49,7 +52,7 @@
         </div>
     </nav>
 
-    <div class="container-fluid konteineris1 text-center">
+    <div class="container-fluid konteineris1 text-center" id="Festivalis">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -81,7 +84,7 @@
         </div>
     </div>
 
-    <div class="container konteineris3 text-center py-5">
+    <div class="container konteineris3 text-center py-5" id="Atlikėjai">
         <div class="row">
             <div class="col">
                 <h1>Atlikėjai</h1>
@@ -136,7 +139,7 @@
         </div>
     </div>
 
-    <div class="container-fluid konteineris4 text-center py-5">
+    <div class="container-fluid konteineris4 text-center py-5" id="Galerija">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -174,7 +177,7 @@
 
     </div>
 
-    <div class="container-fluid konteineris5 text-center">
+    <div class="container-fluid konteineris5 text-center" id="Bilietai">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -243,11 +246,11 @@
         </div>
     </div>
 
-    <div class="container-fluid konteineris6 text-center">
+    <div class="container-fluid konteineris6 text-center" id="Kaip">
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h1>Bilietai</h1>
+                    <h1>Kaip rasti?</h1>
                     <div class="blokas mx-auto my-4"></div>
                     <p class="mx-auto mb-5">
                         Atae, morbi. Elementum hendrerit lectus laoreet gravida urna nunc, a, elementum. Donec nisi vel
@@ -269,21 +272,67 @@
         </div>
     </div>
 
-    <div class="container-fluid text-center">
+    <div class="container-fluid konteineris7 " id="Susisiekti">
         <div class="row">
             <div class="col">
-                <h1>Bilietai</h1>
-                <div class="blokas mx-auto my-4"></div>
-                <div>
-                    <div>vardas:</div><input type="text">
-                </div>
-                <div><input type="text"></div>
-                <div><input type="text"></div>
+                <h1 class="text-center">Susisiekti</h1>
+                <div class="blokas mx-auto mt-4 mb-5"></div>
 
+                <div class="mx-auto" style="max-width: 392px;">
+                    <form class="mb-4 ">
+                        <label for="name">VARDAS:</label><br>
+                        <input type="text" id="name" name="name" required><br>
+
+                        <label for="telefonas">TELEFONAS:</label><br>
+                        <input type="number" id="telefonas" name="telefonas" required><br>
+
+                        <label for="elpastas">EL. PAŠTAS:</label><br>
+                        <input type="email" id="elpastas" name="elpastas" required><br>
+
+                        <div class="mx-auto mt-4">
+                            <button class=type="submit">Siųsti</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <nav class="navbar navbar-expand-lg p-0">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse py-4" id="navbarSupportedContent">
+                <div>Festivalis ABC, Visos teisės saugomos, 2023</div>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-5">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#Festivalis">Pradžia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#Atlikėjai">Atlikėjai</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#Kaip">Kaip rasti?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#Galerija">Galerija</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#Bilietai">Bilietai</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#Susisiekti">Susisiekti</a>
+                    </li>
+                </ul>
 
             </div>
         </div>
-    </div>
+    </nav>
+
 
     <script src="/Bootstrap/js/bootstrap.min.js"></script>
     <script src="/Bootstrap/js/bootstrap.bundle.min.js"></script>
