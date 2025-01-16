@@ -1,0 +1,108 @@
+body {
+  font-family: "Inter";
+  font-style: normal;
+}
+
+.konteineris1 {
+  background: linear-gradient(
+    90deg,
+    rgba(246, 244, 245, 1) 60%,
+    rgb(255, 255, 255) 45%
+  );
+  padding-top: 100px;
+  padding-bottom: 132px;
+}
+
+.konteineris1 .karuselesblokas {
+  height: 536px;
+  max-width: 737px;
+}
+
+.konteineris1 h1 {
+  font-weight: 200;
+  font-size: 48px;
+  line-height: 56px;
+  color: #32292f;
+  max-width: 432px;
+}
+
+.konteineris1 p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  color: #32292f;
+  max-width: 432px;
+}
+
+.konteineris1 button {
+  width: 116px;
+  height: 48px;
+  background: #32292f;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  border: none;
+}
+
+.konteineris2 {
+  padding-top: 85px;
+  padding-bottom: 104px;
+}
+
+.konteineris2 h1 {
+  font-weight: 200;
+  font-size: 40px;
+  line-height: 48px;
+  color: #32292f;
+  padding-bottom: 55px;
+}
+
+.konteineris2 h2 {
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 40px;
+
+  color: #32292f;
+}
+
+.konteineris2 p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  color: #32292f;
+  max-width: 432px;
+}
+
+.konteineris2 button {
+  width: 144px;
+  height: 48px;
+  border: 1px solid #32292f;
+  background-color: #ffffff;
+}
+
+.paveikslas {
+  background-image: url(https://s3-alpha-sig.figma.com/img/60b7/5241/e919f88f0871a97c186bc988912c79b0?Expires=1737936000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=E73MWByKm1OjRjlxgrXHev~S0TXf2nErvE-OxTO15UDYSiNOX8kwufEK4CRPdHGecv8-tx9cId-ADPkJBD1B8tx2qP3GvuqzZkerTP9QHpxnwpFLdB9AbS5BcrSSiN73YF-WRvC1J87fiRqp6TmKm7Vdmz1wU300l~660bs1Khw5jsaEJHXJWt-SLmOHWvnOiaXUa~w1m1sMtfcTjMaT4b02FT79Pa6FmYqBe0LvqV8nUu8~vO2NKri2i9JjnyOraES4pkPIWPGFJwgQJkbFRO2LnbGrEsA-EQLOtBX5~b7mVC~EhEzAH5a0z1Z6M1-8POyQj3RLz4SHKRld-felTw__);
+  background-position: center;
+  background-size: cover;
+  height: 424px;
+}
+
+@media screen and (max-width: 990px) {
+  .konteineris1 {
+    background: linear-gradient(
+      0deg,
+      rgba(246, 244, 245, 1) 90%,
+      rgb(255, 255, 255) 50%
+    );
+    padding: 0;
+  }
+  .konteineris1 .container {
+    padding: 0;
+  }
+  .konteineris1 button,
+  .konteineris2 button {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
