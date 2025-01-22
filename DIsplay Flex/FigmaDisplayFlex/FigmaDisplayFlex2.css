@@ -1,0 +1,121 @@
+body,
+html,
+p,
+h1,
+h2,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Montserrat";
+  font-style: normal;
+}
+
+.kon1 {
+  background-image: url(https://s3-alpha-sig.figma.com/img/ac14/319a/0cad7c4bb9927f868bc902ef087041c0?Expires=1738540800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UvReRsvNTUB--pD~6R3f7MLPWkhQZ1F0H773949zgZ1qu5K6SpVPzCOg7XkRnttoartcIi0VjIoFcd5oFRysaJc-OPE-8Atof7OCFdc72GoszcSl7yrH603PCX1Qz9KK4PGmmFA1WkojbnLZAOkd4K8ZhksbtR-r3jXjE7bG4eqPfyzjvEMIEioDl5f1ev4kAj9wyVvyzCd8mHfg8RAIrJ6UWMiVi4XWrjKH5RiOZS8sKJNK-SQMjFCjPjKPH4KJq1buKg5ED1X9YsGsg2IY9YEnbgEDDn5Cr7UPq4NUt6Le2WILATkRbax-iENkGpm-7NQH6e0N5pwnSRqvRwYNUA__);
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 78px;
+  padding-top: 25px;
+}
+
+.konteineris {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  justify-self: center;
+}
+
+footer {
+  width: 100%;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 24px 0;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav button {
+  width: 195px;
+  height: 55px;
+  border: none;
+  background: #e12e60;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+nav a,
+nav button {
+  font-weight: 800;
+  font-size: 19px;
+  line-height: 23px;
+  letter-spacing: 0.1em;
+  font-variant: all-small-caps;
+  color: #ffffff;
+}
+
+.kon1 .kontekstas {
+  margin-top: 337px;
+
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 61px;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  max-width: 856px;
+}
+.kon2 {
+  background-color: #e12e60;
+  padding: 69px 0;
+}
+.kon2 > div > div {
+  display: flex;
+  gap: 60px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  padding: 60px 40px;
+}
+
+@media only screen and (max-width: 500px) {
+  nav {
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+  nav div {
+    margin-bottom: 40px;
+  }
+  nav ul {
+    flex-wrap: wrap;
+  }
+  nav ul li {
+    width: 100%;
+  }
+  .kon1 .kontekstas {
+    text-align: center;
+  }
+
+  .kon2 > div > div {
+    flex-wrap: wrap;
+  }
+  .kon2 > div > div > p {
+    width: 100%;
+  }
+}
