@@ -1,0 +1,88 @@
+body,
+html,
+p,
+h1,
+h2 {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: rgba(212, 241, 230, 1);
+}
+
+.container {
+  margin: auto;
+  width: 70%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 120%;
+  /* or 86px */
+
+  color: #1f1f1f;
+}
+
+.pav {
+  background-image: url(https://s3-alpha-sig.figma.com/img/1651/5b83/0f474bfa886a717b47da2385eda44ab8?Expires=1738540800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=lz128XV-1GlOyExr58Uv6a9OpoiPDNAWwSRuoJVubtUHsS6-ULSZA5T32P2ce7OYN2x0vYLIAqg7CmUlEfohqU1YNyh6JDCvKWbp4Obf4WB-~f0bnPCXdqmX4vbZiOrYri7bZKPeguKMpfcfbYdfylh7e6fjzvFp6eeXaGUFcYadvaWbbJIyR1K3OyFxjK1NugYwVkZ7eUTtZk~1XKRm-tAY6Bmhq3yuDMrZz1fKiQYQwSta6ZsWEieDWB3sbUCOpehvshBgIzucUsrq-0YymPIvqc6bXHLt19xNSt51tJvOVwlAQ6SI-6OwY-2zld2WobqGOV2l9cWqJgkDuV1wsQ__);
+  border-radius: 62.9px;
+  background-position: center;
+  background-size: cover;
+}
+
+.eile1 {
+  display: flex;
+  gap: 40px;
+}
+
+.eile1 div:first-child {
+  height: 456px;
+  width: 30%;
+}
+
+.eile1 div:last-child {
+  height: 456px;
+  width: 70%;
+}
+
+.eile2 {
+  flex-direction: row-reverse;
+}
+.eile3 {
+  background: rgba(255, 255, 255, 1);
+  display: flex;
+  border-radius: 24px;
+  padding: 80px 60px;
+  margin-bottom: 126px;
+}
+.eile3 p {
+  max-width: 600px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #1f1f1f;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.eile3 h2 {
+  width: 600px;
+  height: 96px;
+  margin-bottom: 16px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 150%;
+
+  color: #1f1f1f;
+}

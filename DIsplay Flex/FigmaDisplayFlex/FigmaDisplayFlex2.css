@@ -93,6 +93,55 @@ nav button {
   padding: 60px 40px;
 }
 
+.kon3 {
+  background: rgba(252, 223, 225, 1);
+}
+
+.kon3 .pav {
+  background-image: url(https://s3-alpha-sig.figma.com/img/0215/1109/7de43bb506dca65c44b936b9d5b3a5d4?Expires=1738540800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=WBvx4oOJz4Ctpp19aBGa4sAWCIPqA7Xf1Gp7RBP7n9sEtA7636rQ8rm~P9Ov9RrtBhzvznP6nauBxm2mg9GzNDH2lr9RLMsQHMo2jFZ57N34IOkt~PkqT8KCB0vynCPx7PC9z80dA9ZC01ooK54vFAwz6RCrDGsXVHWpT7z4uWVl-PcWvzWG9hMM3hdYwAGtC0QBReAPO8AHE7icQ2KrqvDeqVewGUcBQI4NrHwe5~66jIQfbJAQC4JGSk3nw5GZH6B1T-y6bt89cbDe2mBCOh1Ip~DbNrHR2tcbEToPzZJDez1LmG~r4GFUqBj7FqFzhZQGepRvRxoeX005oPHg0g__);
+  height: 614px;
+  background-size: cover;
+  background-position: center;
+  width: 805px;
+  border-radius: 8px;
+}
+
+.kon3-2 > div:first-child {
+  max-width: 299px;
+  background: rgba(255, 255, 255, 1);
+  padding: 65px 50px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 22px;
+  border-radius: 8px;
+  color: #000000;
+}
+
+.kon3-2 {
+  margin: auto;
+  width: 70%;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  padding: 128px 0;
+}
+
+footer {
+  background-color: #000000;
+}
+
+footer .kon4 {
+  margin: auto;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+}
+
 @media only screen and (max-width: 500px) {
   nav {
     flex-wrap: wrap;
