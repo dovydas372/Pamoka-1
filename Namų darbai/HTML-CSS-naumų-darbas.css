@@ -1,0 +1,27 @@
+body {
+  background-color: rgb(233, 179, 114);
+}
+
+h2.Straipsnis {
+  color: rgb(10, 125, 12);
+}
+
+h2,
+h1 {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+tr.langelis {
+  background-color: aquamarine;
+}
+ul li:nth-child(2),
+ol li:nth-child(3) {
+  color: rgb(255, 0, 0);
+}
+
+#Vardas,
+#password,
+#Elpaštas,
+button {
+  background-color: rgba(255, 255, 255, 0.2);
+}

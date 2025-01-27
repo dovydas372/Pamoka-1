@@ -1,0 +1,66 @@
+.playwrite-mx-guides-regular {
+  font-family: "Playwrite MX Guides", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+p {
+  font-family: "Playwrite MX Guides", serif;
+  font-weight: 300;
+  font-size: 1.5em;
+  text-align: right;
+  font-style: italic;
+}
+
+a {
+  font-weight: 300;
+  text-decoration: none;
+}
+
+table {
+  text-align: center;
+  font-size: 1.8em;
+  width: 500px;
+  height: 200px;
+}
+
+li {
+  text-transform: lowercase;
+}
+
+img {
+  height: 200px;
+}
+
+table tr td {
+  border: 2px solid red;
+  border-collapse: collapse;
+}
+
+#pirma-lentele td {
+  vertical-align: top;
+}
+
+ol li::before {
+  content: "\0024";
+  color: blue;
+  padding: 10px;
+}
+
+ol > li {
+  list-style-type: none;
+}
+
+ul.done > li {
+  list-style-type: square;
+}
+
+ul li:nth-child(7) {
+  list-style-type: none;
+}
+
+ul li.saraso-elementai,
+li.saraso-elementai {
+  list-style-type: none;
+  border-bottom: 2px solid silver;
+}

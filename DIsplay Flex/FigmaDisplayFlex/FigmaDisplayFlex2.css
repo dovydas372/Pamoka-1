@@ -1,0 +1,170 @@
+body,
+html,
+p,
+h1,
+h2,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Montserrat";
+  font-style: normal;
+}
+
+.kon1 {
+  background-image: url(https://s3-alpha-sig.figma.com/img/ac14/319a/0cad7c4bb9927f868bc902ef087041c0?Expires=1738540800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UvReRsvNTUB--pD~6R3f7MLPWkhQZ1F0H773949zgZ1qu5K6SpVPzCOg7XkRnttoartcIi0VjIoFcd5oFRysaJc-OPE-8Atof7OCFdc72GoszcSl7yrH603PCX1Qz9KK4PGmmFA1WkojbnLZAOkd4K8ZhksbtR-r3jXjE7bG4eqPfyzjvEMIEioDl5f1ev4kAj9wyVvyzCd8mHfg8RAIrJ6UWMiVi4XWrjKH5RiOZS8sKJNK-SQMjFCjPjKPH4KJq1buKg5ED1X9YsGsg2IY9YEnbgEDDn5Cr7UPq4NUt6Le2WILATkRbax-iENkGpm-7NQH6e0N5pwnSRqvRwYNUA__);
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 78px;
+  padding-top: 25px;
+}
+
+.konteineris {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  justify-self: center;
+}
+
+footer {
+  width: 100%;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 24px 0;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav button {
+  width: 195px;
+  height: 55px;
+  border: none;
+  background: #e12e60;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+nav a,
+nav button {
+  font-weight: 800;
+  font-size: 19px;
+  line-height: 23px;
+  letter-spacing: 0.1em;
+  font-variant: all-small-caps;
+  color: #ffffff;
+}
+
+.kon1 .kontekstas {
+  margin-top: 337px;
+
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 61px;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  max-width: 856px;
+}
+.kon2 {
+  background-color: #e12e60;
+  padding: 69px 0;
+}
+.kon2 > div > div {
+  display: flex;
+  gap: 60px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  padding: 60px 40px;
+}
+
+.kon3 {
+  background: rgba(252, 223, 225, 1);
+}
+
+.kon3 .pav {
+  background-image: url(https://s3-alpha-sig.figma.com/img/0215/1109/7de43bb506dca65c44b936b9d5b3a5d4?Expires=1738540800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=WBvx4oOJz4Ctpp19aBGa4sAWCIPqA7Xf1Gp7RBP7n9sEtA7636rQ8rm~P9Ov9RrtBhzvznP6nauBxm2mg9GzNDH2lr9RLMsQHMo2jFZ57N34IOkt~PkqT8KCB0vynCPx7PC9z80dA9ZC01ooK54vFAwz6RCrDGsXVHWpT7z4uWVl-PcWvzWG9hMM3hdYwAGtC0QBReAPO8AHE7icQ2KrqvDeqVewGUcBQI4NrHwe5~66jIQfbJAQC4JGSk3nw5GZH6B1T-y6bt89cbDe2mBCOh1Ip~DbNrHR2tcbEToPzZJDez1LmG~r4GFUqBj7FqFzhZQGepRvRxoeX005oPHg0g__);
+  height: 614px;
+  background-size: cover;
+  background-position: center;
+  width: 805px;
+  border-radius: 8px;
+}
+
+.kon3-2 > div:first-child {
+  max-width: 299px;
+  background: rgba(255, 255, 255, 1);
+  padding: 65px 50px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 22px;
+  border-radius: 8px;
+  color: #000000;
+}
+
+.kon3-2 {
+  margin: auto;
+  width: 70%;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  padding: 128px 0;
+}
+
+footer {
+  background-color: #000000;
+}
+
+footer .kon4 {
+  margin: auto;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+}
+
+@media only screen and (max-width: 500px) {
+  nav {
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+  nav div {
+    margin-bottom: 40px;
+  }
+  nav ul {
+    flex-wrap: wrap;
+  }
+  nav ul li {
+    width: 100%;
+  }
+  .kon1 .kontekstas {
+    text-align: center;
+  }
+
+  .kon2 > div > div {
+    flex-wrap: wrap;
+  }
+  .kon2 > div > div > p {
+    width: 100%;
+  }
+}

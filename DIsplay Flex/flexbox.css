@@ -1,0 +1,49 @@
+.felx {
+  display: flex;
+  flex-direction: column;
+}
+
+.felx > div:nth-child(odd) {
+  background-color: rgb(255, 134, 4);
+}
+
+.felx > div:nth-child(even) {
+  background-color: rgb(219, 229, 18);
+}
+
+.felx > div:nth-child(1) {
+  display: flex;
+}
+
+.felx > div:nth-child(2) {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.felx > div:nth-child(2) > p {
+  background-color: aliceblue;
+  width: 30%;
+}
+
+.felx > div:nth-child(3) {
+  display: flex;
+  justify-content: center;
+}
+
+.felx > div:nth-child(3) > p {
+  background-color: aliceblue;
+  width: 30%;
+}
+
+.felx > div:nth-child(4) {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.felx > div:nth-child(4) > p {
+  background-color: rgb(255, 153, 0);
+  width: 30%;
+  padding: 50px 6px;
+  margin: 40px;
+}

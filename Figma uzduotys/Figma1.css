@@ -1,0 +1,206 @@
+html,
+body {
+  /* Užduotis 1:  kortelės su position relative */
+
+  position: relative;
+  background: #e2e1e1;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.langas1 {
+  padding: 0px auto;
+  margin: 0px auto;
+
+  position: relative;
+  width: 276px;
+  height: 345px;
+  top: 90px;
+
+  /* White/Fill */
+  background: #ffffff;
+  /* Elevation/Light/Bottom/02 */
+  box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.04),
+    0px 2px 4px rgba(96, 97, 112, 0.16);
+  border-radius: 12px;
+}
+
+div.pav {
+  border-radius: 12px 12px 0 0;
+  height: 176px;
+  width: 276px;
+  background: url(https://s3-alpha-sig.figma.com/img/5bee/38d9/b3e89f67aeed9e01c0a078013ece5186?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=cJez-5mgHXYWWu82a0nCJbp1e9kL2RIl63U0XK20ySo6~KuOs1hVRR7coOB~dB9kDKSOjUfEKAQ-auowh1RXlIP5N3zASB7h0SQZlxaqlNP2Vv-Oz7Xm~a~8NUU8MmfpIh3zlgwVhoNRlvx3EjO4Cav~JWNO-8XxbX8TVs8-VnSQ43Mhaij1Z00NDFIAsWL5vUHpuNEbFhigpOmmc5Pv8YVCy2LKFycpXyqNkELtYaQZhrOFypY~kh3sIfIsNT9YN7MQQ07qgBEbZhQfoiWWLuLaxDxWekt7LY7hJ1M3P6sg~XZv9klkg3WPEoIGujYKkabFpIdt8dJP96zP9NrT0g__);
+  background-size: cover;
+  background-position: center;
+}
+
+div.data {
+  /* Date */
+
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  right: 16px;
+  top: 150px;
+
+  /* White/Fill */
+  background: #ffffff;
+  box-shadow: 0px 1px 1px rgba(40, 41, 61, 0.04),
+    0px 1px 4px rgba(96, 97, 112, 0.16);
+  border-radius: 12px;
+}
+
+/* Day */
+
+div.skaicius1 {
+  position: relative;
+  height: 28px;
+  left: 0.21%;
+  right: 26.79%;
+  top: calc(50% - 28px / 2 - 8.2px);
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  /* identical to box height, or 117% */
+  text-align: center;
+
+  /* Black/700 (Black) */
+  color: #121212;
+}
+
+div.menuo1 {
+  /* Month */
+
+  position: relative;
+  height: 22px;
+  left: 0.5px;
+  right: 28.57%;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  /* identical to box height, or 183% */
+  text-align: center;
+  letter-spacing: 0.2px;
+
+  /* Black/700 (Black) */
+  color: #121212;
+}
+
+div.pav-langas1 {
+  /* Image + Button */
+
+  width: 276px;
+  height: 208px;
+  position: relative;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+div.apatinis-langas {
+  /* Content */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 16px;
+
+  width: 282px;
+  height: 138px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+div.tekstas {
+  /* Title */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
+
+  width: 250px;
+  height: 74px;
+}
+
+div.antraste {
+  /* Headline */
+
+  width: 83px;
+  height: 22px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  /* identical to box height, or 157% */
+  letter-spacing: 0.2px;
+
+  /* Black/400 (Gray) */
+  color: #959393;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+div.info {
+  /* Title */
+
+  width: 250px;
+  height: 48px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  /* or 120% */
+
+  /* Black/700 (Black) */
+  color: #121212;
+}
+
+div.zenklai {
+  /* Buttons */
+
+  position: relative;
+  padding: 0px;
+  width: 76px;
+  height: 64px;
+  display: inline-block;
+  bottom: -10px;
+}
+
+div.zenklas-vienas {
+  /* Button */
+
+  width: 32px;
+  height: 32px;
+}
+
+div.zenklas-du {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  left: 40px;
+  top: -34px;
+}

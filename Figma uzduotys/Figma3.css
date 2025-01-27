@@ -1,0 +1,95 @@
+body,
+html {
+  background-color: #131417;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  width: fit-content;
+  width: 144px;
+  height: 42px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  color: #f17965;
+
+  border: 2px solid #f17965;
+  border-radius: 12px;
+  background-color: transparent;
+  transition: all 0.5s ease;
+}
+
+button:hover {
+  position: relative;
+  width: 144px;
+  height: 42px;
+  color: white;
+  border: 2px solid #f17965;
+  border-radius: 12px;
+  background-color: #f79090;
+}
+
+.konteineris {
+  position: relative;
+  width: 675px;
+  height: 355px;
+  margin: 106px auto;
+  background: rgba(34, 34, 37, 0.7);
+  border-radius: 12px;
+}
+
+.tekstas1 {
+  /* Want to sharpen your productivity skills? */
+
+  width: 531px;
+  height: 96px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 0.42px;
+
+  color: #ffffff;
+  padding-bottom: 17px;
+}
+
+.tekstas2 {
+  width: 525px;
+  height: 52px;
+  padding-bottom: 17px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+.konteineris2 {
+  gap: 17px;
+
+  position: relative;
+  width: 531px;
+  height: 224px;
+  padding: 65px 72px;
+}
+
+.symbolis1 {
+  height: 195px;
+  width: 195px;
+  position: absolute;
+  background: url(image0_116_91724.png);
+  transform: rotate(8.9deg);
+  left: -60px;
+  top: -100px;
+}
+
+.symbolis2 {
+  position: absolute;
+  right: -50px;
+  bottom: -50px;
+}

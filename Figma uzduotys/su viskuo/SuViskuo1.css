@@ -1,0 +1,203 @@
+body,
+html {
+  margin: 0;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+}
+
+nav li a.nav-link:hover {
+  text-decoration: underline;
+  color: #1b6bed;
+}
+
+nav li a.nav-link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #1b6bed;
+}
+
+nav li {
+  margin-right: 50px;
+}
+
+nav li:last-child {
+  margin: 0;
+}
+
+.kon1 {
+  background-image: url(https://s3-alpha-sig.figma.com/img/3b43/b3ba/9fe8a2f8cbf05ee6d21002fe5d546eec?Expires=1738540800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NlG6QOqMiYAe~USRtZwKby720O9XWlpXwPTcKOHxqNW76Q1U1nh3oD7qLFyD561kwxwVQvBCz3ljDQi0t7~W4O67vvJyy1Y75jxtmEE5S6KG~pFEKegfd8KDFfI6PloboTw-vy~pcXX32cDBlMTn9brVbHiooHFmBYAgPeXdw~GpcjX1vxGzCnypShEjLu-W7APS879Iu6iWSIorYI~L08A2q-uSbAMWt5bvnhE8qOsBhiQySAXaUkAh-zlR~h3PxVlb-2dmVotxJxvyQPfqLJ4hb~EvTYRzdtVAV2HAqEPh6Un5sos0A4xlMQSFjSUECcxWnzkGB3DzHznEMbuMQA__);
+  background-position: center;
+  background-size: cover;
+  padding: 343px 0;
+  position: relative;
+}
+
+.kon1 div:first-child {
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 113px;
+
+  color: #ffffff;
+}
+
+.kon1 div:nth-child(2) {
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 45px;
+
+  color: #ffffff;
+}
+
+.kon1 button {
+  width: 215px;
+  height: 48px;
+  background: linear-gradient(180deg, #00d4e4 -40.5%, #1f59ee 97.28%);
+  border-radius: 24px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+}
+
+.kon1 div svg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.kon2 {
+  background: rgba(249, 249, 249, 1);
+  padding: 170px 0;
+}
+
+.kon2 .container {
+  position: relative;
+}
+
+.svg svg {
+  position: absolute;
+  left: 586px;
+  top: 230px;
+
+  right: 213px;
+  z-index: 0;
+}
+.kon2 .eile2 {
+  margin-top: 193px;
+}
+.kon2 .eile2 > div:first-child > div {
+  background: rgba(255, 255, 255, 1);
+  position: relative;
+  padding: 70px 249px 102px 74px;
+  z-index: 2;
+}
+
+.kon2 .eile2 h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #a6a6a6;
+  margin-bottom: 97px;
+}
+
+.kon2 .eile2 h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 136.19%;
+  text-transform: capitalize;
+  color: #4b4b4b;
+}
+.kon2 .eile2 p {
+  max-width: 486px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 148.19%;
+  color: #888888;
+  margin-bottom: 99px;
+  margin-top: 20px;
+}
+
+.kon2 .eile2 .mygtukas1 {
+  width: 232px;
+  height: 49px;
+  border-radius: 24px;
+  border: 2px solid;
+  border-color: #1f59ee;
+  background: none;
+  margin-bottom: 20px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+
+  background: linear-gradient(180deg, #00d4e4 -40.5%, #1f59ee 97.28%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.kon2 .eile2 .mygtukas2 {
+  box-sizing: border-box;
+  width: 183px;
+  height: 50.31px;
+  border-radius: 36px;
+  border: 2px solid;
+  border-color: #1f59ee;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+
+  background: linear-gradient(180deg, #00d4e4 -40.5%, #1f59ee 97.28%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.kon2 .tuscias {
+  height: 460px;
+  background: rgba(249, 249, 249, 1);
+  position: relative;
+  z-index: 1;
+}
+
+.kon2 .eile2 .pav {
+  background-image: url(https://s3-alpha-sig.figma.com/img/767b/50c2/c063f5151d06a15d8f416e41228c4a88?Expires=1738540800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=N54gsvg6XffKzX43XQBumMKH6g3MzK2ml5I15SFvhiBHOBSWGwM3fpcpaK8Nuv-mhGZbDpSA90jPVfiwNZjk6ogZaa1BhrzJ5ZgAgoAHKAlwjBZ4~LGNU48vntHLShxNG9nh8icKnvY5ZzmdLRy26VTfr4JZa9b-w41BD57jvtyHVOOmo3~hU1S-nt3uK6iwV3n~C7devDbRG6k0z1E0yeuYukd1IEjJOYTHX7t77ugeRAFV5oyiAIPYapA00z3kUrMCQzumN7FVenEusOvnSDpsa4tDUdhltSeSSs60bxKv9AcLHSIzBoHmGHvBiLj1jydctt7~ws78~6lCeKSWUA__);
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  height: 450px;
+  width: 320px;
+  box-shadow: -8px 8px 42px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 15.59px;
+  top: 61px;
+  left: 655px;
+  z-index: 3;
+}
+
+.kon2 .tekstas {
+  max-width: 1241px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #666666;
+}

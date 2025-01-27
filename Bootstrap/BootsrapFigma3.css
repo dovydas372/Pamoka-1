@@ -1,0 +1,261 @@
+body {
+}
+
+h1,
+h2 {
+  font-family: "Raleway";
+  font-style: normal;
+}
+
+p,
+button {
+  font-family: "Open Sans";
+  font-style: normal;
+}
+
+.konteineris1 {
+  background-image: url(https://s3-alpha-sig.figma.com/img/8b67/d899/49d7bbb36792b9a824e3ed67078b2188?Expires=1737936000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DeXyielDGYBWwFKYHzON-AfefVkLrMkOAywrooYldBhGrcwbDEQdor1KlVpGUCzkubiYeMWFFRSU1dvSvLHgGFPtAg~OvtKLe~a2fwfAOc~6I2-8DgR5UrtP0t~sq433ASCu6sHX8OwyWKU-W-St9OIJoOBl2zZrFNFD-7qdODoaF80YJH4Zl32yJZgQi15O2YL6OJ-nI8TcJysAQmKdUA-YD4eP8RxmInDmhqjMN~fXt~b4gUEjBJOUqLfp9DFyspSfQMr1oozDzbW~IT36tlyqGyS7bJiS1LTDVNgI9an6bURkIGyMBQB6Fd9gqj1WSdZEJf2zWXZbzN6TsOeyFw__);
+  background-position: center;
+  background-size: cover;
+  padding-top: 272px;
+  padding-bottom: 349px;
+}
+
+.konteineris1 h1 {
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.konteineris1 p {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 54px;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.konteineris1 .button1,
+.konteineris1 .button2 {
+  box-sizing: border-box;
+  width: 232px;
+  height: 52px;
+  background: #eb5757;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  border: 0;
+}
+
+.konteineris1 .button2 {
+  background: #ffffff;
+  color: #eb5757;
+}
+
+.konteineris2 {
+  background-color: #eb5757;
+}
+
+.konteineris2 p {
+  max-width: 1218px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #ffffff;
+}
+
+.konteineris3 h1,
+.konteineris4 h1,
+.konteineris5 h1,
+.konteineris6 h1,
+.konteineris7 h1 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 59px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #222222;
+  margin-top: 39px;
+}
+
+.blokas {
+  width: 31px;
+  height: 5px;
+  background: #eb5757;
+}
+
+.konteineris3 p,
+.konteineris4 p,
+.konteineris5 p,
+.konteineris6 p {
+  max-width: 735px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #222222;
+}
+
+.konteineris3 .avataras {
+  background-image: url(https://s3-alpha-sig.figma.com/img/ce8b/e5cb/77e2f3627dbb93938c780a8772de3a72?Expires=1737936000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UGLdD0vsdBy3IilS9gceiKobGENEoql3~GOkiDFqMShU457XQi1Wx~TL9~Y4s2CI7qMSv8gPYLiwG91y7C-1iQoihZ89fXpN~-HA9VLNucspz9wXwQAuJISZhJSCEJK2YUwA~UaVz9PL~tVTO4~Iblug0j8Yyv2JHcvxuI13DOQfhu2MSzjWnT81yimC4PPR5irhjPJS02MzjogvP7udDRGP2ZGIXdxFgCkFTNu5H3oOdYNwEI3IqBLIktH0b1F2A3NmZeBNz36z4BJS4Nq6mLc1Ncc-z6ntHLygCFQy~PLbdojZ8~DSAX~AF-Pdu0PSZ2POvznUtAJqd5tTmqYSYA__);
+  height: 238px;
+  max-width: 238px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  border: 2px solid #ffffff;
+}
+
+.konteineris3 .avataras2 {
+  background-image: url(https://s3-alpha-sig.figma.com/img/66de/ed01/d0ef18ab6b6a74453a9f3035b3b26f48?Expires=1737936000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fTf1tKyeHRdfJQ1mnHJIUZr6A54U9E8oW7Pkvm-XgPjK1f2h9ZGa5pPGLJM8Qh-dxtiZcfIXq~SApJU6AqsOuAP5XvVl6aPeX5PhDTX98djog-IosPqHMaajOzM-4aEkFYz6TGFJJOdFRcUv3VM3KnXJBu-jsZDkNFpq76gDcZPMN--4122JM5kbS8RgHQCE42GYsPLUMkd2tW5mpVpE8Mydmiii6ocLsrn-~GeCsDMn5dup1e9v6a3PYBstmFySivoFgAWyw54Kn4TAYuR5EMvaUsO94h4hgftMGOwqjcuC4Yep0d4ehTmTLGhe1-iaWj~3WycsWL4KLfQhDGnfHw__);
+}
+
+.konteineris3 h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.konteineris3 .tekstas {
+  max-width: 206px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #222222;
+}
+
+.konteineris4 {
+  background: rgba(235, 87, 87, 0.1);
+}
+
+.konteineris4 .paveikslelis {
+  background-image: url(https://s3-alpha-sig.figma.com/img/4e7f/3ef9/554406dbc3c64002b5e2b33bb2d05abb?Expires=1737936000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QyvD9YSt-p-ag095MXW5NVJBElTqDGfvUNjqdZOBP-Mo9y0JpH07RYdeSTenLoqlyEQyGIG3INoUCT95oYfHVv5bbEKIqKjTocgzyz6LjxLTEgLpwu5PH4aK4ZS6Ka7q7MNC~r-ANRwHfZvOpn3gsW6CX6N1BpIh~l-yohH-7--lmWpTkg~IHsfwaoCHkHJxdmncJuyCa7jvRcgmqrYLvP4N8~iaT53EdXG44TAb01Jx2l-l~I3zFAg3rCbykAyqkivzpjUGo-EPpC3z0lPM20Y5xwQm7H24LI7VN3rf-5Enzv-CT2VE3579yUmJKnnN0xmIKherSgnZ6XQePnHjiQ__);
+  height: 248px;
+  max-width: 248px;
+  background-position: center;
+  background-size: cover;
+}
+
+.konteineris4 .gridblokas {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  row-gap: 26px;
+  margin-bottom: 50px;
+}
+
+.konteineris5 {
+  background-color: rgba(248, 248, 248, 1);
+  padding-bottom: 154px;
+}
+
+.konteineris5 .kaina {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 2px;
+  color: #222222;
+  margin-bottom: 30px;
+}
+
+.konteineris5 .pinigai {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 2px;
+
+  color: #eb5757;
+  margin-left: 18px;
+}
+
+.konteineris5 button {
+  width: 216px;
+  height: 41.9px;
+  background: rgba(235, 87, 87, 1);
+  border: none;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  margin-bottom: 38px;
+}
+
+.konteineris5 .tekstas {
+  max-width: 301px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #222222;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.konteineris5 .bilietas {
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.konteineris5 h2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  color: #222222;
+}
+
+.konteineris5 hr {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.konteineris6 {
+  background: rgba(235, 87, 87, 0.1);
+}
+
+.konteineris7 {
+  background: rgba(248, 248, 248, 1);
+  padding-top: 151px;
+  padding-bottom: 70px;
+}
+
+.konteineris7 form input {
+  height: 40px;
+  width: 100%;
+  border: none;
+  background: #ffffff;
+  margin-bottom: 30px;
+}
+
+.konteineris7 form button,
+.konteineris7 form div {
+  width: 216px;
+  height: 41.9px;
+  border: none;
+  background: rgba(235, 87, 87, 1);
+  color: white;
+}

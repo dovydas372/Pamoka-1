@@ -1,0 +1,211 @@
+body {
+  font-family: "Segoe UI";
+  font-style: normal;
+}
+
+nav li {
+  margin-right: 40px;
+}
+
+.navmygtukas {
+  width: 127px;
+  height: 44px;
+
+  background: #ff6978;
+  border-radius: 14px;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  /* identical to box height, or 156% */
+  margin: 32px 0;
+  color: #ffffff;
+  border: none;
+}
+
+.konteineris1 {
+  border-radius: 25px;
+  margin-top: 54px;
+}
+
+.konteineris1 div div:first-child {
+  background-image: url(https://s3-alpha-sig.figma.com/img/3335/cfcb/7897d232ee680f18d669263f90d71af3?Expires=1737936000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=CbxbD0NpNlVOruuVo08piFHpLKmwNV~VlT-KZ6-nc0Vj0vP1DB1rH3wzR23FfWRZE7xGRTKT-EuYPqJN1v9nCJLYRG94GP~M~glSBxlyBZUx96MFKFNXyVCSebUleLaXq7LfVdmqYgdt5AhRq58zNvl9wBZNlUP~0Dd0PPv0gNuVdArJkBbsbrfKTPkSRYrP4j9C3LA5e18vHNpP~WkHOw25n62Eg9ZU9NXp4yj1ti2ox8ZK8PTb~bt5McjLUi2zJweTpBSb8KuQQ-icbB9ou2uiLslM6DRDdNoJ1BLB5G1EMlG~pVUti3ihmgQKXN7uG~Q0J-JzhQ81WV18vErCFQ__);
+  background-position: center;
+  background-size: cover;
+  border-radius: 25px 0 0 25px;
+}
+
+.konteineris1 div div:last-child {
+  background-color: #ffeee2;
+  border-radius: 0 25px 25px 0;
+  padding: 119px 103px 120px 27px;
+}
+
+.konteineris1 button {
+  align-items: center;
+  padding: 8px 32px;
+  gap: 10px;
+  width: 153px;
+  height: 44px;
+  background: #ff6978;
+  border-radius: 14px;
+  border: none;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+.konteineris1 h2 {
+  max-width: 392px;
+
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 120%;
+  color: #1f1f1f;
+}
+.konteineris1 p {
+  max-width: 392px;
+  font-weight: 350;
+  font-size: 18px;
+  line-height: 28px;
+  color: #1f1f1f;
+  margin: 16px 0;
+}
+
+.konteineris2 div div:first-child {
+  background-image: none;
+  padding: 27px 103px 27px 105px;
+}
+
+.konteineris2 div div:last-child {
+  background-image: url(https://s3-alpha-sig.figma.com/img/3335/cfcb/7897d232ee680f18d669263f90d71af3?Expires=1737936000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=CbxbD0NpNlVOruuVo08piFHpLKmwNV~VlT-KZ6-nc0Vj0vP1DB1rH3wzR23FfWRZE7xGRTKT-EuYPqJN1v9nCJLYRG94GP~M~glSBxlyBZUx96MFKFNXyVCSebUleLaXq7LfVdmqYgdt5AhRq58zNvl9wBZNlUP~0Dd0PPv0gNuVdArJkBbsbrfKTPkSRYrP4j9C3LA5e18vHNpP~WkHOw25n62Eg9ZU9NXp4yj1ti2ox8ZK8PTb~bt5McjLUi2zJweTpBSb8KuQQ-icbB9ou2uiLslM6DRDdNoJ1BLB5G1EMlG~pVUti3ihmgQKXN7uG~Q0J-JzhQ81WV18vErCFQ__);
+  background-position: center;
+  background-size: cover;
+  border-radius: 0;
+}
+
+.konteineris3 div div:first-child,
+.konteineris3 div div:last-child {
+  border-radius: 0;
+}
+
+.konteineris3 div div:last-child {
+  background-color: white;
+  padding: 79px 0;
+  padding-left: 48px;
+}
+
+.konteineris3,
+.konteineris2 {
+  margin-top: 32px;
+}
+
+.konteineris4 {
+  padding: 64px 0;
+}
+
+.konteineris4 .pavadinimas {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 120%;
+  color: #1f1f1f;
+  max-width: 863px;
+  margin-bottom: 42px;
+}
+
+.konteineris4 .atvirukas {
+  background-image: url(https://s3-alpha-sig.figma.com/img/a862/1729/fc3dd8da7ccb0ecd2f12eeadd03c28a2?Expires=1737936000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aex88rvC5DLCu35Jn5vw18ArF7IK85gj-qZJg2PWDBcDMtjx5IEXQxM3lyi2y75L2CBU~~oz0sA8jOxUHYTgCX17k56tqi1wQ9Yvc0pvyv7qDWBQgt2aojaInaD~e0gYpZHaTkQ4vZSd-bgrc4jj6yL3aCVj9tfnZCmlaix0T1EFC-zJ10W~~XwX~taMH9LdqK7qLERnDqSVlCNH-MWgX5jGP6Z3~v7yeOjGRmF3UNhqkJjkpN24cUlcMTzzFN7iLhO-55DlNXiLG6JeXi5htvP5ZlfiVoi175-I~McpmcAkaF1vMKSusdiePcH9qXb3yw83rsCFrQ3p1gSLOoNcyw__);
+  border-radius: 25px;
+  height: 287px;
+  background-position: center;
+  background-size: cover;
+}
+
+.konteineris4 h3 {
+  max-width: 392px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 36px;
+  color: #1f1f1f;
+  margin: 8px 0;
+}
+
+.konteineris5 {
+  background-color: #ffeee2;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.konteineris5 h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 120%;
+
+  color: #1f1f1f;
+}
+
+.konteineris5 .apvaluspav {
+  background-image: url(https://s3-alpha-sig.figma.com/img/c042/15c5/8203293352bb15fedba36f602b357e29?Expires=1737936000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TnccEBC0v9sh6h03rVOJlKy5ySvEejluMFVAw0R9SJb8CtCeKWRfTmb~mrrJMTPbVlv2bdx-9kzKYnOiD0VkwFMR4oAQOeyGcmJQM-CA-lqSgU6HjKWuMyfM1tNlHENI12xs8gdeBMcDyYAluxP9Lw9ztpQweJQknsEXrwG46GuRKBvugKwMxCzLIGwhChSGr~bmGca5KSBZ1qrNc8tJ2-ciFWb0e2ZUc0PTaJ7~MEiAzIcFDdzNctMunZtEqGtClXWusuU946CuPPIPOTvUP~AB2m3iCpiKcc9xwKQVNu2vJyRfbc3x4wMPhi7MTCF8yNv3dTuUpEwqRTcEI-j6xA__);
+  height: 100px;
+  width: 100px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.konteineris5 .blokasatvirukas {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 30px;
+  padding: 94px 104px;
+}
+
+.konteineris6 {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.konteineris6 .atvirukas {
+  border-radius: 0;
+  background-image: url(https://s3-alpha-sig.figma.com/img/a23a/6f55/09b7bc0d1912553b4b37835cc315b501?Expires=1737936000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nnqRi~Fo2ErfuyGpDWzJR7qeIY6WGzIGCM7XziyBfng~RKCXTP7Le68SFQFQjqn~S3bXiSx81s0iKdCosli-uCywHAY6L-arrJlWBzma5nka7LAg5wXLMKm7KfTiHMDZ8eaAeu7sRkhoDKtmbSQjvbk59hgDvWDa~VwZeWWRzZZa6wvILyBw4Cof1ETK0VkS5neXID~RBLPyjdfGFlSd7DUy3ShdmOMfBLtRUAKLM0anG216W37o9oQKEYFuy8K2UHgGeLyKVISeiGx-VHKTA~XucS-W1mEHtBBdcRyZTB~fWMwkgjfU0HKz09NGSO74VqcSsEtIkNk9m1GK5u76mA__);
+  height: 205px;
+}
+
+footer .container-fluid {
+  background-color: #ff6978;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+footer hr {
+  color: white;
+}
+
+footer h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #1f1f1f;
+}
+
+footer p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #1f1f1f;
+}
+
+footer .svg1 {
+  margin-top: 19px;
+  margin-bottom: 19px;
+}
