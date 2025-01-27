@@ -1,0 +1,39 @@
+.kon1 {
+  background-image: url(https://s3-alpha-sig.figma.com/img/fea8/1bde/d3bd0daf16f11bbd8f583b96605d33d4?Expires=1739145600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DD-jzp-p-fmO4iKswmTgK8mhCn4yErxBO9RyA3P3pgcH-yKU9eW90oLDD3iooIfJTR4UvJfLbe3rGIMGhHuPwQOkJRtVdZqu6Ti2jSigC-pgmhwvpFTR5HXqU~KZ-FowIEiIU70Pm-QBV~3gYmzcZGr8wucVqVifO3UafczsTuubMaoOnSyPlnWckjjTIkxKE1EXFwdRaa-TMAS~7tW5H6VfEkyalLqnwfIghHOAKz97MzJ2z0eILUtjrbm8-Mp9IEVmI4~SryLXj0KxxmqInHVQ3qBFD~9D2GdWQrLeZaG4IY68ZlEHcEY8YIf8Z4-MhebKfrsm9~sL86CblkgCvg__);
+  padding: 122px 0;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 45px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-attachment: local;
+}
+
+.vidurys {
+  background-color: rgba(249, 249, 249, 1);
+  padding: 60px 0;
+}
+
+.vidurys .pav {
+  background-image: url(https://s3-alpha-sig.figma.com/img/6a9c/0cb6/e34c96204a59de07cdbe1f395116e237?Expires=1739145600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Fp~1qetBLZzRH9ZG3JizgdMu912MWgoCWfwF2MYbE0SGB2W3YkQzcwKOPmHNfwZtKDtH--GmfcLXT8K~ImsJYOIzKvhvRFcUGhJWZ2dFg7nTR1Z~QT1Q9xOtLiIPotcXsAhg8NdAtAvX2G5KyRFkHGIuu0HCy3f4k6JuLr4ab4p50Tyrh1GYMBPoOPR2pfhXSaNAPKAT6w3YcfDDSFbBuxubJtfwXMvyaFwI9xG3d6gQtnoyCDuMnOr-knlWOaOcujYaFqHYEbaOyuTSaypd5pN3HkWMsY~u2k7cC8TajuZUrwPvQhN8uEnD0rsNGF~hbKK8n5qnMlRPHa5zlE7dDA__);
+  height: 587px;
+  background-position: center;
+  background-size: cover;
+  max-width: 534px;
+}
+
+.vidurys .container > div > div:first-child {
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 756px;
+  height: 587px;
+  top: 416px;
+  left: 300px;
+  gap: 0px;
+  border-radius: 6px 0px 0px 0px;
+  opacity: 0px;
+  box-shadow: 0px 0px 20px 0px rgba(122, 116, 116, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

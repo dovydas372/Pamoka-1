@@ -32,6 +32,7 @@ nav li:last-child {
   background-size: cover;
   padding: 343px 0;
   position: relative;
+  background-attachment: fixed;
 }
 
 .kon1 div:first-child {
@@ -147,7 +148,6 @@ nav li:last-child {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
 }
 
 .kon2 .eile2 .mygtukas2 {
@@ -168,7 +168,6 @@ nav li:last-child {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
 }
 
 .kon2 .tuscias {
@@ -194,10 +193,173 @@ nav li:last-child {
 
 .kon2 .tekstas {
   max-width: 1241px;
-  font-family: "Plus Jakarta Sans";
+
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 200%;
   color: #666666;
+}
+
+.kon3 {
+  background-image: url(https://s3-alpha-sig.figma.com/img/fea8/1bde/d3bd0daf16f11bbd8f583b96605d33d4?Expires=1739145600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DD-jzp-p-fmO4iKswmTgK8mhCn4yErxBO9RyA3P3pgcH-yKU9eW90oLDD3iooIfJTR4UvJfLbe3rGIMGhHuPwQOkJRtVdZqu6Ti2jSigC-pgmhwvpFTR5HXqU~KZ-FowIEiIU70Pm-QBV~3gYmzcZGr8wucVqVifO3UafczsTuubMaoOnSyPlnWckjjTIkxKE1EXFwdRaa-TMAS~7tW5H6VfEkyalLqnwfIghHOAKz97MzJ2z0eILUtjrbm8-Mp9IEVmI4~SryLXj0KxxmqInHVQ3qBFD~9D2GdWQrLeZaG4IY68ZlEHcEY8YIf8Z4-MhebKfrsm9~sL86CblkgCvg__);
+  background-position: center;
+  background-size: cover;
+  padding: 190px 0;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.kon3 > div.svg svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.kon3 > div:last-child {
+  background-color: #ffffff;
+}
+
+.kon3 .pirmas h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 45px;
+  color: #333333;
+}
+
+.kon3 .pirmas p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #888888;
+  max-width: 410px;
+}
+
+.kon3 .antras h2 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 120%;
+
+  background: linear-gradient(180deg, #00d4e4 -40.5%, #1f59ee 97.28%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.kon3 .antras h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: #333333;
+  margin-top: 15px;
+}
+
+.kon3 .antras p {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  margin-top: 10px;
+  color: #888888;
+}
+
+.kon4 {
+  position: relative;
+  padding: 83px 0 119px 0;
+}
+
+.kon4 .svg1 {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.kon4 svg.svg2 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.kon4 > div > p {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 45px;
+  color: #262020;
+  margin-bottom: 71px;
+}
+
+.kon4 .pav {
+  background-image: url(https://s3-alpha-sig.figma.com/img/767b/50c2/c063f5151d06a15d8f416e41228c4a88?Expires=1739145600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=CZoIfx27Cxudfl~aRRiyb4fuPE8VBBfA5ZTJSn16rzrfuy~TgUoH4a6phh0heJgIbRGk9WI9-qjlANzxKGFzZklz0F5s8RKz5tlgyDjnNOhL7unbam5Xo4htLlD7aPGtDLFvUSfvs~E6i08nafGiCvBluH06DF5z9aqGylrIugaBQdlzEYbG51kKEKnTk36pg1xcpam7nhwH-wv7HiCgLoMTiK52O0ZbiTaTaoyYRGvqJDZXuYxCFIOZ19MU6I0Nt8l~qzI94JbgHYt4N1uuiIC6PE-bWbCBJVlXHH6l4y6rlIIlJ7vnJy0IOAKSsp7TVNoSDtuz5m9VzbVw-XnXIg__);
+  height: 282px;
+  max-width: 282px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: end;
+  padding: 0;
+  margin-top: 0;
+}
+
+.kon4 .tekstas {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 136.19%;
+  text-transform: capitalize;
+  color: #ffffff;
+  background: rgba(43, 43, 43, 0.7);
+  width: 100%;
+  padding: 16px 0;
+  padding-left: 15px;
+}
+
+.kon4 .tekstas p {
+  padding: 0;
+  margin: 0;
+}
+
+.kon5 {
+  background-color: rgba(17, 34, 77, 1);
+  color: white;
+}
+
+.kon5 > div {
+  padding-top: 69px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul > li {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 16px;
+}
+
+ul > li:first-child {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.kon5 .eile1 .tekstas {
+  margin-top: 43px;
+  margin-bottom: 16px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+}
+.kon5 hr {
+  margin-bottom: 0;
+}
+.kon5 .copy {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  padding: 35px 0;
 }
