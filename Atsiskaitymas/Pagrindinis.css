@@ -1,0 +1,278 @@
+body,
+html {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.kon1 {
+  background-image: url(https://s3-alpha-sig.figma.com/img/4c1e/67ad/617529b242ecae3c1c15bb1de79f5875?Expires=1739145600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=lFR8KAB3S-3GmzF5omVLuoM1HzAwEM6h0jonLSoFuSpCKTDGuHaMY~sibz9rSXzhtFyMdt74WCL33Wd1q-3LxDM9l4U6XJwrW6y3oYIv33rKsbcN7ApaxfbXdOvV1rNh8I-45XQ3ZOmrQ-4JF0jkgaGMulUPT7DwA6-7J5f~mOXpPwKH3qv2l8US1UYToSqVdqVe9bMaLhbpJwo4OsZblHaJuYu3SzvoUcQNW34o-Lqe3CBtiRNnxiwXN7A~R9de4vbJ89JmzyJFr3KREqcXcLpwUK~Hoj7VcMz6-IyKZgGNj8pGldDKrcRUBLvFg3r3nXVT8cmmpi5-emgY5zNcvw__);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 0;
+}
+
+.kon1-2 {
+  background: radial-gradient(
+        25.11% 41.85% at 53.79% 2.3%,
+        rgba(0, 0, 0, 0.28) 15.16%,
+        rgba(0, 0, 0, 0) 84.82%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    radial-gradient(
+        27.72% 27.72% at 63.41% -3.63%,
+        rgba(0, 0, 0, 0.28) 22.94%,
+        rgba(0, 0, 0, 0) 84.89%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    radial-gradient(
+        26.19% 26.19% at 69.9% -0.97%,
+        rgba(0, 0, 0, 0.28) 15.16%,
+        rgba(0, 0, 0, 0) 79.3%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    radial-gradient(
+        21.89% 28.36% at 85.43% 4.19%,
+        rgba(0, 0, 0, 0.28) 16.15%,
+        rgba(0, 0, 0, 0) 84.53%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    radial-gradient(
+        65.87% 147.92% at 4.91% 53.92%,
+        #232340 33.46%,
+        rgba(22, 22, 40, 0.6) 58.72%,
+        rgba(0, 0, 0, 0.0222348) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+}
+
+.kon1 a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-decoration-line: underline;
+  color: #f5f5f5;
+  text-shadow: 0px 8px 16px rgba(35, 35, 64, 0.6);
+  margin-top: 40px;
+}
+
+.kon1 a:hover {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-decoration-line: underline;
+  color: #f5f5f5;
+  text-shadow: 0px 8px 16px rgba(35, 35, 64, 0.6);
+}
+
+.kon1-3 {
+  padding-top: 160px;
+  padding-bottom: 247px;
+}
+
+.kon1-3 h1 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 64px;
+}
+
+.kon1-3 p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  max-width: 397px;
+  margin-top: 16px;
+  margin-bottom: 56px;
+}
+
+.kon1-3 .mygtukas1 {
+  width: 298px;
+  height: 47px;
+  background: #f5f5f5;
+
+  border-radius: 4px;
+}
+
+.kon1-3 .mygtukas2 {
+  width: 233px;
+  height: 47px;
+  background: #5468e7;
+  border-radius: 4px;
+  color: white;
+}
+
+.kon1-3 .tekstobox {
+  max-width: 563px;
+}
+
+.kon2 {
+  padding-top: 80px;
+}
+
+.kon2 h1 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 64px;
+  color: #232340;
+  max-width: 460px;
+}
+
+.kon2 p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: rgba(35, 35, 64, 0.9);
+  margin-bottom: 48px;
+  margin-top: 24px;
+  max-width: 460px;
+}
+
+.kon2 .svg {
+  height: 654px;
+}
+
+.kon2 .svg > svg {
+  position: absolute;
+}
+
+.kon3 h1 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 64px;
+  color: #232340;
+  max-width: 460px;
+}
+
+.kon3 p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: rgba(35, 35, 64, 0.9);
+  margin-bottom: 48px;
+  margin-top: 24px;
+  max-width: 460px;
+}
+
+.kon3 .data svg {
+  position: absolute;
+  right: 20px;
+  top: 24px;
+}
+
+.kon3 .pav-langas {
+  background-image: url(https://s3-alpha-sig.figma.com/img/37d3/e029/d0cfdfb245e744630ffe801512bc6777?Expires=1739145600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=a4RCUD4VdfY6-jocjjbh3KfvLzql~zwyQpQOzfohpgnGqiOcc7KdDOfszxp2bZgnPBl4cJgdd7DBDMUnHbqGTWtd-glan83prYoW8TG30vF7jcjK0lwSCU2yyPBGb4DEQBx2VTfxMkVmsvS1LCwCq7wO2Ujwy~t0Krbv1qxjBQcrejBJ62Q24PP04BZ99kEa3QUkn6G5lFFF8PatGvh4pzl~VFqJ~J2q~Nw5ckvmUfjlP8q9UGwL4R7i70rLclLiNgG1Z8GiUVPw9~RTf8ieRMhBHYs2I3sFkhLrWcgBJoyHyGTvxjXsMp95gig-eUGNgvgVFzgyT5z3zSXZRb9ijA__);
+  height: 565px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.kon3 .text-box {
+  margin-left: 139px;
+}
+.kon3 .text-box2 {
+  margin-left: 0px;
+}
+
+.kon3 .pav-langas2 {
+  background-image: url(https://s3-alpha-sig.figma.com/img/c7d2/ea67/c1a7ce81ef99bb7c5a2eb9ab82f45881?Expires=1739145600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=glhzSk3-S4sa57PWn3mZ5lXoTeq9JrbFBvfMQugnwqdU~zikhzv19bub7gJ8wj5soMZ901VBsxVp~P9D2EkZuAbkB7IKuVMFpdNs~Z6lBw4UZcNL9gpjp4T1EFtNTGC-fijylrkQ~i0PbY3DUpd5SsrK1YK-2tenVPO6eDl~qmiAqpLxAhQXfyj-HUht6Kqh6xp6nZE3AF0TrQS7-JKeo-8fcJELel2tcGm45NzrAHCfGfcy~pS-V-4RJRfB24~3TqwyClag7-Mnj3fYjGORnc4ZFLR6gI7rBG9Sfy-ClWFEoxDM5VoLH4sHzSauC0uutMQkFIGv~wcZXocNXFxPiw__);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  height: 565px;
+}
+
+.kon3 .mentor-pav {
+  background-image: url(https://s3-alpha-sig.figma.com/img/9c4f/99ed/afdd8d123f71db4245c3a948dccbcae3?Expires=1739145600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qyFwMQiNpsdLexHrSJnHPUK5sKo7iTkrmZ4HVAyCd50pKSKfnJhBUpC~gJqeyHC7dH0aKC2wbPCBN0gSh6fGMa0vhf6HFcqMmvpaMO-cXCYpFDfxqyJ05pY3KKglpoar1ZE9pbP2T3u9bfQCRy~buElGKfjdrmflTr2oFM3HFqoa4-cIJudLuNQDPzbnIFsVlKm8-E~6Coqivk8Poi68tLDo3a5isVNcJQ394OPBbj98IpN~v~GL2Tayo5KDKInNAyCgvtW5bYUt0JI1kWJ5vYJqGHcgtYZLFq9R-rXy0iZQ3exACO9ec2RRmNmfWaXzw-B2tbd-OHQfTm3iBsXTMQ__);
+  height: 82px;
+  width: 190px;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  right: 24px;
+  bottom: 217px;
+}
+
+.kon3 .task-pav {
+  background-image: url(https://s3-alpha-sig.figma.com/img/bf92/2749/1e484fc90ed156b61e113b9c6b36e25a?Expires=1739145600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qIA~mXKJlHQF~8IGSSurZPcT5xGbtWgjuIFAztfsvIC6PWj8lFLf33O9zrCadHkN1OiQ5Yv7FNvpQ7AHuF1xaCzIYvXd6tmSX~6fGBMDMwjo-tUj8~YB7suUJo4G8lFX~MGOPI7roEf0MpRpUtK2G-3JNjsRwcwVWkOVKjj1uOt1XbXqXDs5ATQ5BTMm9Tr87TaqG9iGPHFWlFxdAHtxxSSUjaKF2Ut2O7UDsP97i03Rw-1gfWolK18TbKd-k6bFdp3i7Mjd5RRc6rJ2xdRXOOzkJ2IBjLd2P3u9VbD7us8hklUsm~FhZWvV3hDmxADpgAQGmlRIPQVkHQY0XjjtYw__);
+  height: 182px;
+  width: 190px;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+}
+
+.kon3 .pav-langas3 .mentor-pav2 {
+  background-image: url(https://s3-alpha-sig.figma.com/img/9c4f/99ed/afdd8d123f71db4245c3a948dccbcae3?Expires=1739145600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qyFwMQiNpsdLexHrSJnHPUK5sKo7iTkrmZ4HVAyCd50pKSKfnJhBUpC~gJqeyHC7dH0aKC2wbPCBN0gSh6fGMa0vhf6HFcqMmvpaMO-cXCYpFDfxqyJ05pY3KKglpoar1ZE9pbP2T3u9bfQCRy~buElGKfjdrmflTr2oFM3HFqoa4-cIJudLuNQDPzbnIFsVlKm8-E~6Coqivk8Poi68tLDo3a5isVNcJQ394OPBbj98IpN~v~GL2Tayo5KDKInNAyCgvtW5bYUt0JI1kWJ5vYJqGHcgtYZLFq9R-rXy0iZQ3exACO9ec2RRmNmfWaXzw-B2tbd-OHQfTm3iBsXTMQ__);
+  height: 82px;
+  width: 190px;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  left: 24px;
+  bottom: 23px;
+}
+
+.kon3 .pav-langas3 .task-pav2 {
+  background-image: url(https://s3-alpha-sig.figma.com/img/bf92/2749/1e484fc90ed156b61e113b9c6b36e25a?Expires=1739145600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qIA~mXKJlHQF~8IGSSurZPcT5xGbtWgjuIFAztfsvIC6PWj8lFLf33O9zrCadHkN1OiQ5Yv7FNvpQ7AHuF1xaCzIYvXd6tmSX~6fGBMDMwjo-tUj8~YB7suUJo4G8lFX~MGOPI7roEf0MpRpUtK2G-3JNjsRwcwVWkOVKjj1uOt1XbXqXDs5ATQ5BTMm9Tr87TaqG9iGPHFWlFxdAHtxxSSUjaKF2Ut2O7UDsP97i03Rw-1gfWolK18TbKd-k6bFdp3i7Mjd5RRc6rJ2xdRXOOzkJ2IBjLd2P3u9VbD7us8hklUsm~FhZWvV3hDmxADpgAQGmlRIPQVkHQY0XjjtYw__);
+  height: 182px;
+  width: 190px;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  left: 24px;
+  bottom: 116px;
+}
+
+.kon3 .row {
+  margin-top: 120px;
+}
+
+.kon4 h1 {
+  margin-top: 200px;
+  margin-bottom: 120px;
+
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 64px;
+  color: #232340;
+}
+
+@media only screen and (max-width: 765px) {
+  .kon1-3 .mygtukas2,
+  .kon1-3 .mygtukas1 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .kon3 .pav-langas {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .container-fluid {
+    padding: 0;
+  }
+  .kon3 {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .kon3 .text-box {
+    margin-left: 0;
+    width: 100%;
+  }
+  .kon3 .mentor-pav {
+    right: 24px;
+    top: 16px;
+  }
+
+  .kon3 .task-pav {
+    right: 24px;
+    top: 110px;
+  }
+}
