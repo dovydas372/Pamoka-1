@@ -1,0 +1,95 @@
+.konblog1 {
+  background: rgba(245, 245, 245, 1);
+}
+
+.konblog1 ul li > a {
+  text-decoration: underline;
+  margin-right: 56px;
+  color: #232340;
+}
+
+.konblog1 ul li > a :last-child {
+  margin-right: 0px;
+}
+
+.konblog2 {
+  padding-top: 80px;
+  background: rgba(245, 245, 245, 1);
+}
+
+.konblog2 .blogtext h1 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 64px;
+  color: #232340;
+}
+
+.konblog2 .blogtext p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: 0.01em;
+  color: #232340;
+  margin-bottom: 80px;
+  margin-top: 12px;
+}
+
+.konblog2 .kortablog {
+  background: #ffffff;
+  box-shadow: 0px 18px 24px rgba(118, 118, 178, 0.28);
+  border-radius: 8px;
+}
+
+.konblog2 .kortablog .pav {
+  background-image: url(https://s3-alpha-sig.figma.com/img/1dc9/7972/357cd74bb0cad2d300140bf8ced0d0ae?Expires=1739145600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=X~yGijbkX318V3nYnIcGQGDbAXQKZXjPupvmGS87qPf58lTrUbgNmMAfIvUx3uWO4I9IzdtmbkExfS4R7uiwugn4IXwZOTfhdHDXIgDtyAQXTpZaRJ9NZm6m~yAnLwvDW092QHqmjjjFGbVvDdtgTzNanLjb5zY94R5dQN-deV1-DTx2fkOLrZ~2NZ4llhokG1MSCODOqmLEc-123644jy3o8C3h5jWXAJpDNnxRyjRJWwRjsH6eqaMlZqvNpv9yawDME0iwB55PCWzS-buI3OXPFi5K91GeJwyw5jpkO08kFt~ZM4NsiQm0AAu9Xd8VYd2V8zLILRGVo07gWY1Znw__);
+  height: 220px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.konblog2 .kortablog h2 {
+  margin: 24px 0;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #5468e7;
+  padding: 0 16px;
+}
+
+.konblog2 .kortablog p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: 0.01em;
+  color: #232340;
+  margin-bottom: 48px;
+  padding: 0 16px;
+}
+.konblog2 .avatar {
+  padding: 16px;
+}
+
+.konblog2 .kortablog .textavatar {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: 0.01em;
+  color: #7676b2;
+}
+
+.mygtukaskon {
+  padding-top: 120px;
+  padding-bottom: 161px;
+}
+
+.mygtukaskon button {
+  width: 200px;
+  height: 47px;
+  background: rgba(84, 104, 231, 0.5);
+  border-radius: 4px;
+  border: none;
+}
