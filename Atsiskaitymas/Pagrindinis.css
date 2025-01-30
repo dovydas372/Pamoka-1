@@ -232,6 +232,10 @@ html {
   margin-top: 120px;
 }
 
+.kon4 {
+  padding-bottom: 164px;
+}
+
 .kon4 h1 {
   margin-top: 200px;
   margin-bottom: 120px;
@@ -242,6 +246,111 @@ html {
   color: #232340;
 }
 
+.kon4 .korta1 {
+  background: #ffffff;
+  box-shadow: 0px 16px 24px rgba(118, 118, 178, 0.24);
+
+  padding: 44px 33px 44px 33px;
+}
+
+.kon4 .korta1 p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: rgba(35, 35, 64, 0.9);
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+
+.kon4 .bio .avataras {
+  background-image: url(https://s3-alpha-sig.figma.com/img/9b32/3d1f/551313ba536f506bde0c8c51d8a738b8?Expires=1739145600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fIww-p0ViGrpuCL~sdTSebMSrZktbG7XLu0xuIupIgSq6sSd2eXkYBwTsA19VPDM0~FksYsh2X~msxUpwcKpSakR1CQrIHHHU7oZPgBU1KmzWFVMWh36foEFFXkKter773LDG1IpG8TsIF9kJrimYxYdrOkvbQ2MXJ16s2faGoE-faPD-Zdkm29Lp~gt9Hr~5ZU4ArQNDpBe4kZL6RWtvRjSHbmvElepLlgRNeOFH083nXv1uJD-2AlcXAcoFv4yK-gPYdxpm0rc5Fn1HfOIaFP3JFdvq5sI6QSKmL1GhBY~iqTZOI-gRvWpIG~oivI4ZoG0SxEWF4V1Dqe1nu7~VQ__);
+  height: 56px;
+  width: 56px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+}
+
+.kon4 .bio h2 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+
+  /* Dark Blue */
+  color: #232340;
+}
+
+.kon4 .bio h3 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: 0.01em;
+  color: #7676b2;
+}
+
+.konfooter {
+  padding-top: 72px;
+  background: rgba(35, 35, 64, 1);
+}
+
+.konfooter p {
+  padding-top: 16px;
+  max-width: 168px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: 0.01em;
+  color: #f5f5f5;
+}
+
+.konfooter .footerlist > li {
+  margin-top: 12px;
+}
+.konfooter .footerlist > li:first-child {
+  margin-top: 20px;
+}
+.konfooter .footerlist > li > a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: 0.01em;
+  color: #f5f5f5;
+  margin-top: 20px;
+}
+
+.konfooter .footerlist > li:first-child > a {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #5468e7;
+}
+
+.konfooter .footerlist > li > input {
+  width: 268px;
+  height: 46px;
+  background: rgba(245, 245, 245, 0.24);
+  border-radius: 4px;
+  padding-left: 10px;
+}
+
+.konfooter .footerlist > li > input::placeholder {
+  color: white;
+}
+
+.konfooter .last-list li > a {
+  width: 100%;
+}
+
+.konfooter .last-list > li {
+  width: 100%;
+}
+
+.konfooter .lastrow {
+  margin-top: 171px;
+  padding-bottom: 56px;
+}
+
 @media only screen and (max-width: 765px) {
   .kon1-3 .mygtukas2,
   .kon1-3 .mygtukas1 {
@@ -250,6 +359,11 @@ html {
   }
   .kon3 .pav-langas {
     width: 100%;
+  }
+  .kon4 .korta2 {
+    display: none;
+    width: 0;
+    height: 0;
   }
 }
 
@@ -274,5 +388,13 @@ html {
   .kon3 .task-pav {
     right: 24px;
     top: 110px;
+  }
+  .kon4 .korta3 {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  .konfooter .pirmaselementas {
+    padding-left: 32px;
   }
 }
