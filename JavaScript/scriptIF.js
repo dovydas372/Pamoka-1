@@ -65,3 +65,57 @@ if (trecias / 8 == Math.floor(trecias / 8)) {
 } else {
   console.log("trečias skaičius nesidalinasi iš 8");
 }
+
+let amzius = 18;
+
+if (amzius >= 18) {
+  console.log("jūs galite balsuoti");
+} else {
+  console.log("jūs negalite balsuoti");
+}
+
+let pazymis1 = 1;
+let pazymis2 = 6;
+
+let vidurkis = (pazymis1 + pazymis2) / 2;
+
+if (vidurkis >= 5) {
+  console.log("jųsų vidurkis teigiamas");
+} else {
+  console.log("jųsų vidurkis neigiamas");
+}
+
+let skaičiaus = 6;
+let x = 1;
+if (skaičiaus % 5 == 0) {
+  console.log(skaičiaus * x++);
+  console.log(skaičiaus * x++);
+  console.log(skaičiaus * x++);
+  console.log(skaičiaus * x++);
+  console.log(skaičiaus * x++);
+  console.log(skaičiaus * x++);
+  console.log(skaičiaus * x++);
+  console.log(skaičiaus * x++);
+  console.log(skaičiaus * x++);
+  console.log(skaičiaus * x++);
+} else {
+  console.log("skaičius nesidalina iš 5");
+}
+
+if (skaičiaus % 2 == 0) {
+  console.log(skaičiaus);
+  console.log(skaičiaus ** 2);
+  console.log(skaičiaus / 2);
+} else {
+  console.log("skaičius nelyginis");
+}
+
+if (skaičiaus % 7 !== 0) {
+  let skaičiaus2 = 6;
+  console.log("\n", skaičiaus + skaičiaus2);
+  console.log(skaičiaus - skaičiaus2);
+  console.log(skaičiaus * skaičiaus2);
+  console.log(skaičiaus % skaičiaus2);
+} else {
+  console.log("skaičius dalinasi iš 7");
+}
