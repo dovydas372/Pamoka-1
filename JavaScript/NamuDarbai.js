@@ -23,7 +23,7 @@ console.log(
 console.log("Pajamos už visus iškeptus:", Pajamos);
 
 if (maxKepaluSkaiciusPerPara - kepaluUzsakymaiPerDiena >= 0) {
-  console.log("darbuotojai spės iškepti reikiamą keikį kepalų");
+  console.log("darbuotojai spės iškepti reikiamą kiekį kepalų");
 } else {
   console.log(
     "darbuotojai nespės iškepti:",
@@ -39,7 +39,7 @@ if (maxKepaluSkaiciusPerPara - kepaluUzsakymaiPerDiena >= 0) {
   );
 } else {
   console.log(
-    "Pajamos negautos, užsakymas pilnai neivykditas. Liko: ",
+    "Pajamos negautos, užsakymas pilnai neivykditas. Liko:",
     kepaluUzsakymaiPerDiena - maxKepaluSkaiciusPerPara,
     "Kepalų"
   );
