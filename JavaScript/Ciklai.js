@@ -213,12 +213,65 @@
 //5 Uzduotis
 //
 //
-let i = 1;
-let sum = 0;
-while (i < 101) {
-  if (i % 2 == 0) {
-    sum += i;
-  }
-  i++;
-}
-console.log(sum);
+// let i = 1;
+// let sum = 0;
+// while (i < 101) {
+//   if (i % 2 == 0) {
+//     sum += i;
+//   }
+//   i++;
+// }
+// console.log(sum);
+//
+//
+//
+//
+//
+//
+//6 Uzduotis
+//
+//
+//
+// let skaicius = 1;
+
+// while (skaicius < 5) {
+//   console.log(skaicius, skaicius * skaicius);
+//   skaicius++;
+// }
+//
+//
+//
+// 7 uzduotis
+//
+//
+//
+//
+
+// let i = Math.round(Math.random() * 50);
+// let a = Math.round(Math.random() * 50);
+// while (i != 0) {
+//   console.log(a);
+//   i--;
+// }
+
+//
+//
+//
+//8 uzduotis
+//
+//
+//
+//
+
+// let i = Math.round(Math.random() * 50);
+// let a = 0;
+// let sum = 0;
+// while (i != 0) {
+//   console.log((a = Math.round(Math.random() * 50)));
+//   i--;
+//   sum += a;
+// }
+// console.log("skaiciu suma:", sum);
+//
+//
+//
