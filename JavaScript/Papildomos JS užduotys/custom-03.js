@@ -88,7 +88,28 @@ Sukurkite ciklą kuris suktųsi nuo 0 iki 20. Suskaičiuokite, kiek kartų kinta
 /* 01.
 Sugeneruokite 300 atsitiktinių skaičių nuo 0 iki 300, atspausdinkite juos atskirtus tarpais ir suskaičiuokite kiek tarp jų yra didesnių už 150.  Skaičiai didesni nei 275 turi būti atspausdinti skliausteliuose” [ ] “.
 */
+//
+//
+//
+//
+//
+//
+let virs150 = 0;
+for (let i = 0; i <= 300; i++) {
+  if (i > 150) {
+    virs150++;
+  }
+}
 
+console.log("virš 150: ", virs150);
+
+//
+//
+//
+//
+//
+//
+//
 /* 02.
 Vienoje eilutėje atspausdinkite visus skaičius nuo 1 iki 3000, kurie dalijasi iš 77 be liekanos. Skaičius atskirkite kableliais. Po paskutinio skaičiaus kablelio neturi būti.
 */
