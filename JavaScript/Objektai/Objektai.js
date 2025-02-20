@@ -1,4 +1,9 @@
 //
+// object.values(); Reiksmes
+// object.keys(); pavadinimai
+// object.entries() ; pavadinimas ir reiksme masyvuose bet nebendrame [pavadinimas, reiksme], [pavadinimas2, reiksme2]....
+//
+//
 //
 // let objektas = {
 //   paztmaiai: [5, 6, 3, 1],
