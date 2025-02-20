@@ -94,14 +94,18 @@ Sugeneruokite 300 atsitiktinių skaičių nuo 0 iki 300, atspausdinkite juos ats
 //
 //
 //
-let virs150 = 0;
-for (let i = 0; i <= 300; i++) {
-  if (i > 150) {
-    virs150++;
-  }
-}
 
-console.log("virš 150: ", virs150);
+// let skaicius = 0;
+// for (let i = 0; i <= 300; i++) {
+//   skaicius = Math.round(Math.random() * 300);
+//   if (skaicius > 150) {
+//     if (skaicius > 275) {
+//       console.log(`[${skaicius}]`);
+//     } else {
+//       console.log(skaicius);
+//     }
+//   }
+// }
 
 //
 //
@@ -113,7 +117,15 @@ console.log("virš 150: ", virs150);
 /* 02.
 Vienoje eilutėje atspausdinkite visus skaičius nuo 1 iki 3000, kurie dalijasi iš 77 be liekanos. Skaičius atskirkite kableliais. Po paskutinio skaičiaus kablelio neturi būti.
 */
-
+// let masyvas = [];
+// let skaicius = 0;
+// for (let i = 1; i <= 3000; i++) {
+//   skaicius = Math.round(Math.random() * 3000);
+//   if (i % 70 == 0) {
+//     masyvas.push(i);
+//   }
+// }
+// console.log(masyvas);
 /* 03.
 Nupieškite kvadratą iš “*”, kurio kraštines sudaro 10 “*”.
 * * * * * * * * * * *
@@ -124,3 +136,7 @@ Nupieškite kvadratą iš “*”, kurio kraštines sudaro 10 “*”.
 * * * * * * * * * * *
 * * * * * * * * * * *
 */
+
+// for (let i = 0; i < 10; i++) {
+//   console.log(`* * * * * * * * * * *`);
+// }
