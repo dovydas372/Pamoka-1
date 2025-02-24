@@ -1,7 +1,7 @@
 //
-// object.values(); Reiksmes
-// object.keys(); pavadinimai
-// object.entries() ; pavadinimas ir reiksme masyvuose bet nebendrame [pavadinimas, reiksme], [pavadinimas2, reiksme2]....
+// object.values(objektas); Reiksmes
+// object.keys(objektas); pavadinimai
+// object.entries(objektas) ; pavadinimas ir reiksme masyvuose bet nebendrame [pavadinimas, reiksme], [pavadinimas2, reiksme2]....
 //
 //
 //
@@ -329,3 +329,491 @@
 // console.log(objektas.mano4.nelabai);
 
 // console.log(objektas.mano + objektas.mano2 + objektas.mano3);
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+// 7. Susikurkite objektą informacijai apie knygyną saugoti. Į šį objektą sudėkite
+// tokias savybes su reikšmėmis: pavadinimas, adresas, plotas (kv. m.), kiek
+// turi knygų, darbo valandos, ar atidarytas. Išveskite šio knygyno objekto
+// raktus su reikšmėmis. Tuomet išveskite visas knygyno savybes, kurių
+// reikšmės yra ne string tipo (plotas, kiek turi knygų ir pan.).
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+// let knygynas = {
+//     pavadinimas: "Knygų pasaulis",
+//     adresas: "Vilniaus g. 23, Vilnius",
+//     plotas: 150,
+//     KnyguKiekis: 2000,
+//     darboValandos: {
+//         pirmadienis: "9:00 - 18:00",
+//         antradienis: "9:00 - 18:00",
+//         treciadienis: "9:00 - 18:00",
+//         ketvirtadienis: "9:00 - 18:00",
+//         penktadienis: "9:00 - 18:00",
+//         sestadienis: "10:00 - 16:00",
+//         sekmadienis: "Uždaryta"
+//     },
+//     atidarytas: true
+// };
+
+// // for (let reiksmes in knygynas) {
+// //     console.log (reiksmes, knygynas[reiksmes])
+// // }
+
+// for (let reiksmes in knygynas) {
+//     if (typeof knygynas[reiksmes] != "string")
+// {
+//     console. log (reiksmes, knygynas[reiksmes])
+// }
+
+// }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+// 8. Susikurkite du objektus, dviejų studentų informacijai saugoti. Abiejuose
+
+// objektuose sudėkite šias savybes su reikšmėmis: vardas ir pavardė, studijų
+// programos pavadinimas, pažymiai. Raskite abiejų studentų pažymių
+// vidurkius. Išveskite abiejų studentų informaciją, bei pažymių vidurkius.
+// Raskite ir išveskite, kurio studento pažymių vidurkis yra didesnis ir
+// išveskite jo vardą su pavarde.
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+// let studentas1 = {
+//   vardas: "Jonas",
+//   pavarde: "Pakalnis",
+//   studijuPrograma: "Informatika",
+//   pazymiai: [8, 9, 10, 7],
+// };
+
+// let studentas2 = {
+//   vardas: "Eglė",
+//   pavarde: "Kazlauskaitė",
+//   studijuPrograma: "Verslo administravimas",
+//   pazymiai: [9, 8, 10, 9],
+// };
+
+// let vidurkis1 =
+//   studentas1.pazymiai.reduce((x, y) => x + y, 0) / studentas1.pazymiai.length;
+// let vidurkis2 =
+//   studentas2.pazymiai.reduce((x, y) => x + y, 0) / studentas2.pazymiai.length;
+
+// console.log(vidurkis1);
+
+// if (vidurkis1 > vidurkis2) {
+//   console.log(studentas1.vardas, studentas1.pavarde);
+// } else {
+//   console.log(studentas2.vardas, studentas2.pavarde);
+// }
+
+// Object.entries(studentas1)
+//   .filter((eilute) => typeof eilute[1] !== "string")
+//   .forEach((eilė) => {
+//     console.log(eilė[0], eilė[1]);
+//   });
+
+// objektai su funkcija
+//
+
+// let objektas = {
+//   vardas: "tomas",
+//   pavarde: "tomatis",
+//   pazymiai: [5, 6, 8, 7, 6],
+//   vidurkis: () => {
+//     const suma = console.log("vidurkis didelis");
+//   },
+// };
+
+// console.log(objektas.vidurkis());
+//
+//
+//
+//
+//
+//
+//
+//
+//
+// 9. Pagal 16-ą pavyzdį, pritaikykite skriptą prie kitos esybės, t.y. sukurkite tokį
+// objektą, kuriame turėtumėte tam tikrų savybių, bei metodą/funkciją, kuri
+// kažką paskaičiuotų iš objekto duomenų. Šio objekto informacijos ir
+// atsakymų išvedimas irgi būtų panašus į duotą nurodytame pavyzdyje.
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+// let objektas = {
+//   skaicius1: 50,
+//   skaicius2: 100,
+//   sudetis: function () {
+//     let suma = this.skaicius1 + this.skaicius2;
+//     return suma;
+//   },
+// };
+
+// console.log(objektas.sudetis());
+//
+//
+//
+//
+//
+//
+//
+//
+//
+// 10.Pagal 18-ą pavyzdį, pritaikykite skriptą prie kitos esybės. Išveskite visą
+// objekto informaciją per atskirą nuo objekto console.log(), taip pat, išveskite
+// tam tikrą pasirinktą informaciją pasinaudojant funkcija/metodu iš objekto.
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+// let objektas = {
+//   skaicius1: 50,
+//   skaicius2: 100,
+//   sudetis: function () {
+//     const suma = this.skaicius1 + this.skaicius2;
+//     console.log(suma);
+//   },
+// };
+
+// objektas.sudetis();
+// console.log (objektas.skaicius1);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+// 11.Susikurkite knygų objektų masyvą. Apie kiekvieną knygą į atskirus knygų objektus
+// sudėkite norimą informaciją (bent 3 savybes). Į masyvą įdėkite bent 3 knygas. Visas
+// šias knygas išsiveskite. Tuomet parodykite pirmą knygą. Antros knygos kažkurią
+// savybę.
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+// let knygos = [
+//   {
+//     pavadinimas: "Karys",
+//     autorius: "Hermanas Hese",
+//     metai: 1927,
+//   },
+//   {
+//     pavadinimas: "Krikštatėvis",
+//     autorius: "Mario Puzo",
+//     metai: 1969,
+//   },
+//   {
+//     pavadinimas: "1984",
+//     autorius: "George Orwell",
+//     metai: 1949,
+//   },
+//   {
+//     pavadinimas: "Alchemikas",
+//     autorius: "Paulo Coelho",
+//     metai: 1988,
+//   },
+// ];
+
+// console.log(knygos);
+// console.log(knygos[0]);
+// console.log(knygos[1].pavadinimas);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+// 12.Susikurkite prekių objektų masyvą ir jį užpildykite pasirinktais duomenimis.
+// Išveskite visų prekių pavadinimus su kainomis ir dar kokiais nors atributais
+// atskirose eilutėse.
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+// let prekes = [
+//   { pavadinimas: "bulve", kaina: 10 },
+//   { pavadinimas: "ryziai", kaina: 1.5 },
+// ];
+
+// for (let preke of prekes) {
+//   console.log(`${preke.pavadinimas}: ${preke.kaina} eur`);
+// }
+//
+//
+//
+//
+//
+//
+//
+//
+//
+// 13.Susikurkite automobilių objektų masyvą ir užpildykite jį pasirinktais duomenimis.
+// Išveskite kiekvieno automobilio pavadinimą, metus ir paskaičiuotą jo amžių
+// (dabartiniai metai - gamybos metai).
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+// let masinos = [
+//   {
+//     marke: "audi",
+//     kaina: 50000,
+//     metai: 2001,
+//     amzius: function () {
+//       let amzius1 = 2025 - this.metai;
+//       return amzius1;
+//     },
+//   },
+//   {
+//     marke: "opel",
+//     kaina: 60000,
+//     metai: 2005,
+//     amzius: function () {
+//       let amzius1 = 2025 - this.metai;
+//       return amzius1;
+//     },
+//   },
+//   {
+//     marke: "bmw",
+//     kaina: 5000,
+//     metai: 2004,
+//     amzius: function () {
+//       let amzius1 = 2025 - this.metai;
+//       return amzius1;
+//     },
+//   },
+// ];
+
+// for (let masina of masinos) {
+//   console.log(
+//     `${masina.marke}, kaina: ${masina.kaina} metai: ${
+//       masina.metai
+//     } amzius: ${masina.amzius()}  `
+//   );
+// }
+
+// console.log(object);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+// 14.Susikurkite objektų masyvą įmonių duomenims saugoti ir jį užpildykite
+// duomenimis. Išveskite kiekvienos įmonės informaciją atskirose eilutėse,
+// gražiai suformatuotai (sakinio pavidalu ar pan.). Taip pat, ką nors
+// paskaičiuokite iš turimų skaitinių duomenų (pvz.: vidutinis įmonės amžius,
+// darbuotojų kiekis per visas įmones, bendras pelnas, ar pan.).
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+// let imones = [
+//   {
+//     pavadinimas: "UAB traidenis",
+//     metai: 2021,
+//     pelnas: 500000,
+//     drbuotojai: 200,
+//   },
+//   {
+//     pavadinimas: "UAB trai",
+//     metai: 2001,
+//     pelnas: 400000,
+//     drbuotojai: 230,
+//   },
+//   {
+//     pavadinimas: "UAB denis",
+//     metai: 2011,
+//     pelnas: 50000,
+//     drbuotojai: 240,
+//   },
+// ];
+
+// let darbuotojai = imones.reduce((x, y) => x + y.drbuotojai, 0);
+// console.log(darbuotojai);
+
+// for (const element of imones) {
+//   console.log(`${element.pavadinimas} metai:${2025 - element.metai} `);
+// }
+//
+//
+//
+//
+//
+//
+//
+//
+//
+// 15.Susikurkite objektų masyvą ligoninių duomenims saugoti ir užpildykite jį
+
+// pasirinktais duomenimis. Išveskite ligoninių pavadinimus su adresais
+// skirtingose eilutėse. Suskaičiuokite ką nors iš skaitinių jų duomenų, pvz.:
+// bendrą lankytojų kiekį, bendrą ar vidutinį darbuotojų kiekį, ar pan.
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+// let ligonines = [
+//   {
+//     pavadinimas: "traidenis",
+//     metai: 2021,
+//     pacientai: 200,
+//     drbuotojai: 200,
+//   },
+//   {
+//     pavadinimas: "trai",
+//     metai: 2001,
+//     pacientai: 200,
+//     drbuotojai: 230,
+//   },
+//   {
+//     pavadinimas: "denis",
+//     metai: 2011,
+//     pacientai: 200,
+//     drbuotojai: 240,
+//   },
+// ];
+// let suma = 0;
+// for (const element of ligonines) {
+//   suma += element.pacientai;
+// }
+// console.log(`pacientu visuose ligoninese: ${suma}`);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+// 16.Susikurkite studentų objektų masyvą, kur apie kiekvieną studentą būtų
+
+// žinoma ši informacija: vardas ir pavardė, amžius, pažymiai, studijų
+// programa, kursas. Kiekvieną studentą išveskite taip: pirmoje eilutėje visi
+// studento duomenys išskyrus jo pažymius, antroje eilutėje jo pažymiai,
+// trečioje jo pažymių vidurkis su prierašu 'pažymių vidurkis'. Išvedus visus
+// studentus dėkite brūkšnį (pvz.: -----) ir išveskite bendrą visų studentų
+// pažymių vidurkį.
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+let studentai = [
+  {
+    vardas: "Jonas",
+    pavarde: "Pakalnis",
+    amzius: 20,
+    pazymiai: [9, 8, 7, 10],
+    studijuPrograma: "Informatika",
+    kursas: 2,
+  },
+  {
+    vardas: "Eglė",
+    pavarde: "Kazlauskaitė",
+    amzius: 22,
+    pazymiai: [8, 9, 10, 9],
+    studijuPrograma: "Verslo administravimas",
+    kursas: 3,
+  },
+  {
+    vardas: "Tomas",
+    pavarde: "Stankevicius",
+    amzius: 21,
+    pazymiai: [6, 7, 8, 9],
+    studijuPrograma: "Matematika",
+    kursas: 1,
+  },
+];
