@@ -791,29 +791,37 @@
 //
 //
 //
-let studentai = [
-  {
-    vardas: "Jonas",
-    pavarde: "Pakalnis",
-    amzius: 20,
-    pazymiai: [9, 8, 7, 10],
-    studijuPrograma: "Informatika",
-    kursas: 2,
-  },
-  {
-    vardas: "Eglė",
-    pavarde: "Kazlauskaitė",
-    amzius: 22,
-    pazymiai: [8, 9, 10, 9],
-    studijuPrograma: "Verslo administravimas",
-    kursas: 3,
-  },
-  {
-    vardas: "Tomas",
-    pavarde: "Stankevicius",
-    amzius: 21,
-    pazymiai: [6, 7, 8, 9],
-    studijuPrograma: "Matematika",
-    kursas: 1,
-  },
-];
+// let studentai = [
+//   {
+//     vardas: "Jonas",
+//     pavarde: "Pakalnis",
+//     amzius: 20,
+//     pazymiai: [9, 8, 7, 10],
+//     studijuPrograma: "Informatika",
+//     kursas: 2,
+//   },
+//   {
+//     vardas: "Eglė",
+//     pavarde: "Kazlauskaitė",
+//     amzius: 22,
+//     pazymiai: [8, 9, 10, 9],
+//     studijuPrograma: "Verslo administravimas",
+//     kursas: 3,
+//   },
+//   {
+//     vardas: "Tomas",
+//     pavarde: "Stankevicius",
+//     amzius: 21,
+//     pazymiai: [6, 7, 8, 9],
+//     studijuPrograma: "Matematika",
+//     kursas: 1,
+//   },
+// ];
+
+// for (let studentas of studentai) {
+//   for (studentas1 in studentas) {
+//     if (studentas1 != "pazymiai") {
+//       console.log(studentas[studentas1]);
+//     }
+//   }
+// }
