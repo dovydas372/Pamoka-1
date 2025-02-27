@@ -731,3 +731,147 @@
 // c = skaicius[2];
 
 // sumos3Isvedimas(a, b, c);
+//
+//
+//
+//
+//
+//
+//
+//
+// 23.Susikurkite funkciją kuri priimtų skaičių masyvą per argumentus. Ši funkcija turėtų
+// rasti duotųjų skaičių sumą ir grąžinti gautą atsakymą. Už funkcijos ribų susikurkite
+// du skaičių masyvus ir užpildykite juos duomenimis. Iškvieskite turimą funkciją du
+// kartus, jai abu kartus perduodant skirtingą masyvą. Gautus atsakymus išveskite.
+// Taip pat, raskite kuri suma gavosi didesnė ir išveskite atsakymą.
+//
+//
+//
+//
+//
+//
+// let skaicius = [1, 1, 4, 5, 1, 1];
+// let skaicius2 = [5, 4, 5, 1, 1];
+// function suma(a) {
+//   return a.reduce((b, c) => b + c);
+// }
+
+// function kasDidesnis(a, b) {
+//   return Math.max(a, b);
+// }
+
+// console.log("didesnis skaicius", kasDidesnis(suma(skaicius), suma(skaicius2)));
+//
+//
+//
+//
+//
+//
+//
+//
+// 24.Susikurkite funkciją kuri per argumentus priimtų žodžių masyvą. Ji turėtų rasti ir
+// grąžinti ilgiausią žodį masyve. Už funkcijos ribų susikurkite žodžių masyvą.
+// Iškvieskite funkciją perduodant jai žodžių masyvą. Gautą atsakymą išveskite, taip
+// pat, nurodykite šio žodžio ilgį.
+//
+//
+//
+//
+//
+//
+// let masyvas = [
+//   "sadasdsa",
+//   "ADsdas",
+//   "asdasdahhhhhhhhhhhhhhhh",
+//   "ssssssssssssss",
+// ];
+
+// function suma(a) {
+//   let max = a[0].length;
+//   let zod = "";
+//   for (let zodis of a) {
+//     if (zodis.length > max) {
+//       max = zodis.length;
+//       zod = zodis;
+//     }
+//   }
+//   return [zod, max];
+// }
+
+// console.log(suma(masyvas));
+//
+//
+//
+//
+//
+//
+//
+//
+// 25.Susikurkite funkciją kuri per argumentus priimtų pažymių masyvą. Ji turėtų
+// patikrinti ar visi pažymiai teigiami: jei visi teigiami turėtų grąžintų true kaip
+// atsakymą, o jei yra bent vienas neigiamas - false. Susikurkite du pažymių
+// masyvus. Iškvieskite šią funkciją du kartus, abu kartus perduodant
+// skirtingus masyvus. Gautus atsakymus paverskite į tekstą (jeigu gavote
+// true - išveskite tekstą 'visi studento pažymiai teigiami', jei false - 'studentas
+// turi bent vieną neigiamą pažymį'). Šiam iškonvertavimui iš true/false į
+// tekstą galite pamėginti pasikurti atskirą funkciją, jai perduoti kitos
+// funkcijos atsakymą.
+//
+//
+//
+//
+//
+//
+// function name(masyvas) {
+//   return masyvas.every((a) => a > 4);
+// }
+
+// let masyvas = [5, 2, 8, 9];
+
+// if (name(masyvas) == true) {
+//   console.log("visi studento pažymiai teigiami");
+// } else {
+//   console.log("studentas turi bent vieną neigiamą pažymį");
+// }
+//
+//
+//
+//
+//
+//
+//
+//
+// 1. Praeitame skyriuje sukurtą darbuotojo objektą pasikopijuokite į naują
+// gamyklos (factory) funkciją, kuri galėtų sukurti daugiau tokių objektų.
+// Pritaikykite objektą, kad duomenis prisiskirtų iš funkcijos argumentų. Už
+// funkcijos ribų sukurkite ir sudėkite keletą tokių darbuotojų į masyvą.
+// Tuomet mėginkite prasukti ciklą pro sukurtą darbuotojų masyvą ir
+// išsiveskite darbuotojų duomenis, taip pat, pakvieskite skaičiavimų
+// funkcijas ir pasižiūrėkite gaunamus rezultatus.
+//
+//
+//
+//
+//
+//
+
+// function darbuotojas(vardas, patiritis, gm) {
+//   return {
+//     Vardas: vardas,
+//     patirtis: patiritis,
+//     gymMetai: gm,
+//     amzius: function amzius() {
+//       console.log(`-----------------------`);
+//       console.log(`Vardas: ${this.Vardas}`);
+//       console.log(`Patirtis: ${this.patirtis}`);
+//       console.log(`GymimoMetai: ${this.gymMetai}`);
+//       console.log("amzius: ", 2025 - this.gymMetai, "metai");
+//     },
+//   };
+// }
+
+// let darbuotojoInfo = darbuotojas("tomas", "10metu", 1980);
+// let darbuotojoInfo2 = darbuotojas("domas", "20metu", 1970);
+
+// darbuotojoInfo.amzius();
+// darbuotojoInfo2.amzius();
