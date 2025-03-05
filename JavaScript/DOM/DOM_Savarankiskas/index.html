@@ -186,6 +186,15 @@
           </select>
         </div>
         <div class="parametas">
+          <p>Teksto Spalva:</p>
+          <select id="teksto-spalvos-pasirinkimas">
+            <option value="burlywood">Burlywood</option>
+            <option value="black">Juoda</option>
+            <option value="red">Raudona</option>
+            <option value="green">Zalia</option>
+          </select>
+        </div>
+        <div class="parametas">
           <p>Tekstas per viduri:</p>
           <input type="text" value="Tekstas per viduri" id="tekstas-divui" />
         </div>
@@ -247,6 +256,32 @@
     <div id="astuonioliktas">
       <button id="kitas-perjungti-mygtukas">Rodyti</button>
       <p id="kitas-perjungti-tekstas">Tekstas</p>
+    </div>
+
+    <!-- Astuonioliktas -->
+
+    <div id="devynioliktas">
+      <p id="devyniolikto-tekstas">Slepti sita teksta ant paspaudimo</p>
+    </div>
+    <!-- Papildoma nr 3 -->
+    <div id="papildoma3">
+      <textarea id="papildomaTrystekstas"></textarea>
+
+      <textarea id="papildomaTrystekstas2"></textarea>
+      <button id="skenuoti">Skenuoti ir nusplavinti blokus</button>
+    </div>
+
+    <!-- Papildoma nr 4 -->
+    <div id="papildoma4">
+      <input
+        style="width: 100%"
+        type="number"
+        id="papildomaKeturitekstas"
+        placeholder="Įveskite skaičius"
+      />
+
+      <textarea id="papildomaKeturitekstas2" readonly></textarea>
+      <button id="skenuotiKeturi">Suskaičiuoti</button>
     </div>
 
     <script src="index.js"></script>

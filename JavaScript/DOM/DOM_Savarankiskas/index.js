@@ -92,6 +92,14 @@ spalvosPasirinkimas.oninput = function (a) {
   divKeitimui.style.backgroundColor = this.value;
 };
 
+let tekstoSpalvosPasirinkimas = document.getElementById(
+  "teksto-spalvos-pasirinkimas"
+);
+
+tekstoSpalvosPasirinkimas.oninput = function () {
+  divKeitimui.style.color = this.value;
+};
+
 let tekstasDivui = document.getElementById("tekstas-divui");
 
 tekstasDivui.oninput = function () {
@@ -120,6 +128,7 @@ function ilgiausiasZodis() {
   let tekstas = penkioliktoTekstas.value;
   let zodiai = tekstas.trim().split(" ");
   let ilgiausias = "";
+  let trumpiausias = zodiai[0];
 
   for (let zodis of zodiai) {
     if (zodis.length > ilgiausias.length) {
@@ -127,10 +136,16 @@ function ilgiausiasZodis() {
     }
   }
 
+  for (let zodis of zodiai) {
+    if (zodis.length < trumpiausias.length) {
+      trumpiausias = zodis;
+    }
+  }
+
   document.getElementById(
     "penkiolikto-atsakymai"
   ).innerHTML = `<p>Ilgiausias zodis: ${ilgiausias}</p>
-  <p>Jo ilgis: ${ilgiausias.length} simboliu.</p>`;
+  <p>Jo ilgis: ${ilgiausias.length} simboliu.</p> <p>trumpiausias zodis: ${trumpiausias}</p>`;
 }
 
 // sesioliktas div
@@ -174,4 +189,50 @@ document.getElementById("kitas-perjungti-mygtukas").onclick = function () {
     this.innerText = "Rodyti";
     KitasperjungtiTekstas.style.display = "block";
   }
+};
+
+//devinioliktas div
+
+document.getElementById("devyniolikto-tekstas").onclick = function () {
+  this.style.display = "none";
+};
+
+//papildoma 3
+
+let tekstoBlokas1 = document.getElementById("papildomaTrystekstas");
+let tekstoBlokas2 = document.getElementById("papildomaTrystekstas2");
+
+let papildomasMygtukas = document.getElementById("skenuoti");
+
+papildomasMygtukas.onclick = function () {
+  if (tekstoBlokas1.value.length >= 10) {
+    tekstoBlokas1.style.backgroundColor = "red";
+  } else {
+    tekstoBlokas1.style.backgroundColor = "white";
+  }
+  if (tekstoBlokas2.value.length >= 10) {
+    tekstoBlokas2.style.backgroundColor = "red";
+  } else {
+    tekstoBlokas2.style.backgroundColor = "white";
+  }
+};
+
+//papildoma 4
+
+let papildoma4Tekstas = document.getElementById("papildomaKeturitekstas");
+let papildoma4Tekstas2 = document.getElementById("papildomaKeturitekstas2");
+let valuePapildoma4Tekstas = [];
+let papildomas4Mygtukas = document.getElementById("skenuotiKeturi");
+
+papildoma4Tekstas.oninput = function a() {
+  valuePapildoma4Tekstas = this.value.split("");
+};
+
+papildomas4Mygtukas.onclick = function () {
+  papildoma4Tekstas2.innerText = `${
+    (valuePapildoma4Tekstas.map(Number).reduce((a, b) => a + b),
+    valuePapildoma4Tekstas.map(Number).reduce((a, b) => a - b, 0),
+    valuePapildoma4Tekstas.map(Number).reduce((a, b) => a * b, 1),
+    valuePapildoma4Tekstas.map(Number).reduce((a, b) => a / b, 1))
+  }`;
 };

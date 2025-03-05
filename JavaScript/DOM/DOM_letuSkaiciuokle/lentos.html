@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/Bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="/JavaScript/DOM/DOM_letuSkaiciuokle/lentos.css"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap");
+    </style>
+    >
+  </head>
+  <body>
+    <div class="container" id="konteineris">
+      <div class="row">
+        <div class="col-6 pirmasDiv">
+          <div class="row">
+            <div class="col">
+              <h1>Pasirinkite lentų išmatavimus:</h1>
+
+              <h3>Lentų ilgis: <span id="lentosIlgis"></span></h3>
+              <input
+                type="range"
+                class="form-range"
+                id="customRange1"
+                min="1"
+                max="10"
+              />
+
+              <h3>Lentų plotis: <span id="lentosPlotis"></span></h3>
+              <input
+                type="range"
+                class="form-range"
+                id="plotis"
+                min="1"
+                max="10"
+              />
+
+              <h3>Lentų gylis: <span id="lentosGylis"></span></h3>
+              <input
+                type="range"
+                class="form-range"
+                id="gylis"
+                min="1"
+                max="10"
+              />
+              <h1>Pasirinkite lentų kiekį</h1>
+              <h3>Lentų kiekis: <span id="lentosKiekis"></span></h3>
+              <input
+                class="mb-5"
+                type="number"
+                class="form-range"
+                id="kiekis"
+                min="1"
+                max="100"
+                style="background-color: white"
+              />
+              <button id="mygtukas">Skaičiuoti</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 antrasDiv">
+          <div class="apskaiciuotos">
+            <h1>Jūsų užsakymas:</h1>
+            <p class="kaina">Kaina: <span id="kaina"></span></p>
+            <p class="kubatura">Kubatūra:<span id="kubatura"></span></p>
+            <p class="kubatura" style="padding: 0">
+              <button class="mygtukas2" style="width: 100%; height: 100%">
+                UŽSAKYTI
+              </button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/Bootstrap/js/bootstrap.min.js"></script>
+    <script src="/Bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/JavaScript/DOM/DOM_letuSkaiciuokle/lentos.js"></script>
+  </body>
+</html>
