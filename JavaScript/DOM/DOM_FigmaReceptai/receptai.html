@@ -11,9 +11,9 @@
     />
   </head>
   <body>
-    <div class="container" style="">
-      <h1>Pasirinkite recepta</h1>
-      <div class="row gap-5">
+    <div class="container kon1">
+      <h1>Pasirinkite receptą:</h1>
+      <div class="row gap-5 justify-content-center">
         <div class="card" style="width: 18rem">
           <img
             class="card-img-top"
@@ -21,7 +21,7 @@
             alt="Card image cap"
           />
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">Receptas1</h5>
             <p class="card-text">
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
@@ -36,7 +36,7 @@
             alt="Card image cap"
           />
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">Recpetas2</h5>
             <p class="card-text">
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
@@ -51,7 +51,7 @@
             alt="Card image cap"
           />
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">Receptas3</h5>
             <p class="card-text">
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
@@ -60,7 +60,22 @@
         </div>
       </div>
     </div>
+    <div class="container kon1">
+      <h1>Kiek porcijų gaminsite?</h1>
+      <div class="wrapper">
+        <div class="range">
+          <input type="range" min="1" max="5" value="1" id="range" />
+          <div class="value">1</div>
+        </div>
+      </div>
+    </div>
 
+    <div class="container kon1">
+      <h1>Jums reikės šių ingredientų, tokiais kiekias:</h1>
+
+      <p id="Receptas"></p>
+    </div>
+    <script src="/JavaScript/DOM/DOM_FigmaReceptai/receptai.js"></script>
     <script src="/Bootstrap/js/bootstrap.min.js"></script>
     <script src="/Bootstrap/js/bootstrap.bundle.min.js"></script>
   </body>
