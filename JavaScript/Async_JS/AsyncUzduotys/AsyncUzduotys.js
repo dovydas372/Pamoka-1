@@ -1,13 +1,46 @@
 //1. Sukurkite JS funkciją, kurios parametras yra callback funkcija. Jūsų funkcija
 // turėtų vykdyti callback funkciją po 2s.
 
-// const { each } = require("async");
+//
+//
+//CALL BACK FUNKCIJA YRA KAI ISKVIECIAME SUKURTA FUNKCIJA IR I JOS KINTAMJI PADUODAM FUNKCIJA
 
-// function fukcija1(a) {
-//   setTimeout(() => {
-//     a();
-//   }, 2000);
+//// function funkcija1(a) {
+//   setTimeout(a, 5000);
 // }
+
+// funkcija1(() => {
+//   console.log("praejo 5 sec");     <--- CALL BACK FUNKCIJA
+// });
+//
+//
+//
+//
+//
+//
+// SU FETCH I ELEMENTA REIKE KREIPTIS DU KARTUS SU .THEN
+// PIRMAS SU THEN.JSON (PAVERCIA IS BINARY KODO I MUMS SUPRANTAMA TEKSTA)
+// IR ANTRA KART TIESIOG .THEN()
+//
+//
+//
+//
+
+// function funkcija1(a) {
+//   setTimeout(a, 5000);
+// }
+
+// funkcija1(() => {
+//   console.log("praejo 5 sec");
+// });
+
+// funkcija1(() => {
+//   console.log("praejo 5 sec");
+// });
+
+// funkcija1(() => {
+//   console.log("praejo 5 sec");
+// });
 
 // 2. Sukurkite JS funkciją, kuri daro HTTP Request užklausą ir grąžina pažadą su
 // duomenimis.
@@ -15,11 +48,31 @@
 // function funkcija2(url) {
 //   fetch(url)
 //     .then((a) => a.json())
-//     .then((a) => {
-//       console.log(a);
+//     .catch((b) => {
+//       throw "error";
 //     });
 // }
 
+// function gautiDuomenys() {
+//   return new Promise((resolve, reject) => {
+//     const request = new XMLHttpRequest();
+
+//     request.addEventListener("readystatechange", () => {
+//       if (request.readyState === 4 && request.status === 200) {
+//         const data = JSON.parse(request.responseText);
+//         resolve(data);
+//       } else if (request.readyState === 4) {
+//         reject("kazkokia klaida");
+//       }
+//     });
+//     request.open("GET", "AsyncUzduotys.json");
+//     request.send();
+//   });
+// }
+
+// gautiDuomenys().then((a) => {
+//   console.log(a);
+// });
 // 3. Sukurti funkciją(1), kuri kaip parametrus priimtų skaičių masyvą ir callback
 // funkciją(2). Funkcija(1) turėtų iteruoti per masyvą ir siųsti kiekvieną jos narį
 // callback funkcijai(2). Callback funkcijos esmė - patikrinti ar gautas skaičius yra
@@ -91,6 +144,7 @@
 // ];
 
 // function funkcija(masyvas, funkcija) {
+//   const zmones2
 //   for (let objektas of masyvas) {
 //     funkcija(objektas);
 //   }
@@ -111,21 +165,73 @@
 //     kitu atveju - resolvinam ir grąžinam pasirinktą pranešimą. Iškvieskite tą funkciją
 //     naudojantis then ir catch, o gautą rezultatą atvaizduokite konsolėje.
 
-const getData = async (url) => {
-  const response = await fetch(url);
-  const duomenys = await response.json();
+// const getData = async (url) => {
+//   const response = await fetch(url);
+//   const duomenys = await response.json();
 
-  if (duomenys === true) {
-    console.log(duomenys);
+//   if (duomenys === true) {
+//     return duomenys;
+//   } else {
+//     throw new Error("aaaa");
+//   }
+// };
+
+// getData("AsyncUzduotys.json")
+//   .then((b) => {
+//     console.log(b);
+//   })
+//   .catch((a) => {
+//     console.log(a);
+//   });
+
+// function gautiDuomenys() {
+//   return new Promise((resolve, reject) => {
+//     const request = new XMLHttpRequest();
+//     const data = JSON.parse(request.responseText);
+//     request.addEventListener("readystatechange", () => {
+//       if (true) {
+//         resolve(data);
+//       } else {
+//         reject("vartotojas neprisijunges");
+//       }
+//     });
+//     request.open("GET", "AsyncUzduotys.json");
+//     request.send();
+//   });
+// }
+
+// gautiDuomenys().then((a) => {
+//   console.log(a);
+// });
+//   7. Sukurkite async funkciją, kuri priimtų parametrą "age". Funkcijos viduje
+// padarykite patikrinimą ar "age" yra paduotas ir ar jis yra skaičius - priešingu
+// atveju iškvieskite klaidą (throw). Toliau tikrinkite ar amžius yra daugiau nei 18,
+// jeigu taip, grąžinkite, kad “vartotojas gali laikyti vairuotojo egzaminą", priešingu
+// atveju iškvieskite klaidą (throw) ir parašykite, kad "jūsų amžius turi būti daugiau
+// nei 18". Iškvieskite šią funkciją naudojantis then ir catch.
+
+async function kazkokiaFunkcija(age) {
+  if (age && typeof age === "number") {
+    if (age > 18) {
+      return "Vartotojas gali laikyti vairuotojo egzamina";
+    } else {
+      throw new Error("Jusu amzius turi buti daugiau nei 18");
+    }
   } else {
-    throw "Iviko klaida";
+    throw new Error("amzius nera skaicius");
   }
-};
+}
 
-getData("AsyncUzduotys.json")
-  .then((b) => {
-    console.log("a");
+kazkokiaFunkcija("18")
+  .then((rezultatas) => {
+    console.log("rodau kita langa kur gali pasirinkt egzamino langa");
   })
   .catch((a) => {
     console.log(a);
   });
+
+// THROW ATSTOJA REJECT
+
+// RETURN SEKMES ATVIJU
+
+//7 UZDUOTIES FUNKCIJA NAUDOJAMA ASYNCRONINIAM FUNKCIJOMS (JEI NEREIKIA LAUKTI DUOMENU)

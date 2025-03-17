@@ -1,1 +1,15 @@
-true
+[
+  {
+    "marke": "Toyota",
+    "modelis": "Corolla",
+    "metai": 2020,
+    "spalva": "Mėlyna"
+  },
+
+  {
+    "pavadinimas": "Paslaptingas miestas",
+    "autorius": "Jonas Petrauskas",
+    "puslapiuSkaicius": 312,
+    "zanras": "Detektyvas"
+  }
+]
