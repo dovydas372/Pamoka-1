@@ -2,7 +2,7 @@ window.addEventListener("DOMContentLoaded", () => renderPosts());
 const container = document.querySelector(".irasai");
 
 const renderPosts = async () => {
-  let uri = "http://localhost:3000/posts";
+  let uri = "http://localhost:3000/posts?_sort=likes&_order=desec";
 
   const res = await fetch(uri);
   const posts = await res.json();
