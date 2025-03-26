@@ -40,6 +40,12 @@
         font-style: normal;
       }
 
+      form input:hover,
+      form button:hover {
+        box-shadow: inset 4px 0px 68px 20px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+      }
+
       span {
         padding: 0 10px;
         color: rgb(226, 202, 43);
@@ -52,7 +58,7 @@
     <div class="laukas">
       <h1>Orų prognozė</h1>
       <form action="submit">
-        <input type="text" name="" id="" placeholder="Įveskite miestą" />
+        <input type="text" name="miestas" id="" placeholder="Įveskite miestą" />
         <button>Rodyti orus</button>
       </form>
       <div class="informacija">
