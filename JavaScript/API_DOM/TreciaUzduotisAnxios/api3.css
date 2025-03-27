@@ -1,0 +1,33 @@
+body {
+  display: flex;
+
+  justify-content: center;
+}
+.prekiuKonteineris {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+
+  margin: 0;
+  padding: 0;
+}
+h3 {
+  width: 100%;
+}
+.preke {
+  margin: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 30%;
+  border: 1px solid black;
+}
+p {
+  max-width: 100%;
+}
+
+img {
+  width: 150px;
+  height: 200px;
+}

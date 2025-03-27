@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+      body {
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .konteineris {
+        height: 90%;
+        width: 80%;
+        border: 1px solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .korteliuLaukas {
+        height: 100%;
+        width: 70%;
+        border: 1px solid red;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      .korteliuLaukas > div {
+        background-color: black;
+        width: 20%;
+        height: 25%;
+        padding: 0px;
+        margin: 2px;
+        background-image: url(https://images.pexels.com/photos/4994765/pexels-photo-4994765.png?auto=compress&cs=tinysrgb&h=350);
+
+        background-position: center;
+        background-size: cover;
+        border-radius: 10px;
+        border: 2px solid rgb(0, 0, 0);
+      }
+      .korteliuLaukas > div:hover {
+        cursor: pointer;
+        background: linear-gradient(
+            rgba(255, 255, 255, 0.2),
+            rgba(255, 255, 255, 0.1)
+          ),
+          url(https://images.pexels.com/photos/4994765/pexels-photo-4994765.png?auto=compress&cs=tinysrgb&h=350);
+        background-position: center;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="konteineris">
+      <h1>Rezultatas: <span class="rezultatas">0</span></h1>
+      <div class="korteliuLaukas">
+        <div class="kortele1"></div>
+        <div class="kortele2"></div>
+        <div class="kortele3"></div>
+        <div class="kortele4"></div>
+        <div class="kortele5"></div>
+        <div class="kortele6"></div>
+        <div class="kortele7"></div>
+        <div class="kortele8"></div>
+        <div class="kortele9"></div>
+        <div class="kortele10"></div>
+        <div class="kortele11"></div>
+        <div class="kortele12"></div>
+      </div>
+    </div>
+
+    <script src="/JavaScript/API_DOM/KorteliuZaidimas/korteliuZaidimas.js"></script>
+  </body>
+</html>
