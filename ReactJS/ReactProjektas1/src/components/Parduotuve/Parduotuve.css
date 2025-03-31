@@ -1,0 +1,7 @@
+.Preke {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid white;
+  margin: 50px 0 0 10px;
+}
