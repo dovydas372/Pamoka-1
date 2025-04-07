@@ -1,4 +1,15 @@
 const PrekiuKrepselis = () => {
+  function atrinktosPagalKaina(a) {
+    let atrusiuotasKrepselis = [];
+    krepselis.forEach((objektas) => {
+      if (objektas.kaina > a) {
+        atrusiuotasKrepselis.push(objektas);
+      }
+    });
+
+    return masyvoSpausdinimas(atrusiuotasKrepselis);
+  }
+
   function masyvoSpausdinimas(a) {
     return a.map((objektas) => {
       return (
@@ -57,10 +68,14 @@ const PrekiuKrepselis = () => {
   ];
   return (
     <div>
-      PrekiuKrepselis
+      <h1>PrekiuKrepselis</h1>
       <table>{masyvoSpausdinimas(krepselis)}</table>\
       <p>visu nuolaidu suma: {visuPrekiuNuolaida(krepselis)}</p>
-      <p>visuy prekiu kaina: {visuPrekiuKaina(krepselis)}</p>
+      <p>visu prekiu kaina: {visuPrekiuKaina(krepselis)}</p>
+      <br />
+      <br />
+      <br />
+      <table>{atrinktosPagalKaina(100)}</table>
     </div>
   );
 };
