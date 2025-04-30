@@ -1,0 +1,29 @@
+.container {
+  border: 1px solid red;
+  width: 90vh;
+}
+
+.pirmaEile {
+  display: flex;
+}
+
+.krepselis {
+  background-color: white;
+  padding: 10px;
+}
+
+.produktas {
+  width: 50%;
+}
+
+.vienetoKaina {
+  width: 20%;
+}
+
+.kiekis {
+  width: 20%;
+}
+
+.bendraKaina {
+  width: 20%;
+}

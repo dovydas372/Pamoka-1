@@ -1,0 +1,10 @@
+body {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100hv;
+  margin: 0;
+
+  padding: 0;
+  background-color: brown;
+}

@@ -2,15 +2,17 @@ import { useRef } from "react";
 
 const KnygosIvedimas = (props) => {
   const formRef = useRef();
-  const ivestiFn = () => {
+  const ivestiFn = (event) => {
+    event.preventDefault();
     const forma = formRef.current;
     const knyga = {
       pavadinimas: forma["ivestaKnyga"].value,
       kaina: forma["kaina"].value,
       metai: forma["metai"].value,
     };
-    console.log(knyga);
+
     props.data(knyga);
+    forma.reset();
   };
 
   return (

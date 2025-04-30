@@ -18,8 +18,6 @@ const ZodziuBendras = () => {
     setIlgiausias(reikiamasZodis);
   };
 
-  const ilgiausiasZodis = () => {};
-
   return (
     <div>
       <h1>ZodziuBendras</h1>
