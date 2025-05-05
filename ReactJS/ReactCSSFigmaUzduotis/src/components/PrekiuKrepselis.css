@@ -3,8 +3,9 @@
   width: 90vh;
 }
 
-.pirmaEile {
+.row {
   display: flex;
+  align-items: center;
 }
 
 .krepselis {
