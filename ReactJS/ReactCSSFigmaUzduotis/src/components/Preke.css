@@ -15,7 +15,7 @@
   background-color: #e0e0e0;
   cursor: pointer;
   font-size: 20px;
-  user-select: none;
+
   transition: background 0.2s;
 }
 
@@ -27,6 +27,7 @@
   font-size: 18px;
   background-color: #e0e0e0;
   height: 100%;
+  padding: 10px 0px;
 }
 
 .prekesPav {

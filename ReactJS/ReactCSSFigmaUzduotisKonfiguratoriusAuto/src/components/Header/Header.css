@@ -1,0 +1,11 @@
+header {
+  background: url(.\src\assets\img\970b27af0a985ab811a0e881137d9557d625cbf0.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}
