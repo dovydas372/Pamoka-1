@@ -1,8 +1,9 @@
 body {
   background-color: grey;
+  font-family: "Inter";
+  font-style: normal;
 }
 
-#root,
 body,
 html {
   margin: 0;
@@ -11,4 +12,11 @@ html {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
 }

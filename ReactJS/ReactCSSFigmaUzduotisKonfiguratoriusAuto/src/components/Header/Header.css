@@ -1,11 +1,40 @@
 header {
-  background: url(.\src\assets\img\970b27af0a985ab811a0e881137d9557d625cbf0.jpg);
+  background-image: url(C:\Users\PMAC\Desktop\PROGRAMAVIMAS\Pamoka-1\ReactJS\ReactCSSFigmaUzduotisKonfiguratoriusAuto\src\assets\img\header.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 265px;
+  display: flex;
+  justify-content: center;
 }
 
 h1,
 h2 {
   margin: 0;
   padding: 0;
+}
+
+.containerH {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+  max-width: 1320px;
+  margin-bottom: 55px;
+}
+
+header h1 {
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 100%;
+  color: #ffffff;
+}
+
+header h2 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 100%;
+  color: #ffffff;
 }

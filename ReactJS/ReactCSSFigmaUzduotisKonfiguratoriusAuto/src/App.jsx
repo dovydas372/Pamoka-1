@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./components/Header/Header";
 import Paketas from "./components/Paketas/Paketas";
 import Variklis from "./components/Variklis/Variklis";
+import PapildomiPriedai from "./components/PapildomiPriedai/PapildomiPriedai";
 
 function App() {
   const [kaina, setKaina] = useState();
@@ -28,6 +29,11 @@ function App() {
           \
           <div>
             <Variklis pasirinkimasFn={(a) => suma(a)}></Variklis>
+          </div>
+        </section>
+        <section>
+          <div>
+            <PapildomiPriedai></PapildomiPriedai>
           </div>
         </section>
       </div>
