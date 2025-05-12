@@ -16,7 +16,7 @@ const Variklis = (props) => {
 
   return (
     <div className="card">
-      <h3>Pagrindinis paketas</h3>
+      <h3>Variklis</h3>
       <div className="options ">
         {varikliai.map((varikliss, index) => (
           <div

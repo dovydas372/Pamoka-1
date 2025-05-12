@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import Paketas from "./components/Paketas/Paketas";
 import Variklis from "./components/Variklis/Variklis";
 import PapildomiPriedai from "./components/PapildomiPriedai/PapildomiPriedai";
+import Spalva from "./components/Spalva/Spalva";
 
 function App() {
   const [kaina, setKaina] = useState();
@@ -26,12 +27,14 @@ function App() {
           </div>
         </section>
         <section className="second">
-          \
+          <div>
+            <Spalva></Spalva>
+          </div>
           <div>
             <Variklis pasirinkimasFn={(a) => suma(a)}></Variklis>
           </div>
         </section>
-        <section>
+        <section className="third">
           <div>
             <PapildomiPriedai></PapildomiPriedai>
           </div>

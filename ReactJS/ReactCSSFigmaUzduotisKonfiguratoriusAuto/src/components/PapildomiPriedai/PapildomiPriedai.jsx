@@ -8,11 +8,10 @@ const PapildomiPriedai = () => {
 
     if (priedai.includes(pasirinkimas)) {
       naujaReiksme = priedai.filter((priedas) => pasirinkimas !== priedas);
+      setPriedai(naujaReiksme);
     } else {
       setPriedai([...priedai, pasirinkimas]);
     }
-    console.log(naujaReiksme);
-    setPriedai(naujaReiksme);
   };
 
   const paketai = [
