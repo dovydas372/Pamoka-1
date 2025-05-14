@@ -4,10 +4,11 @@ const Spalva = (props) => {
   const [Spalva, setSpalva] = useState(null);
 
   const pasirinkti = (pasirinkimas) => {
+    props.pasirinkimasFn(spalvos[pasirinkimas].kaina);
     setSpalva(pasirinkimas);
   };
 
-  const Spalvos = [
+  const spalvos = [
     { pavadinimas: "Spalva 1", kaina: 200 },
     { pavadinimas: "Spalva 2", kaina: 500 },
     { pavadinimas: "Spalva 3", kaina: 600 },
@@ -20,7 +21,7 @@ const Spalva = (props) => {
     <div className="card">
       <h3>Spalva</h3>
       <div className="options ">
-        {Spalvos.map((Spalvas, index) => (
+        {spalvos.map((Spalvas, index) => (
           <div
             key={index}
             className={`option ${Spalva === index ? "selected" : ""}`}

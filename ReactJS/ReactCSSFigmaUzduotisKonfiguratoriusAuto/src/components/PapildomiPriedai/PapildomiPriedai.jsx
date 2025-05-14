@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const PapildomiPriedai = () => {
+const PapildomiPriedai = (props) => {
   const [priedai, setPriedai] = useState([]);
 
   const pasirinkti = (pasirinkimas) => {
@@ -8,10 +8,15 @@ const PapildomiPriedai = () => {
 
     if (priedai.includes(pasirinkimas)) {
       naujaReiksme = priedai.filter((priedas) => pasirinkimas !== priedas);
-      setPriedai(naujaReiksme);
     } else {
-      setPriedai([...priedai, pasirinkimas]);
+      naujaReiksme = [...priedai, pasirinkimas];
     }
+    let sum = 0;
+    naujaReiksme.forEach((indeksas) => {
+      sum += paketai[indeksas].kaina;
+    });
+    props.pasirinkimasFn(sum);
+    setPriedai(naujaReiksme);
   };
 
   const paketai = [

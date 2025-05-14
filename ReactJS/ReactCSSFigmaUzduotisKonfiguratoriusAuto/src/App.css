@@ -29,9 +29,60 @@ section.second > div:last-child {
 
 section.third {
   margin-top: 20px;
-  width: 100%;
+}
+
+section.third > div:first-child {
+  width: 30%;
+  margin-right: 10px;
+  height: 100%;
 }
 
 section.third > div:last-child {
+  width: 70%;
+}
+
+hr {
   width: 100%;
+  height: 0px;
+  border: 2px solid #ededed;
+  margin: 36px 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 47px;
+}
+.footer .galutineKaina {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+
+  font-variant: all-small-caps;
+
+  color: #222222;
+}
+
+.footer button {
+  padding: 16px 32px;
+  gap: 8px;
+
+  width: 113px;
+  height: 50px;
+
+  background: #2b9cee;
+
+  /* Pirkti */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  /* identical to box height, or 18px */
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
 }

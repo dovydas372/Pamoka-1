@@ -1,8 +1,9 @@
 import { useState } from "react";
 import "./Paketas.css";
-const Paketas = () => {
+const Paketas = (props) => {
   const [paketas, setPaketas] = useState(null);
   const pasirinkti = (pasirinkimas) => {
+    props.pasirinkimasFn(paketai[pasirinkimas].kaina);
     setPaketas(pasirinkimas);
   };
 
