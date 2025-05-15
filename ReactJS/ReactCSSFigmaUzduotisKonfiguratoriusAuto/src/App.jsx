@@ -6,6 +6,7 @@ import Variklis from "./components/Variklis/Variklis";
 import PapildomiPriedai from "./components/PapildomiPriedai/PapildomiPriedai";
 import Spalva from "./components/Spalva/Spalva";
 import Salonas from "./components/Salonas/Salonas";
+import Dekojame from "./components/Dekojame/Dekojame";
 
 function App() {
   const [paketas, setPaketas] = useState();
@@ -13,6 +14,7 @@ function App() {
   const [variklis, setVariklis] = useState();
   const [saloans, setSalonas] = useState();
   const [priedai, setPriedai] = useState();
+  const [pirkti, setPirkti] = useState(false);
 
   const paketasK = (gautaKaina) => {
     setPaketas(gautaKaina);
@@ -41,51 +43,70 @@ function App() {
     );
   };
 
+  const pirktiFn = () => {
+    setPirkti(true);
+  };
+
+  const atgalFn = (a) => {
+    setPaketas(0);
+    setSpalva(0);
+    setVariklis(0);
+    setSalonas(0);
+    setPriedai(0);
+    setPirkti(a);
+  };
+
   return (
     <>
       <Header></Header>
       <div className="container">
-        <section className="first">
+        {pirkti ? (
+          <Dekojame atgal={(a) => atgalFn(a)}></Dekojame>
+        ) : (
           <div>
-            <img
-              src=".\src\assets\img\f3d55ece923ce5d9094c0de5a5da2cfbeaeae0bd.png"
-              alt=""
-            />
-          </div>
-          <div>
-            <Paketas pasirinkimasFn={(a) => paketasK(a)}></Paketas>
-          </div>
-        </section>
-        <section className="second">
-          <div>
-            <Spalva pasirinkimasFn={(a) => spalvaK(a)}></Spalva>
-          </div>
-          <div>
-            <Variklis pasirinkimasFn={(a) => variklisK(a)}></Variklis>
-          </div>
-        </section>
-        <section className="third">
-          <div>
-            <Salonas pasirinkimasFn={(a) => salonasK(a)}></Salonas>
-          </div>
-          <div>
-            <PapildomiPriedai
-              pasirinkimasFn={(a) => priedaiK(a)}
-            ></PapildomiPriedai>
-          </div>
-        </section>
+            <section className="first">
+              <div>
+                <img
+                  src=".\src\assets\img\f3d55ece923ce5d9094c0de5a5da2cfbeaeae0bd.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <Paketas pasirinkimasFn={(a) => paketasK(a)}></Paketas>
+              </div>
+            </section>
+            <section className="second">
+              <div>
+                <Spalva pasirinkimasFn={(a) => spalvaK(a)}></Spalva>
+              </div>
+              <div>
+                <Variklis pasirinkimasFn={(a) => variklisK(a)}></Variklis>
+              </div>
+            </section>
+            <section className="third">
+              <div>
+                <Salonas pasirinkimasFn={(a) => salonasK(a)}></Salonas>
+              </div>
+              <div>
+                <PapildomiPriedai
+                  pasirinkimasFn={(a) => priedaiK(a)}
+                ></PapildomiPriedai>
+              </div>
+            </section>
 
-        <hr />
+            <hr />
 
-        <div className="footer">
-          <div className="galutineKaina">
-            Galutinė kaina:{" "}
-            <span className="galutineKSk">{galutineKainaFn()}</span>
+            <div className="footer">
+              <div className="galutineKaina">
+                Galutinė kaina:{" "}
+                <span className="galutineKSk">{galutineKainaFn()}</span>
+              </div>
+              <div>
+                <button onClick={pirktiFn}>Pirkti</button>
+              </div>
+            </div>
           </div>
-          <div>
-            <button>Pirkti</button>
-          </div>
-        </div>
+        )}
       </div>
     </>
   );

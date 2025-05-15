@@ -1,5 +1,5 @@
 import { useRef } from "react";
-
+import "./PrekeIvedimas.css";
 const PrekeIvedimas = (props) => {
   const formRef = useRef();
   const ivestiFn = (event) => {
@@ -19,7 +19,8 @@ const PrekeIvedimas = (props) => {
   return (
     <div className="container">
       <h2>Prekes ivedimas </h2>
-      <form ref={formRef} onSubmit={ivestiFn}>
+
+      <form ref={formRef} onSubmit={ivestiFn} className="ivedimasDiv">
         <label htmlFor="url">Prekes paveikslelio nuoroda</label>
         <input type="text" name="url" id="url" />
 

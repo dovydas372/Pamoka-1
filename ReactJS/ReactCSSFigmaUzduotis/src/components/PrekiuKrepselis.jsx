@@ -5,8 +5,14 @@ import Preke from "./Preke";
 const PrekiuKrepselis = () => {
   const [prekes, setPrekes] = useState([]);
   const ivestasProduktas = (ivestaInfo) => {
-    setPrekes([ivestaInfo, ...prekes]);
+    setPrekes([...prekes, ivestaInfo]);
   };
+
+  const trintiPreke = (indeksas) => {
+    const newPrekes = prekes.filter((preke, i) => i !== indeksas);
+    setPrekes([...newPrekes]);
+  };
+
   return (
     <>
       <div className="container">
@@ -19,7 +25,17 @@ const PrekiuKrepselis = () => {
             <div className="bendraKaina">Bendra kaina</div>
           </div>
           <hr />
-          {prekes.length > 0 ? <Preke gautiPreke={prekes}></Preke> : ""}
+          {prekes.length > 0
+            ? prekes.map((prekesInfo, index) => (
+                <div key={index}>
+                  <Preke
+                    indeksas={index}
+                    gautiPreke={prekesInfo}
+                    istrinti={(a) => trintiPreke(a)}
+                  ></Preke>
+                </div>
+              ))
+            : ""}
         </div>
       </div>
 

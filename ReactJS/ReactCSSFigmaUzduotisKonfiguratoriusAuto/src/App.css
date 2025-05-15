@@ -64,7 +64,7 @@ hr {
   color: #222222;
 }
 
-.footer button {
+button {
   padding: 16px 32px;
   gap: 8px;
 
@@ -85,4 +85,17 @@ hr {
   align-items: center;
 
   color: #ffffff;
+}
+
+.dekojame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dekojame > div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
