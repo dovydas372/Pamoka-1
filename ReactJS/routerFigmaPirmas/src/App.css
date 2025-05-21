@@ -1,0 +1,46 @@
+.header {
+  width: 100%;
+  gap: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(22, 48, 45, 1);
+
+  box-shadow: 0px 9px 12.8px 0px rgba(80, 197, 87, 0.05);
+  height: 136;
+  padding-top: 32px;
+  padding-right: 300px;
+  padding-bottom: 32px;
+  padding-left: 300px;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header > div > div {
+  gap: 50px;
+  display: flex;
+  justify-content: space-between;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  text-decoration: none;
+  color: #eff1ec;
+}
+.nav-link {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.nav-link.active {
+  filter: drop-shadow(-2px -2px 10px #139711);
+}
+
+.container {
+  width: 70%;
+}
