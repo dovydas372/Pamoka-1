@@ -1,5 +1,6 @@
 import React from "react";
 import "./Home.css";
+import Gallery from "../../components/Gallery";
 const Home = () => {
   return (
     <>
@@ -52,6 +53,18 @@ const Home = () => {
 
         <div className="pav">
           <img src="src/assets/pav/balkonai.jpg" alt="" />
+        </div>
+      </div>
+
+      <div className="row4">
+        <div>
+          <h2>Explore nearby us</h2>
+          <p>
+            Uncover Local Gems and Nearby Adventures to Enhance Your Experience.
+          </p>
+        </div>
+        <div>
+          <Gallery></Gallery>
         </div>
       </div>
     </>
