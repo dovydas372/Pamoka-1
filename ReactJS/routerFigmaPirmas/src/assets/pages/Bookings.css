@@ -1,0 +1,167 @@
+.bookings-row1 {
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.bookings-row1 h1 {
+  font-family: "Krona One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 120%;
+
+  color: #eff1ec;
+}
+
+.bookings-row1 > div:first-child {
+  width: 50%;
+}
+
+.bookings-row1 > div:last-child {
+  display: flex;
+  justify-content: end;
+  width: 50%;
+}
+
+.bookings-row1 img {
+  width: 100%;
+  max-height: 595px;
+  border-top-left-radius: 390px;
+  border-top-right-radius: 390px;
+}
+
+.bookings-row2 {
+  background: rgba(22, 48, 45, 1);
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 65px 0;
+}
+
+.bookings-row2 img {
+  max-width: 1083px;
+}
+
+.container-bookings {
+  width: 90%;
+  max-height: 493px;
+}
+
+.bookings-row3 {
+  background: rgba(22, 48, 45, 1);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.bookings-row3 .textbox {
+  display: flex;
+  flex-direction: column;
+
+  margin: 50px;
+}
+
+.bookings-row3 .textbox h4 {
+  font-family: "Krona One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 150%;
+  margin: 0;
+  color: #1e1e1e;
+}
+
+.bookings-row3 .textbox span {
+  font-family: "Krona One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  color: #81d386;
+}
+
+.bookings-row3 .textbox h3 {
+  max-width: 371px;
+  width: 100%;
+  font-family: "Krona One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 150%;
+
+  color: #16302d;
+}
+
+.bookings-row3 .textbox p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  max-width: 557px;
+  color: #1e1e1e;
+}
+
+.bookings-row3 .card {
+  background-color: white;
+  height: 100%;
+  max-height: 493px;
+  display: flex;
+  justify-content: center;
+}
+
+.bookings-row3 .card:not(:last-child) {
+  margin-bottom: 48px;
+}
+
+.bookings-row3 .reverse {
+  flex-direction: row-reverse;
+}
+
+.bookings-row3 .card > div:first-child {
+  width: 50%;
+}
+.bookings-row3 .card > div:last-child {
+  width: 50%;
+}
+
+.bookings-row3 .card > div:last-child img {
+  height: 100%;
+  max-height: 493px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.bookings-row3 .card .buttons {
+  margin-top: 36px;
+  display: flex;
+  gap: 48px;
+}
+
+.bookings-row3 .card .buttons button {
+  padding: 16px 8px;
+  width: 100%;
+  max-width: 211px;
+  max-height: 61px;
+  height: 100%;
+
+  border: none;
+  border-bottom: 3px solid #50c557;
+
+  font-family: "Krona One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+
+  color: #1e1e1e;
+}
+
+.bookings-row3 .card .buttons button:hover {
+  background: #50c557;
+}

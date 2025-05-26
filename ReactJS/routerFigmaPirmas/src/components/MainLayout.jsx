@@ -157,12 +157,31 @@ const MainLayout = () => {
             <div>
               <ul>
                 <li>
-                  <strong>Booking</strong>
+                  <strong>Hotel</strong>
                 </li>
-                <li>Standard Room</li>
-                <li>Superior Room</li>
-                <li>Deluxe Room</li>
-                <li>Junior Suite</li>
+                <li>
+                  <NavLink
+                    to={"/aboutus"}
+                    className={({ isActive }) =>
+                      isActive ? "nav-link active" : "nav-link"
+                    }
+                  >
+                    About
+                  </NavLink>
+                </li>
+                <li>
+                  {" "}
+                  <NavLink
+                    to={"/contacts"}
+                    className={({ isActive }) =>
+                      isActive ? "nav-link active" : "nav-link"
+                    }
+                  >
+                    Contacts
+                  </NavLink>
+                </li>
+                <li>Careers</li>
+                <li>FAQs</li>
               </ul>
             </div>
           </div>

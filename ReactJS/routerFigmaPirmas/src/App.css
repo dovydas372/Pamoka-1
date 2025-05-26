@@ -164,6 +164,11 @@
   color: #ffffff;
 }
 
+.footer ul li:not(:first-child):hover {
+  background-color: rgba(19, 151, 17, 0.2);
+  cursor: pointer;
+}
+
 .footer li:first-child {
   margin-bottom: 21px;
   font-family: "Montserrat";
