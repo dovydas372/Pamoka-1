@@ -46,15 +46,16 @@ const Bookings = () => {
       <div className="bookings-row3">
         <div className="container-bookings">
           {rooms.map((room, index) => (
-            <div key={index} className="card">
+            <div
+              key={index}
+              className={index % 2 == 0 ? "card  reverse" : "card"}
+            >
               <div className="textbox">
                 <div>
-                  <h3>Standard Room</h3>
-                  <p>
-                    Immerse Yourself in Luxury Amidst Nature's Tranquil Embrace.
-                  </p>
+                  <h3>{room.type}</h3>
+                  <p>{room.description}</p>
                   <h4>
-                    147.6 € <span>/Night</span>
+                    {room.price} € <span>/Night</span>
                   </h4>
                 </div>
                 <div className="buttons">
@@ -62,8 +63,13 @@ const Bookings = () => {
                   <button>More details</button>
                 </div>
               </div>
-              <div>
-                <img src="src/assets/pav/image2.png" alt="" />
+              <div className="image">
+                <img
+                  src={`src/assets/pav/image${
+                    index + 1 == 4 ? 1 : index + 1
+                  }.png`}
+                  alt=""
+                />
               </div>
             </div>
           ))}

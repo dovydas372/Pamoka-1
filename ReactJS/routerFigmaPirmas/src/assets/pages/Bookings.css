@@ -46,7 +46,6 @@
 
 .container-bookings {
   width: 90%;
-  max-height: 493px;
 }
 
 .bookings-row3 {
@@ -123,11 +122,11 @@
   flex-direction: row-reverse;
 }
 
-.bookings-row3 .card > div:first-child {
+.bookings-row3 .card .image {
   width: 50%;
 }
-.bookings-row3 .card > div:last-child {
-  width: 50%;
+.bookings-row3 .card .textbox {
+  width: calc(50% - 100px);
 }
 
 .bookings-row3 .card > div:last-child img {
