@@ -16,7 +16,7 @@ const Api = () => {
     fetch("https://jsonplaceholder.typicode.com/posts")
       .then((response) => response.json())
       .then((json) => {
-        setIrasai(json.slice(json.length - 2, json.length));
+        setIrasai(json);
       });
   };
 
