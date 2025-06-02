@@ -1,11 +1,10 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
-
-import MainLayout from "./assets/components/MainLayout.jsx";
+import Main from "./assets/components/Main.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <MainLayout> </MainLayout>
+    <Main> </Main>
   </StrictMode>
 );
