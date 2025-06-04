@@ -1,0 +1,46 @@
+.header {
+  height: 100px;
+  background-color: rgb(74, 66, 119);
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 1.1rem;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  background-color: rgb(97, 97, 182);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.main-content {
+  padding: 1rem 2rem;
+}
+
+.footer {
+  height: 100px;
+  background-color: rgb(0, 145, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+
+.filmasCard .filmoPav img {
+  max-height: 200px;
+  max-width: 200px;
+}
