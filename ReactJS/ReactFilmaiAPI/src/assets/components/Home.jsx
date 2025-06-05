@@ -1,23 +1,13 @@
 import { NavLink, Outlet } from "react-router";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import Filmai from "./Filmai";
 const Home = () => {
   const [puslapisFilmu, setPuslapisFilmu] = useState([]);
   const [puslapis, setPuslapis] = useState(1);
   const [genres, setGenres] = useState([]);
 
   useEffect(() => {
-    axios
-      .get(
-        `https://api.themoviedb.org/3/discover/movie?api_key=f3224de920dc986e671d6fd0ec82fb41&page=${puslapis}`
-      )
-      .then((response) => {
-        setPuslapisFilmu(response.data.results);
-      })
-      .catch((error) => {
-        console.error("Klaida gaunant duomenis:", error);
-      });
-
     axios
       .get(
         `https://api.themoviedb.org/3/genre/movie/list?api_key=f3224de920dc986e671d6fd0ec82fb41`
@@ -31,28 +21,43 @@ const Home = () => {
       });
   }, []);
 
+  useEffect(() => {
+    axios
+      .get(
+        `https://api.themoviedb.org/3/discover/movie?api_key=f3224de920dc986e671d6fd0ec82fb41&page=${puslapis}`
+      )
+      .then((response) => {
+        setPuslapisFilmu(response.data.results);
+      })
+      .catch((error) => {
+        console.error("Klaida gaunant duomenis:", error);
+      });
+  }, [puslapis]);
+
+  const forwardFn = () => {
+    setPuslapis(Number(puslapis) + 1);
+  };
+
+  const backFn = () => {
+    if (puslapis > 0) {
+      setPuslapis(Number(puslapis) - 1);
+    }
+  };
+
   return (
     <>
-      <div>
+      <div className="visiFilmaiPuslapiai">
         <strong>Filmai puslapis: </strong> {puslapis}
+        <button onClick={backFn}>Back</button>
+        <button onClick={forwardFn}>Forward</button>
       </div>
-      <div className="filmai">
-        {puslapisFilmu.map((filmas, index) => (
-          <div key={index} className="filmasCard">
-            <div className="pavadinimas">
-              <strong>Pavadinimas</strong> {filmas.title}{" "}
-            </div>
-            <div className="filmoPav">
-              <img
-                src={`https://image.tmdb.org/t/p/original${filmas.poster_path}`}
-                alt=""
-              />
-            </div>
-
-            <div className="overview">{filmas.overview}</div>
-            <div className="genre"></div>
-          </div>
-        ))}
+      <div>
+        <Filmai filmai={puslapisFilmu}></Filmai>
+      </div>
+      <div className="visiFilmaiPuslapiai">
+        <strong>Filmai puslapis: </strong> {puslapis}
+        <button>Back</button>
+        <button onClick={forwardFn}>Forward</button>
       </div>
     </>
   );

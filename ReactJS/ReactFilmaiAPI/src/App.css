@@ -40,7 +40,134 @@
   font-weight: bold;
 }
 
+.filmasCard {
+  background-color: #7ba3e5;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 16px;
+  margin: 10px;
+  max-width: 600px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.filmasCard:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.pavadinimas {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #3300ed;
+}
+
+.pavadinimas strong {
+  color: #000000;
+}
+
+.filmasCard .poPav {
+  display: flex;
+  gap: 10px;
+}
+
+.filmoPav img {
+  max-height: 200px;
+  max-width: 200px;
+  border-radius: 12px;
+}
+
+.overview {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+  margin-top: 10px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.genre {
+  margin-top: 12px;
+  font-size: 13px;
+  font-style: italic;
+  color: #777;
+}
+
 .filmasCard .filmoPav img {
   max-height: 200px;
   max-width: 200px;
+}
+
+.visiFilmaiPuslapiai {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 20px auto;
+  padding: 12px 16px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  font-family: sans-serif;
+}
+
+.visiFilmaiPuslapiai strong {
+  font-size: 16px;
+  color: #333;
+}
+
+.visiFilmaiPuslapiai button {
+  padding: 6px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.visiFilmaiPuslapiai button:hover {
+  background-color: #0056b3;
+}
+
+.filmuGenres {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  max-width: 700px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.genresHeader {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.genresList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.genreButton {
+  margin: 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.genreButton:hover {
+  background-color: #0056b3;
 }
