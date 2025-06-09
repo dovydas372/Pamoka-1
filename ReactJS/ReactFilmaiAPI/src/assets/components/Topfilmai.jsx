@@ -19,7 +19,7 @@ const Topfilmai = () => {
 
   return (
     <>
-      <Filmai filmai={puslapisFilmu}></Filmai>
+      <Filmai filmai={puslapisFilmu} atsinaujino={() => {}}></Filmai>
     </>
   );
 };

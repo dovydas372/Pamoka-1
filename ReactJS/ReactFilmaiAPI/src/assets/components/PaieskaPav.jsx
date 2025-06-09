@@ -37,7 +37,9 @@ const PaieskaPav = () => {
         />
       </div>
       <div className="FilmaiRezultatai">
-        {ivestis && <Filmai filmai={puslapisFilmu}></Filmai>}
+        {ivestis && (
+          <Filmai filmai={puslapisFilmu} atsinaujino={() => {}}></Filmai>
+        )}
       </div>
     </>
   );

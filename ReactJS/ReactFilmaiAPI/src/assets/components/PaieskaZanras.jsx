@@ -67,7 +67,11 @@ const PaieskaZanras = () => {
         </div>
       </div>
       <div className="filmaiList">
-        <Filmai filmai={puslapisFilmu} genres={selectedGenreName}></Filmai>
+        <Filmai
+          filmai={puslapisFilmu}
+          genres={selectedGenreName}
+          atsinaujino={() => {}}
+        ></Filmai>
       </div>
     </>
   );

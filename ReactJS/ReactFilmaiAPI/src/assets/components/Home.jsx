@@ -14,7 +14,6 @@ const Home = () => {
       )
       .then((response) => {
         setGenres(response.data.genres);
-        console.log(response.data.genres, "genres");
       })
       .catch((error) => {
         console.error("Klaida gaunant duomenis:", error);
@@ -52,7 +51,7 @@ const Home = () => {
         <button onClick={forwardFn}>Forward</button>
       </div>
       <div>
-        <Filmai filmai={puslapisFilmu}></Filmai>
+        <Filmai filmai={puslapisFilmu} atsinaujino={() => {}}></Filmai>
       </div>
       <div className="visiFilmaiPuslapiai">
         <strong>Filmai puslapis: </strong> {puslapis}
