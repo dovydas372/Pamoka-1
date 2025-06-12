@@ -55,3 +55,65 @@ const userNew = {
     status: "active",
 };
 console.log(banUser(userNew));
+let suma = {
+    name: "sudetis",
+    operation(a, b) {
+        return a + b;
+    },
+};
+let atimtis = {
+    name: "atimtis",
+    operation(a, b) {
+        return a - b;
+    },
+};
+function skaiciuoti(op, a, b) {
+    let symbol = "";
+    switch (op.name) {
+        case "sudetis":
+            symbol = "+";
+            break;
+        case "atimtis":
+            symbol = "-";
+            break;
+    }
+    let result = op.operation(a, b);
+    console.log(`${op.name}: ${a} ${symbol} ${b} = ${result}`);
+}
+skaiciuoti(suma, 1, 3);
+skaiciuoti(atimtis, 4, 3);
+const circle = {
+    name: "Apskritimas",
+    position: { x: 10, y: 15 },
+    size: 5,
+};
+const square = {
+    name: "Kvadratas",
+    position: { x: 0, y: 0 },
+    size: 4,
+};
+const triangle = {
+    name: "Trikampis",
+    position: { x: -5, y: 7 },
+    size: 6,
+};
+function moveShape(shape, dx, dy) {
+    let newPosition = {
+        x: dx + shape.position.x,
+        y: dy + shape.position.y,
+    };
+    shape.position = newPosition;
+    return shape;
+}
+console.log(moveShape(circle, -2, 5));
+let masyvas = [
+    { id: 1, name: "pirmas" },
+    { id: "abc123", name: "antas" },
+    { id: 42, name: "trecias" },
+    { id: "xyz789", name: "ketvirtas" },
+    { id: 1, name: "paskutinis" },
+];
+function findEntityById(masyvas, id) {
+    return masyvas.filter((entity) => entity.id == id);
+}
+console.log(findEntityById(masyvas, 1), "naujas clg");

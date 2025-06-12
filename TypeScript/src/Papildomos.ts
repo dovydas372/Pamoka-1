@@ -92,3 +92,107 @@ const userNew: User = {
 };
 
 console.log(banUser(userNew));
+
+//ketvirta
+
+interface MathOperation {
+  name: string;
+  operation(a: number, b: number): number;
+}
+
+let suma: MathOperation = {
+  name: "sudetis",
+  operation(a: number, b: number): number {
+    return a + b;
+  },
+};
+
+let atimtis: MathOperation = {
+  name: "atimtis",
+  operation(a: number, b: number): number {
+    return a - b;
+  },
+};
+
+function skaiciuoti(op: MathOperation, a: number, b: number): any {
+  let symbol = "";
+  switch (op.name) {
+    case "sudetis":
+      symbol = "+";
+      break;
+    case "atimtis":
+      symbol = "-";
+      break;
+  }
+  let result = op.operation(a, b);
+  console.log(`${op.name}: ${a} ${symbol} ${b} = ${result}`);
+}
+
+skaiciuoti(suma, 1, 3);
+skaiciuoti(atimtis, 4, 3);
+
+// Penkta
+
+type Coordinates = {
+  x: number;
+  y: number;
+};
+
+interface Shape {
+  name: string;
+  position: Coordinates;
+  size: number;
+}
+
+const circle: Shape = {
+  name: "Apskritimas",
+  position: { x: 10, y: 15 },
+  size: 5,
+};
+
+const square: Shape = {
+  name: "Kvadratas",
+  position: { x: 0, y: 0 },
+  size: 4,
+};
+
+const triangle: Shape = {
+  name: "Trikampis",
+  position: { x: -5, y: 7 },
+  size: 6,
+};
+
+function moveShape(shape: Shape, dx: number, dy: number): Shape {
+  let newPosition: Coordinates = {
+    x: dx + shape.position.x,
+    y: dy + shape.position.y,
+  };
+  shape.position = newPosition;
+
+  return shape;
+}
+
+console.log(moveShape(circle, -2, 5));
+
+// sesta
+
+type ID = string | number;
+
+interface Entity {
+  id: ID;
+  name: string;
+}
+
+let masyvas: Entity[] = [
+  { id: 1, name: "pirmas" },
+  { id: "abc123", name: "antas" },
+  { id: 42, name: "trecias" },
+  { id: "xyz789", name: "ketvirtas" },
+  { id: 1, name: "paskutinis" },
+];
+
+function findEntityById(masyvas: Entity[], id: ID): Entity[] | undefined {
+  return masyvas.filter((entity) => entity.id == id);
+}
+
+console.log(findEntityById(masyvas, 1), "naujas clg");
