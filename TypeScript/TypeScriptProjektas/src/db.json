@@ -1,0 +1,128 @@
+{
+  "picos": [
+    {
+      "pavadinimas": "Andriaus ypatingoji",
+      "aprašymas": "Itin daug sūrio turinti pica ant plono ir traškaus pagrindo su alyvuogėmis ir grybais.",
+      "priedai": [
+        "grybai",
+        "alyvuogės"
+      ],
+      "kaina": 12,
+      "id": 1
+    },
+    {
+      "pavadinimas": "Ievos nepaprastoji",
+      "aprašymas": "Paprikos ir grybai ant Ievos kurto nepaprasto česnakinio pagrindo, su BBQ padažu.",
+      "priedai": [
+        "grybai",
+        "pipirai"
+      ],
+      "kaina": 10,
+      "id": 2
+    },
+    {
+      "pavadinimas": "Justės Havajiška",
+      "aprašymas": "Vaisinis ananasų, kukurūzų ir grybų derinys ant lengvo, plono pagrindo.",
+      "priedai": [
+        "ananasas"
+      ],
+      "kaina": 15,
+      "id": 3
+    },
+    {
+      "id": "e214",
+      "pavadinimas": "sadadas",
+      "aprasymas": "",
+      "priedai": [],
+      "kaina": null
+    },
+    {
+      "id": "dc22",
+      "pavadinimas": "a",
+      "aprasymas": null,
+      "priedai": [],
+      "kaina": null
+    },
+    {
+      "id": "25cd",
+      "pavadinimas": "a",
+      "aprasymas": "adsda",
+      "priedai": [
+        "45"
+      ],
+      "kaina": 54
+    },
+    {
+      "id": "4fcf",
+      "pavadinimas": "a",
+      "aprasymas": "",
+      "priedai": [
+        ""
+      ],
+      "kaina": null
+    },
+    {
+      "id": "7e78",
+      "pavadinimas": "asdasdad",
+      "aprasymas": "",
+      "priedai": [
+        ""
+      ],
+      "kaina": null
+    },
+    {
+      "id": "0f0b",
+      "pavadinimas": "aaaa",
+      "aprasymas": "",
+      "priedai": [
+        ""
+      ],
+      "kaina": null
+    },
+    {
+      "id": "2583",
+      "pavadinimas": "",
+      "aprasymas": "",
+      "priedai": [
+        ""
+      ],
+      "kaina": null
+    },
+    {
+      "id": "d160",
+      "pavadinimas": "a",
+      "aprasymas": "",
+      "priedai": [
+        ""
+      ],
+      "kaina": null
+    },
+    {
+      "id": "7c94",
+      "pavadinimas": "",
+      "aprasymas": "",
+      "priedai": [
+        ""
+      ],
+      "kaina": null
+    },
+    {
+      "id": "390b",
+      "pavadinimas": "aaaaaaaa",
+      "aprasymas": "",
+      "priedai": [
+        ""
+      ],
+      "kaina": null
+    },
+    {
+      "id": "10f6",
+      "pavadinimas": "aaa4",
+      "aprasymas": "a4",
+      "priedai": [
+        "asdasda4"
+      ],
+      "kaina": 545
+    }
+  ]
+}
