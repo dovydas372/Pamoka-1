@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: "Inter", sans-serif;
 }
 
 .container {
@@ -68,4 +69,31 @@ body {
 .aprasymas {
   font-size: 15px;
   color: #2c3e50;
+}
+
+.pizza button {
+  background-color: #2c3e50;
+  color: white;
+  border-radius: 5px;
+  padding: 2px 10px;
+}
+.pizza button:hover {
+  cursor: pointer;
+  background-color: #ffffff;
+  color: rgb(13, 10, 10);
+}
+
+.pridetiPica {
+  font-family: "Inter", sans-serif;
+
+  border-radius: 5px;
+  background-color: #257adc;
+  color: #ffffff;
+}
+
+.pridetiPica:hover {
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #257adc;
+  cursor: pointer;
 }

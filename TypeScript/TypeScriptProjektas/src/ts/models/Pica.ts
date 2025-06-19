@@ -5,6 +5,7 @@ export interface PicaModelis {
   aprašymas: string;
   priedai: string[];
   kaina: number;
+  id?: string;
 }
 
 export const Pica = new DataResource<PicaModelis>(

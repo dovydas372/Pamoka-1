@@ -671,30 +671,37 @@ var _pica = require("./models/Pica");
 const rootElement = document.querySelector(".root");
 const mygtukasPrideti = document.querySelector(`.pridetiPica`);
 function createPizzaTemplate(pica) {
-    return `
-   <div class="pizza">
-
+    const picaDiv = document.createElement("div");
+    picaDiv.className = "pizza";
+    picaDiv.innerHTML = `
    <h2 class="pavadinimas"> ${pica.pavadinimas}</h2>
    <p class="toppings">${pica.priedai.join(`,`)}</p>
    <p  class="aprasymas">${pica.apra\u0161ymas}</p>
    <p class="kaina">${pica.kaina}\u{20AC}</p>
-   
-   </div> 
     `;
+    const button = document.createElement("button");
+    button.textContent = "istrinti";
+    button.onclick = function() {
+        if (pica.id) (0, _pica.Pica).delete(pica.id).then(async ()=>{
+            rootElement.innerHTML = "";
+            const picos = await (0, _pica.Pica).loadAlll();
+            const picosSablonai = picos.map(createPizzaTemplate);
+            renderTemplate(picosSablonai, rootElement);
+        });
+    };
+    picaDiv.append(button);
+    return picaDiv;
 }
 mygtukasPrideti.addEventListener("click", (e)=>{
     e.preventDefault();
     window.location.href = `create.html`;
 });
 function renderTemplate(templates, parent) {
-    const templateElement = document.createElement(`template`);
-    for (const t of templates)templateElement.innerHTML += t;
-    parent.append(templateElement.content);
+    for (const t of templates)parent.appendChild(t);
 }
 document.addEventListener(`DOMContentLoaded`, async ()=>{
     const picos = await (0, _pica.Pica).loadAlll();
-    console.log(picos);
-    const picosSablonai = picos.map(createPizzaTemplate);
+    const picosSablonai = picos.map((pica)=>createPizzaTemplate(pica));
     renderTemplate(picosSablonai, rootElement);
 });
 

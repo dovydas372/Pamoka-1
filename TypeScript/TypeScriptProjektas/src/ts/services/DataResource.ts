@@ -11,7 +11,7 @@ export class DataResource<T> {
     return res.json();
   }
 
-  async delete(id: number): Promise<Response> {
+  async delete(id: string): Promise<Response> {
     const res = await fetch(`${this.endpoint}/${id}`, {
       method: "DELETE",
     });
