@@ -1,0 +1,12 @@
+<%- include('../partials/head.ejs') %> <%- include('../partials/nav.ejs') %>
+<div class="blogs content">
+  <h2>Visos pamokos</h2>
+  <% if (blogs.length > 0) { blogs.forEach(blog => { %>
+  <h3 class="title"><%=blog.title %></h3>
+  <p class="santruaka"><%= blog.santrauka %></p>
+  <%}) } else { %>
+  <p>šiuo metu pamoku nera</p>
+  <%} %>
+</div>
+
+<%- include('../partials/footer.ejs') %>
