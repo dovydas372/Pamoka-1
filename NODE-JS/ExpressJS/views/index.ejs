@@ -2,11 +2,54 @@
 <div class="blogs content">
   <h2>Visos pamokos</h2>
   <% if (blogs.length > 0) { blogs.forEach(blog => { %>
-  <h3 class="title"><%=blog.title %></h3>
-  <p class="santruaka"><%= blog.santrauka %></p>
-  <%}) } else { %>
+  <div class="blog">
+    <a class="single" href="/blogs/<%= blog._id %>">
+      <h3 class="title"><%= blog.title %></h3>
+      <p class="santruaka"><%= blog.santrauka %></p>
+    </a>
+    <div class="likeBlock">
+      <a class="like" data-like="<%= blog._id %>">Like</a>
+      <a class="disslike" data-disslike="<%= blog._id %>">disslike</a>
+      <% if (blog.likes) { %>
+      <div>Likes: <%= blog.likes %></div>
+      <% } else { %>
+      <div>Likes: 0</div>
+      <% }%>
+    </div>
+  </div>
+  <% }) } else { %>
   <p>šiuo metu pamoku nera</p>
   <%} %>
 </div>
+
+<script>
+  const like = document.querySelectorAll("a.like");
+  like.forEach((element) => {
+    element.addEventListener("click", (e) => {
+      const endpoint = `/blogs/${element.dataset.like}/like`;
+      console.log(endpoint);
+      fetch(endpoint, {
+        method: "PUT",
+      })
+        .then((response) => response.json())
+        .then((data) => (window.location.href = "/blogs"))
+        .catch((err) => console.log(err));
+    });
+  });
+
+  const disslike = document.querySelectorAll("a.disslike");
+  disslike.forEach((element) => {
+    element.addEventListener("click", (e) => {
+      const endpoint = `/blogs/${element.dataset.disslike}/disslike`;
+      console.log(endpoint);
+      fetch(endpoint, {
+        method: "PUT",
+      })
+        .then((response) => response.json())
+        .then((data) => (window.location.href = "/blogs"))
+        .catch((err) => console.log(err));
+    });
+  });
+</script>
 
 <%- include('../partials/footer.ejs') %>

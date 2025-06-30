@@ -6,6 +6,7 @@ const blogSchema = new schema(
     title: { type: String, required: true },
     santrauka: { type: String, required: true },
     body: { type: String, required: true },
+    likes: { type: Number, required: false },
   },
   { timestamps: true }
 );
