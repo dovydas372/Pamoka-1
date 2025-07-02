@@ -1,0 +1,36 @@
+<%- include('../partials/head.ejs') %> <%- include('../partials/nav.ejs') %>
+
+<div class="details contetn">
+  <h2><%= book.title %></h2>
+  <div class="content">
+    <p><%= book.description %></p>
+  </div>
+  <div class="info">
+    <p>Author: <%= book.author %></p>
+    <p>Year: <%= book.year %></p>
+  </div>
+  <a class="delete" data-doc="<%= book._id %>">Delete</a>
+  <a class="edit" data-doc="<%= book._id %>">Edit</a>
+</div>
+
+<script>
+  const trashcan = document.querySelector("a.delete");
+  trashcan.addEventListener("click", (e) => {
+    const endpoint = `/book/delete/${trashcan.dataset.doc}`;
+
+    fetch(endpoint, {
+      method: "DELETE",
+    })
+      .then((response) => response.json())
+      .then((data) => (window.location.href = "/books"))
+      .catch((err) => console.log(err));
+  });
+
+  edit.addEventListener("click", (e) => {
+    e.preventDefault();
+    console.log(object);
+    window.location.href = `/books/update/${edit.dataset.doc}`;
+  });
+</script>
+
+<%- include('../partials/footer.ejs') %>
