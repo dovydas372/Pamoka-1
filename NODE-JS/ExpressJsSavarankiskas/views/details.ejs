@@ -13,11 +13,33 @@
   <a class="edit" data-doc="<%= book._id %>">Edit</a>
 </div>
 
+<div class="add-comment">
+  <form method="POST" action="/books/<%= book._id %>">
+    <label for="name">Your name</label>
+    <input type="text" id="name" name="name" required />
+    <label for="comment">comment:</label>
+    <textarea type="text" id="comment" name="comment" required> </textarea>
+    <button>comment</button>
+  </form>
+</div>
+<br />
+<h2>Comments:</h2>
+<% if (comments) { %> <% comments.forEach(comment => { %>
+<div class="comments-section">
+  <div><%= comment.name%></div>
+  <div><%= comment.text%></div>
+</div>
+<% }) %> <% } else {%>
+<div class="comments-section">
+  <div>no comments</div>
+</div>
+<%} %>
+
 <script>
   const trashcan = document.querySelector("a.delete");
   trashcan.addEventListener("click", (e) => {
-    const endpoint = `/book/delete/${trashcan.dataset.doc}`;
-
+    const endpoint = `/books/delete/${trashcan.dataset.doc}`;
+    console.log(endpoint);
     fetch(endpoint, {
       method: "DELETE",
     })
@@ -26,9 +48,9 @@
       .catch((err) => console.log(err));
   });
 
+  const edit = document.querySelector("a.edit");
   edit.addEventListener("click", (e) => {
-    e.preventDefault();
-    console.log(object);
+    console.log(edit);
     window.location.href = `/books/update/${edit.dataset.doc}`;
   });
 </script>

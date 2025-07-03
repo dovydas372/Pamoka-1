@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const Book = require("../model/book");
+const Comment = require("../model/comment");
 
 router.get("/", (req, res) => {
   res.redirect("/books");
@@ -33,19 +34,22 @@ router.post("/books", (req, res, next) => {
     });
 });
 
-// router.put("/books/update/:id ", (req, res) => {
-//   const BookId = req.params.id;
-
-//   Book.findByIdAndUpdate(BookId, { $inc: { likes: -1 } }, { new: true })
-//     .then((updatedBook) => res.json(""))
-//     .catch((err) => res.status(500).json({ error: err.message }));
-// });
+router.put("/books/update/:id", (req, res, next) => {
+  const bookId = req.params.id;
+  console.log(req.body);
+  Book.findByIdAndUpdate(bookId, req.body, { new: true, runValidators: true })
+    .then((updatedBook) => res.json("ok"))
+    .catch((err) => {
+      console.log(err);
+      next();
+    });
+});
 
 router.get("/books/update/:id", (req, res) => {
   const id = req.params.id;
   Book.findById(id)
     .then((result) =>
-      res.render("update", { title: `book details`, book: result })
+      res.render("update", { title: `book edit`, book: result })
     )
     .catch((err) => {
       console.log(err);
@@ -53,23 +57,54 @@ router.get("/books/update/:id", (req, res) => {
     });
 });
 
-router.get("/books/:id", (req, res) => {
+router.get("/books/:id", (req, res, next) => {
   const id = req.params.id;
   Book.findById(id)
-    .then((result) =>
-      res.render("details", { title: `book details`, book: result })
-    )
+    .then((book) => {
+      return Comment.find({ bookId: id })
+        .sort({ createdAt: -1 })
+        .then((comments) => {
+          if (comments.length > 0) {
+            res.render("details", {
+              title: "book details",
+              book: book,
+              comments: comments,
+            });
+          } else {
+            res.render("details", {
+              title: "book details",
+              book: book,
+              comments: false,
+            });
+          }
+        })
+        .catch((err) => {
+          console.log(err);
+          next();
+        });
+    })
     .catch((err) => {
       console.log(err);
       next();
     });
 });
+
+// router.post("/books/:id", (req, res, next) => {
+//   const book = new Comment({});
+//   book
+//     .save()
+//     .then((result) => res.redirect("/books"))
+//     .catch((err) => {
+//       console.log(err);
+//       next();
+//     });
+// });
 
 router.delete("/books/delete/:id", (req, res, next) => {
   const id = req.params.id;
   Book.findByIdAndDelete(id)
     .then((result) => {
-      res.json("/books");
+      res.json("ok");
     })
     .catch((err) => {
       console.log(err);

@@ -10,7 +10,7 @@ mongoose.connect(dbUri).then(() => server.listen(3000));
 server.set("view engine", "ejs");
 server.use(express.static(path.join(__dirname, "assets")));
 server.use(express.urlencoded({ extended: true }));
-
+server.use(express.json());
 server.use(bookRoutes);
 
 server.use((req, res) => {
