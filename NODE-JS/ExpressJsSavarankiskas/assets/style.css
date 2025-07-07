@@ -195,3 +195,85 @@ a.edit:hover {
   color: #555;
   font-style: italic;
 }
+
+/*komentarai*/
+
+.add-comment {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 600px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.add-comment form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.add-comment label {
+  font-weight: 600;
+  color: #333;
+}
+
+.add-comment input[type="text"],
+.add-comment textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.add-comment textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.add-comment button {
+  align-self: flex-start;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.add-comment button:hover {
+  background-color: #0056b3;
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.comments-section {
+  background-color: #fff;
+  border-left: 4px solid #007bff;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+  max-width: 600px;
+}
+
+.comments-section div:first-child {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.comments-section div:last-child {
+  color: #555;
+  line-height: 1.5;
+}

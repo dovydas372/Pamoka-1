@@ -17,17 +17,17 @@
   <form method="POST" action="/books/<%= book._id %>">
     <label for="name">Your name</label>
     <input type="text" id="name" name="name" required />
-    <label for="comment">comment:</label>
-    <textarea type="text" id="comment" name="comment" required> </textarea>
-    <button>comment</button>
+    <label for="text">text:</label>
+    <textarea id="text" name="text" required> </textarea>
+    <button type="submit">comment</button>
   </form>
 </div>
 <br />
 <h2>Comments:</h2>
 <% if (comments) { %> <% comments.forEach(comment => { %>
 <div class="comments-section">
-  <div><%= comment.name%></div>
-  <div><%= comment.text%></div>
+  <div>Name: <%= comment.name%></div>
+  <div>Comment: <%= comment.text%></div>
 </div>
 <% }) %> <% } else {%>
 <div class="comments-section">

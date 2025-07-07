@@ -89,16 +89,22 @@ router.get("/books/:id", (req, res, next) => {
     });
 });
 
-// router.post("/books/:id", (req, res, next) => {
-//   const book = new Comment({});
-//   book
-//     .save()
-//     .then((result) => res.redirect("/books"))
-//     .catch((err) => {
-//       console.log(err);
-//       next();
-//     });
-// });
+router.post("/books/:id", (req, res, next) => {
+  const id = req.params.id;
+
+  const comment = new Comment({
+    name: req.body.name,
+    text: req.body.text,
+    bookId: req.params.id,
+  });
+  comment
+    .save()
+    .then((result) => res.redirect(`/books/${id}`))
+    .catch((err) => {
+      console.log(err);
+      next();
+    });
+});
 
 router.delete("/books/delete/:id", (req, res, next) => {
   const id = req.params.id;
