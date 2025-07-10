@@ -13,6 +13,7 @@
   <a class="edit" data-doc="<%= book._id %>">Edit</a>
 </div>
 
+<% if (user) { %>
 <div class="add-comment">
   <form method="POST" action="/books/<%= book._id %>">
     <label for="name">Your name</label>
@@ -22,6 +23,16 @@
     <button type="submit">comment</button>
   </form>
 </div>
+<% } else { %>
+<div class="cantComment">
+  <p>
+    <a href="/login">Log in</a>
+    to comment
+  </p>
+</div>
+
+<% } %>
+
 <br />
 <h2>Comments:</h2>
 <% if (comments) { %> <% comments.forEach(comment => { %>

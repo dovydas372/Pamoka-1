@@ -277,3 +277,145 @@ h2 {
   color: #555;
   line-height: 1.5;
 }
+
+/*login signup*/
+
+.login ul {
+  list-style-type: none;
+}
+
+.login a {
+  text-decoration: none;
+}
+
+.login nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 120px;
+}
+
+.login nav ul {
+  display: flex;
+  align-items: center;
+}
+
+.login nav li {
+  margin-left: 20px;
+}
+
+.login nav li a {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.8em;
+  display: block;
+  padding: 10px 16px;
+  letter-spacing: 2px;
+}
+
+.login .btn {
+  border-radius: 36px;
+  background: #fee996;
+}
+
+form.login h2 {
+  font-size: 2.4em;
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+
+form.login {
+  width: 360px;
+  margin: 0 auto;
+  padding: 30px;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background: white;
+}
+
+.login input {
+  padding: 10px 12px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 1em;
+  width: 100%;
+}
+
+.login label {
+  display: block;
+  margin: 20px 0 10px;
+}
+
+.login button {
+  margin-top: 30px;
+  border-radius: 36px;
+  background: #fee996;
+  border: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.8em;
+  display: block;
+  padding: 10px 16px;
+  letter-spacing: 2px;
+}
+
+.login button:hover {
+  cursor: pointer;
+  background: #f6d860;
+}
+
+.login .error {
+  color: #ff0099;
+  margin: 10px 2px;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.login .recipes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 80px;
+  margin: 80px auto;
+  max-width: 1200px;
+}
+
+.login .recipe {
+  display: inline-block;
+  border-radius: 20px;
+  background: white;
+  position: relative;
+  text-align: center;
+  padding: 0 20px 30px 20px;
+}
+
+.login .recipe img {
+  width: 100px;
+  margin: -30px auto 20px;
+}
+
+/*cant commment*/
+
+.cantComment {
+  background-color: #fff8dc;
+  border: 1px solid #ffd966;
+  padding: 16px 24px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1em;
+  color: #444;
+  max-width: 500px;
+  margin: 40px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.cantComment a {
+  color: #e67e22;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.cantComment a:hover {
+  text-decoration: underline;
+}

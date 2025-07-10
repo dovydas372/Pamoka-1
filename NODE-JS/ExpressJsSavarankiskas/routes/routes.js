@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const Book = require("../model/book");
 const Comment = require("../model/comment");
+const authController = require("../controller/authController");
 
 router.get("/", (req, res) => {
   res.redirect("/books");
@@ -117,5 +118,20 @@ router.delete("/books/delete/:id", (req, res, next) => {
       next();
     });
 });
+
+router.get("/login", (req, res, next) => {
+  res.render("login", { title: "Log in" });
+});
+
+router.get("/signup", (req, res, next) => {
+  res.render("signup", { title: "Sign up" });
+});
+
+router.get("/logout", authController.logout_get, (req, res, next) => {
+  res.redirect("/");
+});
+
+router.post("/login", authController.login_post);
+router.post("/signup", authController.signup_post);
 
 module.exports = router;
