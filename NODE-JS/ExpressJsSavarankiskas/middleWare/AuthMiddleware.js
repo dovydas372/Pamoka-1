@@ -1,24 +1,14 @@
 const jwt = require("jsonwebtoken");
 const User = require("../model/Users");
 
-// const requireAuth = (req, res, next) => {
-//   const token = req.cookies.jwt;
-//   if (token) {
-//     jwt.verify(token, "slaptas dalykas", async (err, decodedToken) => {
-//       if (err) {
-//         console.log(err.message);
-//         res.cookie("jwt", "", { maxAge: 1 });
-//         res.redirect("/login");
-//       } else {
-//         console.log(decodedToken);
-//         next();
-//       }
-//     });
-//   } else {
-//     res.redirect("/login");
-//   }
-// };
-
+const requireAuth = (req, res, next) => {
+  const token = req.cookies.jwt;
+  if (token) {
+    next();
+  } else {
+    res.status(401).send("can't enter");
+  }
+};
 const checkUser = (req, res, next) => {
   const token = req.cookies.jwt;
   if (token) {
@@ -38,4 +28,4 @@ const checkUser = (req, res, next) => {
   }
 };
 
-module.exports = { checkUser };
+module.exports = { checkUser, requireAuth };

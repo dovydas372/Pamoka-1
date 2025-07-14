@@ -3,6 +3,7 @@ const router = express.Router();
 const Book = require("../model/book");
 const Comment = require("../model/comment");
 const authController = require("../controller/authController");
+const { requireAuth } = require("../middleWare/AuthMiddleware");
 
 router.get("/", (req, res) => {
   res.redirect("/books");
@@ -90,7 +91,7 @@ router.get("/books/:id", (req, res, next) => {
     });
 });
 
-router.post("/books/:id", (req, res, next) => {
+router.post("/books/:id", requireAuth, (req, res, next) => {
   const id = req.params.id;
 
   const comment = new Comment({
