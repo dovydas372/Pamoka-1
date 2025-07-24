@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const schema = mongoose.Schema;
 
-const pockelsSchema = new schema(
+const pockelsCellSchema = new schema(
   {
     SN: { type: Number, required: true },
     type: { type: String, required: true },
@@ -13,6 +13,10 @@ const pockelsSchema = new schema(
   { timestamps: true }
 );
 
-const Pockels = mongoose.model("komponentai", pockelsSchema);
+const PockelsCells = mongoose.model(
+  "PockelsCells",
+  pockelsCellSchema,
+  "komponentai"
+);
 
-module.exports = Pockels;
+module.exports = PockelsCells;

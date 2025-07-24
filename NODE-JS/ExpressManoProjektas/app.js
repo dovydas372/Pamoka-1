@@ -14,8 +14,9 @@ mongoose.connect(dbUri).then(() => app.listen(3000));
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "assets")));
 app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 app.use(Routes);
 
-app.use((req, res) => {
-  res.status(404).render("404", { title: "klaida" });
-});
+// app.use((req, res) => {
+//   res.status(404).render("404", { title: "klaida" });
+// });

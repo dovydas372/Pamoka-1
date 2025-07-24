@@ -1,0 +1,19 @@
+<form action="/main" method="GET">
+  <label for="type">Ieškoti pagal:</label>
+  <select name="type" id="type" required>
+    <option value="SN">SN</option>
+    <option value="type">Type</option>
+    <option value="kristalo1SN">Kristalo1SN</option>
+    <option value="kristalo2SN">Kristalo2SN</option>
+    <option value="hrSN">HrSN</option>
+    <option value="prizmesSN">PrizmesSN</option>
+  </select>
+
+  <input
+    type="text"
+    name="value"
+    placeholder="Įveskite paieškos reikšmę"
+    required
+  />
+  <button type="submit">Ieškoti</button>
+</form>
