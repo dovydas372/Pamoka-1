@@ -19,6 +19,13 @@
     <p class="info" data-field="prizmesSN">
       Prizmės SN: <span><%= pockelsCell.prizmesSN %></span>
     </p>
+    <p class="info">
+      Sukurtas: <%= new Date(pockelsCell.createdAt).toLocaleString("lt-LT") %>
+    </p>
+    <p class="info">
+      Atnaujintas: <%= new Date(pockelsCell.updatedAt).toLocaleString("lt-LT")
+      %>
+    </p>
   </div>
 
   <script>
@@ -29,7 +36,7 @@
         element.addEventListener("click", () => {
           const span = element.querySelector("span");
           const currentValue = span.textContent;
-          // if (elelement.querySelector("input")) return;
+          if (element.querySelector("input")) return;
           const input = document.createElement("input");
           input.type = "text";
           input.value = currentValue;
@@ -43,6 +50,7 @@
             element.replaceChild(newSpan, input);
           }
           function save() {
+            input.removeEventListener("blur", cancel);
             const newValue = input.value.trim() || currentValue;
             const newSpan = document.createElement("span");
             newSpan.textContent = newValue;
@@ -79,7 +87,7 @@
               input.blur();
             }
             if (e.key === "Escape") {
-              cancel();
+              input.blur();
             }
           });
         });

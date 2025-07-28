@@ -3,7 +3,7 @@ const schema = mongoose.Schema;
 
 const pockelsCellSchema = new schema(
   {
-    SN: { type: Number, required: true },
+    SN: { type: String, required: true },
     type: { type: String, required: true },
     kristalo1SN: { type: String, required: true },
     kristalo2SN: { type: String, required: true },

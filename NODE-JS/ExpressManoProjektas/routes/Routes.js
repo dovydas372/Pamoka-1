@@ -56,20 +56,6 @@ router.get("/pockelsCell/:id/:SN", (req, res, next) => {
 router.post("/pockelsCell/update", async (req, res) => {
   const { id, field, value } = req.body;
 
-  const allowedFields = [
-    "type",
-    "SN",
-    "kristalo1SN",
-    "kristalo2SN",
-    "hrSN",
-    "prizmesSN",
-  ];
-  if (!allowedFields.includes(field)) {
-    return res
-      .status(400)
-      .json({ success: false, message: "Netinkamas laukas" });
-  }
-
   try {
     const updateObj = {};
     updateObj[field] = value;
@@ -88,6 +74,23 @@ router.post("/pockelsCell/update", async (req, res) => {
     console.error("Klaida atnaujinant įrašą:", err);
     res.status(500).json({ success: false, message: "Serverio klaida" });
   }
+});
+
+router.get("/CreatePockelsCell", (req, res) => {
+  res.render("createPockelsCell", {
+    title: "Pockels Cell create",
+  });
+});
+
+router.post("/CreatePockelsCell", (req, res, next) => {
+  const pockelCell = new PockelsCells(req.body);
+  pockelCell
+    .save()
+    .then((result) => res.redirect("/main"))
+    .catch((err) => {
+      console.log(err);
+      next();
+    });
 });
 
 module.exports = router;
