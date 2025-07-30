@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 const mongoose = require("mongoose");
 const cookieParser = require("cookie-parser");
-
+const { checkUser } = require("./middleWare/AuthMiddleware");
 const app = express();
 
 const Routes = require("./routes/Routes");
@@ -16,9 +16,11 @@ app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "assets")));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-// server.use(cookieParser());
+app.use(cookieParser());
+app.use(checkUser);
+
 app.use(Routes);
 
-// app.use((req, res) => {
-//   res.status(404).render("404", { title: "klaida" });
-// });
+app.use((req, res) => {
+  res.status(404).send("404", { title: "klaida" });
+});

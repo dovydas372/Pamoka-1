@@ -1,0 +1,13 @@
+<%- include('../partials/head.ejs') %> <%- include('../partials/nav.ejs') %>
+<div class="main">
+  <div class="pockelsCell">
+    <h3 class="info" data-field="SN">
+      Vartotojo vardas: <span><%= user.username %></span>
+    </h3>
+    <p class="info">
+      Sukurtas: <%= new Date(user.createdAt).toLocaleString("lt-LT") %>
+    </p>
+  </div>
+
+  <%include('../partials/footer.ejs') %>
+</div>

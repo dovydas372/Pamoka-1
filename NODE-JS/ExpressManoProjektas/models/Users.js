@@ -2,23 +2,26 @@ const mongoose = require("mongoose");
 const { isAlphanumeric } = require("validator");
 const bcrypt = require("bcrypt");
 
-const userScheme = new mongoose.Schema({
-  username: {
-    type: String,
-    required: [true, "Prašome įvesti vartotojo vardą"],
-    unique: true,
-    lowercase: true,
-    validate: {
-      validator: (username) => isAlphanumeric(username),
-      message: "turi būti tik raidės arba skaičiai",
+const userScheme = new mongoose.Schema(
+  {
+    username: {
+      type: String,
+      required: [true, "Prašome įvesti vartotojo vardą"],
+      unique: true,
+      lowercase: true,
+      validate: {
+        validator: (username) => isAlphanumeric(username),
+        message: "turi būti tik raidės arba skaičiai",
+      },
+    },
+    password: {
+      type: String,
+      required: [true, "iveskit pass"],
+      minlength: [4, "netrumpesnis nei 4"],
     },
   },
-  password: {
-    type: String,
-    required: [true, "iveskit pass"],
-    minlength: [4, "netrumpesnis nei 4"],
-  },
-});
+  { timestamps: true }
+);
 
 userScheme.pre("save", async function (next) {
   const salt = await bcrypt.genSalt();
