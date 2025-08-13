@@ -1,0 +1,58 @@
+import Workout from "../models/pratimoModelis.js";
+import mongoose from "mongoose";
+
+//get -paimti visus pratimus
+export const getWorkouts = async (req, res) => {
+  const pratimai = await Workout.find({}).sort({ createAt: -1 });
+  res.status(200).json(pratimai);
+};
+
+//get paimt viena pratima
+
+export const getWorkout = async (req, res) => {
+  const { id } = req.params;
+  if (!mongoose.Types.ObjectId.isValid(id)) {
+    return res.status(404).json({ error: "Tokio pratimo nėra." });
+  }
+  const pratimas = await Workout.findById(id);
+  if (!pratimas) {
+    return res.status(404).json({ error: "Tokio pratimo nera" });
+  }
+  res.status(200).json(pratimas);
+};
+
+//post sukurti nauja pratima
+
+export const createWorkout = async (req, res) => {
+  const { title, reps, load } = req.body;
+  try {
+    const pratimas = await Workout.create({ title, reps, load });
+    res.status(200).json(pratimas);
+  } catch (error) {
+    res.status(400).json({ error: error.message });
+  }
+};
+
+export const updateWorkout = async (req, res) => {
+  const { id } = req.params;
+  if (!mongoose.Types.ObjectId.isValid(id)) {
+    return res.status(404).json({ error: "Tokio pratimo nėra." });
+  }
+  const pratimas = await Workout.findOneAndUpdate({ _id: id }, { ...req.body });
+  if (!pratimas) {
+    return res.status(404).json({ error: "Tokio pratimo nera" });
+  }
+  res.status(200).json(pratimas);
+};
+
+export const deleteWorkout = async (req, res) => {
+  const { id } = req.params;
+  if (!mongoose.Types.ObjectId.isValid(id)) {
+    return res.status(404).json({ error: "Tokio pratimo nėra." });
+  }
+  const pratimas = await Workout.findOneAndDelete({ _id: id });
+  if (!pratimas) {
+    return res.status(404).json({ error: "Tokio pratimo nera" });
+  }
+  res.status(200).json(pratimas);
+};
