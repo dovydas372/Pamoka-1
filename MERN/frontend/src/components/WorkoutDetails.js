@@ -1,17 +1,18 @@
 import useWorkoutContext from "../hooks/useWorkoutContext";
+import formatDistanceToNow from "date-fns/formatDistanceToNow";
 
 const WorkoutDetails = ({ pratimas }) => {
   const { dispatch } = useWorkoutContext();
 
   const handleClick = async () => {
-    const response = await fetch("/api/pratimai" + pratimas._id, {
+    const response = await fetch("/api/pratimai/" + pratimas._id, {
       method: "DELETE",
     });
 
     const json = await response.json();
 
     if (response.ok) {
-      dispatch({ type: "DELETE_WORKOUT", playload: json });
+      dispatch({ type: "DELETE_WORKOUT", payload: json });
     }
   };
 
@@ -27,7 +28,14 @@ const WorkoutDetails = ({ pratimas }) => {
         {pratimas.reps}
       </p>
       <p>{pratimas.createdAt}</p>
-      <span onClick={handleClick}>delete</span>
+      <p>
+        {formatDistanceToNow(new Date(pratimas.createdAt), {
+          addSuffix: true,
+        })}
+      </p>
+      <span className="material-symbols-outlined" onClick={handleClick}>
+        delete
+      </span>
     </div>
   );
 };

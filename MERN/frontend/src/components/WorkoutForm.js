@@ -7,6 +7,7 @@ const WorkoutForm = () => {
   const [load, setLoad] = useState("");
   const [reps, setReps] = useState("");
   const [error, setError] = useState(null);
+  const [emptyFields, setEmpatyFields] = useState([]);
 
   const handleSumbit = async (e) => {
     e.preventDefault();
@@ -19,14 +20,16 @@ const WorkoutForm = () => {
     const json = await response.json();
     if (!response.ok) {
       setError(json.error);
+      setEmpatyFields(json.emptyFields);
       console.log(error);
     }
     if (response.ok) {
+      setEmpatyFields([]);
       setTitle("");
       setLoad("");
       setReps("");
       setError(null);
-      console.log("Naujas pratimas pradėti");
+      console.log("Naujas pratimas pradėti", json);
       dispatch({ type: "CREATE_WORKOUT", payload: json });
     }
   };
@@ -36,18 +39,21 @@ const WorkoutForm = () => {
       <h3>Pradėti naują pratimą</h3>
       <label>Pratimo pavadinimas:</label>
       <input
+        className={emptyFields.includes("title") ? "error" : ""}
         type="text"
         onChange={(e) => setTitle(e.target.value)}
         value={title}
       />
       <label>Svoris (kg)</label>
       <input
+        className={emptyFields.includes("load") ? "error" : ""}
         type="number"
         onChange={(e) => setLoad(e.target.value)}
         value={load}
       />
       <label>Pratimo pakrtojimai:</label>
       <input
+        className={emptyFields.includes("reps") ? "error" : ""}
         type="number"
         onChange={(e) => setReps(e.target.value)}
         value={reps}

@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 
 //get -paimti visus pratimus
 export const getWorkouts = async (req, res) => {
-  const pratimai = await Workout.find({}).sort({ createAt: -1 });
+  const pratimai = await Workout.find({}).sort({ createdAt: -1 });
   res.status(200).json(pratimai);
 };
 
@@ -25,6 +25,25 @@ export const getWorkout = async (req, res) => {
 
 export const createWorkout = async (req, res) => {
   const { title, reps, load } = req.body;
+
+  let emptyFields = [];
+
+  if (!title) {
+    emptyFields.push("title");
+  }
+  if (!load) {
+    emptyFields.push("load");
+  }
+  if (!reps) {
+    emptyFields.push("reps");
+  }
+
+  if (emptyFields.length > 0) {
+    return res
+      .status(400)
+      .json({ error: "Prašome užpildyti visus laukelius", emptyFields });
+  }
+
   try {
     const pratimas = await Workout.create({ title, reps, load });
     res.status(200).json(pratimas);

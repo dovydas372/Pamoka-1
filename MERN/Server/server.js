@@ -3,6 +3,7 @@ import express from "express";
 import pratimaiRoutes from "./routes/pratimai.js";
 import mongoose from "mongoose";
 import cors from "cors";
+import userRoutes from "./routes/user.js";
 dotenv.config();
 
 const app = express();
@@ -16,6 +17,7 @@ app.use((req, res, next) => {
 
 //routes
 app.use("/api/pratimai", pratimaiRoutes);
+app.use("/api/user", userRoutes);
 
 mongoose
   .connect(process.env.URI)
