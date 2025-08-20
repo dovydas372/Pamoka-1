@@ -2,20 +2,18 @@ import mongoose from "mongoose";
 
 const Schema = mongoose.Schema;
 
-const pratimoSchema = new Schema(
+const programaSchema = new Schema(
   {
     title: {
       type: String,
       required: true,
     },
-    reps: {
-      type: Number,
-      required: true,
-    },
-    load: {
-      type: Number,
-      required: true,
-    },
+    pratimai: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Workout",
+      },
+    ],
     user_id: {
       type: String,
       required: true,
@@ -24,4 +22,4 @@ const pratimoSchema = new Schema(
   { timestamps: true }
 );
 
-export default mongoose.model("Workout", pratimoSchema);
+export default mongoose.model("Program", programaSchema);

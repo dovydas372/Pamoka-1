@@ -1,9 +1,11 @@
 import express from "express";
 import * as controller from "../controller/controller.js";
+import requireAuth from "../middleware/requireAuth.js";
 
 const router = express.Router();
+router.use(requireAuth);
 
-// GET – paimti visus pratimus
+// GET – paimti visus pratimus pagal ID tas kas sukurė
 router.get("/", controller.getWorkouts);
 
 // GET – paimti vieną pratimą

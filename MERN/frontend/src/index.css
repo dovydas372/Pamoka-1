@@ -115,3 +115,54 @@ div.error {
 input.error {
   border: 1px solid var(--error);
 }
+
+/*Navbar*/
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  margin-left: 10px;
+}
+
+nav button {
+  background-color: #fff;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-family: "Popopins";
+  cursor: pointer;
+  font-size: 1em;
+  margin-left: 10px;
+}
+
+.navProg {
+  margin-right: 20px;
+  padding: 5px;
+  padding-right: 15px;
+  border-radius: 5px;
+}
+
+.navProg a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+
+.navProg:hover {
+  border: solid 1px #45a049;
+}
+
+/*auth forms*/
+
+form.signup,
+form.login {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+}
