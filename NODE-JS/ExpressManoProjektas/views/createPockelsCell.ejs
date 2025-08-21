@@ -1,0 +1,26 @@
+<%- include('../partials/head.ejs') %> <%- include('../partials/nav.ejs') %>
+
+<div class="createPockelsCell content">
+  <form method="POST" action="/CreatePockelsCell">
+    <label for="type">Pockels Cell tipas:</label>
+    <select name="type" id="type" required>
+      <option value="B04">B04</option>
+      <option value="B03">B03</option>
+      <option value="B02">B02</option>
+      <option value="A01">A01</option>
+    </select>
+    <label for="SN">Pockels Cell SN</label>
+    <input type="text" id="SN" name="SN" required />
+    <label for="kristalo1SN">Pirmo kristalo SN</label>
+    <input type="text" id="kristalo1SN" name="kristalo1SN" required />
+    <label for="kristalo2SN">Antro kristalo SN</label>
+    <input type="text" id="kristalo2SN" name="kristalo2SN" required />
+    <label for="hrSN">Veidrodžio SN</label>
+    <input type="number" id="hrSN" name="hrSN" required />
+    <label for="prizmesSN">Prizmes SN</label>
+    <input type="number" id="prizmesSN" name="prizmesSN" required />
+    <button>Sukurti</button>
+  </form>
+</div>
+
+<%- include('../partials/footer.ejs') %>

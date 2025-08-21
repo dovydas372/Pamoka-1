@@ -1,0 +1,99 @@
+<%- include('../partials/head.ejs') %> <%- include('../partials/nav.ejs') %>
+<div class="main">
+  <div class="pockelsCell">
+    <h3 class="type" data-field="type">
+      Tipas: <span><%= pockelsCell.type %></span>
+    </h3>
+    <h3 class="info" data-field="SN">
+      Pokelso SN: <span><%= pockelsCell.SN %></span>
+    </h3>
+    <p class="info" data-field="kristalo1SN">
+      Pirmo kristalo SN: <span><%= pockelsCell.kristalo1SN %></span>
+    </p>
+    <p class="info" data-field="kristalo2SN">
+      Antro kristalo SN: <span><%= pockelsCell.kristalo2SN %></span>
+    </p>
+    <p class="info" data-field="hrSN">
+      Veidrodžio SN: <span><%= pockelsCell.hrSN %></span>
+    </p>
+    <p class="info" data-field="prizmesSN">
+      Prizmės SN: <span><%= pockelsCell.prizmesSN %></span>
+    </p>
+    <p class="info">
+      Sukurtas: <%= new Date(pockelsCell.createdAt).toLocaleString("lt-LT") %>
+    </p>
+    <p class="info">
+      Atnaujintas: <%= new Date(pockelsCell.updatedAt).toLocaleString("lt-LT")
+      %>
+    </p>
+  </div>
+
+  <script>
+    document
+      .querySelectorAll(".pockelsCell [data-field]")
+      .forEach((element) => {
+        element.style.cursor = "pointer";
+        element.addEventListener("click", () => {
+          const span = element.querySelector("span");
+          const currentValue = span.textContent;
+          if (element.querySelector("input")) return;
+          const input = document.createElement("input");
+          input.type = "text";
+          input.value = currentValue;
+          input.style.width = "100%";
+
+          element.replaceChild(input, span);
+          input.focus();
+          function cancel() {
+            const newSpan = document.createElement("span");
+            newSpan.textContent = currentValue;
+            element.replaceChild(newSpan, input);
+          }
+          function save() {
+            input.removeEventListener("blur", cancel);
+            const newValue = input.value.trim() || currentValue;
+            const newSpan = document.createElement("span");
+            newSpan.textContent = newValue;
+            element.replaceChild(newSpan, input);
+
+            fetch("/pockelsCell/update", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({
+                id: "<%= pockelsCell._id %>",
+                field: element.dataset.field,
+                value: newValue,
+              }),
+            })
+              .then((res) => res.json())
+              .then((data) => {
+                if (!data.success) {
+                  alert("Klaida saugant: " + data.message);
+                  newSpan.textContent = currentValue;
+                }
+              })
+              .catch(() => {
+                alert("Tinklo klaida saugant pakeitimus");
+                newSpan.textContent = currentValue;
+              });
+          }
+          input.addEventListener("blur", cancel);
+          input.addEventListener("keydown", (e) => {
+            if (e.key === "Enter") {
+              e.preventDefault();
+              save();
+              input.blur();
+            }
+            if (e.key === "Escape") {
+              input.blur();
+            }
+          });
+        });
+      });
+  </script>
+
+  <%- include('../partials/pavWindow.ejs') %>
+  <%include('../partials/footer.ejs') %>
+</div>

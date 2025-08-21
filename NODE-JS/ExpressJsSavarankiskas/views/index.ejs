@@ -1,0 +1,19 @@
+<%- include('../partials/head.ejs') %> <%- include('../partials/nav.ejs') %>
+
+<div class="books-block">
+  <h2>All books</h2>
+  <% if (books.length > 0) { books.forEach(book => { %>
+  <div class="book">
+    <a class="single" href="/books/<%= book._id %>">
+      <h2 class="title"><%= book.title %></h2>
+    </a>
+    <p class="description"><%= book.description %></p>
+    <h5 class="year"><bold>Years:</bold> <%= book.year %></h5>
+    <h5 class="authot"><bold>Author:</bold> <%= book.author %></h5>
+  </div>
+  <% }) } else { %>
+  <p>No books at the moment.</p>
+  <%} %>
+</div>
+
+<%- include('../partials/footer.ejs') %>

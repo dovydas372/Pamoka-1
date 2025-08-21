@@ -1,0 +1,66 @@
+.card {
+  padding: 32px;
+  box-shadow: 2px 3px 11.6px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+.card h3 {
+  margin: 0;
+
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 100%;
+
+  color: #222222;
+}
+
+.card .options .option {
+  border: solid 1px black;
+  position: relative;
+  border-radius: 15px;
+  padding: 16px;
+  margin-top: 8px;
+}
+
+.card .options .option .title {
+  width: 99px;
+  height: 30px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+}
+
+.card .options .option .price {
+  width: 76px;
+  height: 18px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+
+  align-items: center;
+  font-variant: all-small-caps;
+
+  color: #999999;
+}
+.card .options .option:hover {
+  border: solid 1px rgb(80, 30, 206);
+}
+
+.card .options .option.selected::before {
+  content: "\2714";
+  padding: 5px;
+  width: 15px;
+  height: 15px;
+  top: 10%;
+  right: 10px;
+  background-color: rgb(80, 30, 206);
+  position: absolute;
+  border-radius: 50%;
+  text-align: center;
+}

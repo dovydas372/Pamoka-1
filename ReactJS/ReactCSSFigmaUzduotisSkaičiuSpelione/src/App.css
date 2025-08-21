@@ -1,0 +1,17 @@
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+#root > div:first-child {
+  background-image: url("../src/assets/pav/skaiciai.png");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 100%;
+}
+
+#root > div:last-child {
+  width: 50%;
+}

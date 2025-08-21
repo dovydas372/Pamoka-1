@@ -1,0 +1,58 @@
+{
+  "filmai": [
+    {
+      "pavadinimas": "Pradžia",
+      "rezisierius": "Christopher Nolan",
+      "isleidimo_metai": 2010,
+      "zanrai": [
+        "Veiksmo",
+        "Mokslinė fantastika",
+        "Trileris"
+      ],
+      "imdb_ivertinimas": 8.8
+    },
+    {
+      "pavadinimas": "Keršytojai: Pabaigos žaidimas",
+      "rezisierius": "Anthony Russo, Joe Russo",
+      "isleidimo_metai": 2019,
+      "zanrai": [
+        "Veiksmo",
+        "Nuotykių",
+        "Fantastika"
+      ],
+      "imdb_ivertinimas": 8.4
+    },
+    {
+      "pavadinimas": "Žalioji mylia",
+      "rezisierius": "Frank Darabont",
+      "isleidimo_metai": 1999,
+      "zanrai": [
+        "Drama",
+        "Fantastika",
+        "Kriminalinis"
+      ],
+      "imdb_ivertinimas": 8.6
+    },
+    {
+      "pavadinimas": "Parazitas",
+      "rezisierius": "Bong Joon-ho",
+      "isleidimo_metai": 2019,
+      "zanrai": [
+        "Drama",
+        "Trileris"
+      ],
+      "imdb_ivertinimas": 8.5
+    },
+    {
+      "pavadinimas": "Matrica",
+      "rezisierius": "Lana Wachowski, Lilly Wachowski",
+      "isleidimo_metai": 1999,
+      "zanrai": [
+        "Veiksmo",
+        "Mokslinė fantastika"
+      ],
+      "imdb_ivertinimas": 8.7
+    }
+  ],
+  "Mano megstamiausi": []
+}

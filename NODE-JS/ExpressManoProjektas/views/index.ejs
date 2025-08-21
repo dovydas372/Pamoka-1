@@ -1,0 +1,21 @@
+<%- include('../partials/head.ejs') %> <%- include('../partials/nav.ejs') %>
+<div class="main">
+  <%- include('../partials/searchBar.ejs') %>
+  <div class="pockelsCells">
+    <% if (pockelsCells.length > 0) { pockelsCells.forEach(pockelsCell => { %>
+    <div class="pockelsCell">
+      <a
+        class="single"
+        href="/pockelsCell/<%= pockelsCell._id %>/<%= pockelsCell.SN %>"
+      >
+        <h3 class="type"><%= pockelsCell.type %></h3>
+        <p class="info"><%= pockelsCell.SN %></p>
+      </a>
+    </div>
+    <% }) } else { %>
+    <p>Tokių pockels komponentų nėra</p>
+    <%} %>
+  </div>
+</div>
+
+<%- include('../partials/footer.ejs') %>

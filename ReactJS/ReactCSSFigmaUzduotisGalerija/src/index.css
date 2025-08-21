@@ -1,0 +1,25 @@
+html {
+  height: 100vh;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+body {
+  background-color: rgb(209, 205, 199);
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px red;
+  height: 100%;
+  width: 100%;
+}

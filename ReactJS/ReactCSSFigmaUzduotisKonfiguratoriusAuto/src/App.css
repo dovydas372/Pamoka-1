@@ -1,0 +1,101 @@
+.container {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  max-width: 1320px;
+  padding: 96px;
+}
+
+section {
+  display: flex;
+}
+section.first img {
+  width: 100%;
+}
+
+section.first > div:first-child {
+  width: 70%;
+}
+section.first > div:last-child {
+  width: 30%;
+}
+
+section.second > div:first-child {
+  width: 70%;
+}
+section.second > div:last-child {
+  width: 30%;
+}
+
+section.third {
+  margin-top: 20px;
+}
+
+section.third > div:first-child {
+  width: 30%;
+  margin-right: 10px;
+  height: 100%;
+}
+
+section.third > div:last-child {
+  width: 70%;
+}
+
+hr {
+  width: 100%;
+  height: 0px;
+  border: 2px solid #ededed;
+  margin: 36px 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 47px;
+}
+.footer .galutineKaina {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+
+  font-variant: all-small-caps;
+
+  color: #222222;
+}
+
+button {
+  padding: 16px 32px;
+  gap: 8px;
+
+  width: 113px;
+  height: 50px;
+
+  background: #2b9cee;
+
+  /* Pirkti */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  /* identical to box height, or 18px */
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+}
+
+.dekojame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dekojame > div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

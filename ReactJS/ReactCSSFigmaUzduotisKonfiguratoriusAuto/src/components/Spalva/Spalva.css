@@ -1,0 +1,9 @@
+section.second > div:first-child .options {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-auto-rows: auto;
+}
+
+section.second > div:first-child .option {
+  margin-right: 8px;
+}

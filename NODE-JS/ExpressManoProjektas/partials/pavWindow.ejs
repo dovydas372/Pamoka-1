@@ -1,0 +1,24 @@
+<div
+  contenteditable="true"
+  id="pasteArea"
+  style="border: 1px solid #ccc; padding: 10px"
+>
+  Įklijuokite čia paveikslėlį iš clipboard (Ctrl+V)
+</div>
+
+<script>
+  document.getElementById("pasteArea").addEventListener("paste", (event) => {
+    const items = event.clipboardData.items;
+    for (const item of items) {
+      if (item.type.indexOf("image") !== -1) {
+        const file = item.getAsFile();
+        const reader = new FileReader();
+        reader.onload = function (event) {
+          const img = new Image();
+          img.src = event.target.result;
+        };
+        reader.readAsDataURL(file);
+      }
+    }
+  });
+</script>

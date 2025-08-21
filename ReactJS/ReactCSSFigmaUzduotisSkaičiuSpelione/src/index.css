@@ -1,0 +1,17 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto";
+  font-style: normal;
+  position: relative;
+  background-image: linear-gradient(rgba(47, 10, 149, 0.7)),
+    url("../src/assets/pav/background.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  height: 100%;
+  width: 100%;
+}

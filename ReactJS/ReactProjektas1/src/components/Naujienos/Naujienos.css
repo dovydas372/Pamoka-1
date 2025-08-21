@@ -1,0 +1,20 @@
+.naujienos-wrapper {
+  background-color: bisque;
+  color: black;
+}
+.Naujienos-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 20px;
+}
+
+.naujienos-blokas {
+  width: calc(50%-10px);
+}
+
+.preke {
+  display: flex;
+  flex-direction: column;
+  color: aqua;
+}

@@ -1,0 +1,19 @@
+.paslaugos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.paslaugos img {
+  width: 300px;
+  height: auto;
+}
+
+.paslaugos p {
+  max-width: 300px;
+}
+
+.paslaugosLangas {
+  border: 1px solid white;
+  padding: 10px;
+}

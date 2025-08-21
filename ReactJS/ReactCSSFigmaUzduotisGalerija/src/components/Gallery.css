@@ -1,0 +1,58 @@
+.gallery {
+  background-color: rgb(209, 205, 199);
+  width: 30%;
+}
+
+.gallery .mainPhoto {
+  position: relative;
+}
+
+.gallery .mainPhoto img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.gallery .mainPhoto .buttons button {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  background: none;
+}
+.gallery .mainPhoto .buttons button.next {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+.gallery .mainPhoto .buttons button:hover svg ellipse {
+  border-radius: 50%;
+  cursor: pointer;
+  fill: rgb(161, 172, 38);
+}
+.gallery .navigation {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  margin-top: 8%;
+  background-color: rgb(209, 205, 199);
+}
+
+.gallery .navigation div {
+  width: 20%;
+}
+
+.gallery .navigation div img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.gallery .navigation div img.active {
+  box-shadow: 0px 0px 0px 2px yellow;
+}

@@ -1,0 +1,22 @@
+{
+  "picos": [
+    {
+      "pavadinimas": "Justės Havajiška",
+      "aprašymas": "Vaisinis ananasų, kukurūzų ir grybų derinys ant lengvo, plono pagrindo.",
+      "priedai": [
+        "ananasas"
+      ],
+      "kaina": 15,
+      "id": "3"
+    },
+    {
+      "id": "a972",
+      "pavadinimas": "Ypatingoji",
+      "aprašymas": "labai skani",
+      "priedai": [
+        "paperoni, svogunai"
+      ],
+      "kaina": 10
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+<%- include('../partials/head.ejs') %> <%- include('../partials/nav.ejs') %>
+<div class="main">
+  <div class="pockelsCells">
+    <% if (users.length > 0) { users.forEach(user => { %>
+    <div class="pockelsCell">
+      <a class="single" href="/user/<%= user._id %>">
+        <h3 class="type"><%= user.username %></h3>
+      </a>
+    </div>
+    <% }) } else { %>
+    <p>Sukurtų vartotojų nėra</p>
+    <%} %>
+  </div>
+</div>
+
+<%- include('../partials/footer.ejs') %>

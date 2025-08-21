@@ -1,0 +1,17 @@
+.about-row1 img {
+  max-height: 600px;
+  width: 30%;
+}
+
+.about-row1 img:not(:last-child) {
+  margin-right: 20px;
+}
+
+.about-row2 {
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+.about-row2 h2 {
+  margin-top: 0;
+}

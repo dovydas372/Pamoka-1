@@ -1,0 +1,69 @@
+<%- include('../partials/head.ejs') %> <%- include('../partials/nav.ejs') %>
+
+<div class="details contetn">
+  <h2><%= book.title %></h2>
+  <div class="content">
+    <p><%= book.description %></p>
+  </div>
+  <div class="info">
+    <p>Author: <%= book.author %></p>
+    <p>Year: <%= book.year %></p>
+  </div>
+  <a class="delete" data-doc="<%= book._id %>">Delete</a>
+  <a class="edit" data-doc="<%= book._id %>">Edit</a>
+</div>
+
+<% if (user) { %>
+<div class="add-comment">
+  <form method="POST" action="/books/<%= book._id %>">
+    <label for="name">Your name</label>
+    <input type="text" id="name" name="name" required />
+    <label for="text">text:</label>
+    <textarea id="text" name="text" required> </textarea>
+    <button type="submit">comment</button>
+  </form>
+</div>
+<% } else { %>
+<div class="cantComment">
+  <p>
+    <a href="/login">Log in</a>
+    to comment
+  </p>
+</div>
+
+<% } %>
+
+<br />
+<h2>Comments:</h2>
+<% if (comments) { %> <% comments.forEach(comment => { %>
+<div class="comments-section">
+  <div>Name: <%= comment.name%></div>
+  <div>Comment: <%= comment.text%></div>
+</div>
+<% }) %> <% } else {%>
+<div class="comments-section">
+  <div>no comments</div>
+</div>
+<%} %>
+
+<script>
+  const trashcan = document.querySelector("a.delete");
+  trashcan.addEventListener("click", (e) => {
+    const endpoint = `/books/delete/${trashcan.dataset.doc}`;
+    console.log(endpoint);
+    fetch(endpoint, {
+      method: "DELETE",
+    })
+      .then((response) => response.json())
+      .then((data) => (window.location.href = "/books"))
+      .catch((err) => console.log(err));
+  });
+
+  const edit = document.querySelector("a.edit");
+  edit.addEventListener("click", (e) => {
+    console.log(edit);
+    window.location.href = `/books/update/${edit.dataset.doc}`;
+  });
+</script>
+
+<%- include('../partials/footer.ejs') %>
