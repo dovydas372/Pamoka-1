@@ -1,4 +1,11 @@
-<form action="/api/programuotojai/<%= dev._id %>" method="POST">
+<%- include('partials/header'); -%>
+
+<form
+  class="editForma"
+  action="/api/programuotojai/<%= dev._id %>"
+  method="POST"
+>
+  <label>Vardas:</label>
   <input type="text" name="vardas" value="<%= dev.vardas %>" required />
 
   <label>Technologijos:</label><br />
@@ -15,10 +22,7 @@
   <input type="checkbox" name="tech" value="Java" <%= dev.tech.includes("Java")
   ? "checked" : "" %>> Java<br />
 
-  <label>Laisvas:</label>
-  <input type="checkbox" name="laisvas" value="true" <%= dev.laisvas ? "checked"
-  : "" %>><br />
-
+  <label>Ilguma:</label>
   <input
     type="number"
     name="longitude"
@@ -26,6 +30,8 @@
     step="any"
     required
   />
+
+  <label>Platuma:</label>
   <input
     type="number"
     name="latitude"
@@ -36,3 +42,5 @@
 
   <button type="submit">Išsaugoti</button>
 </form>
+
+<%- include('partials/footer'); -%>

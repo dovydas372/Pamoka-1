@@ -10,6 +10,26 @@
 <script src="https://unpkg.com/react@15/dist/react.js"></script>
 <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
 
+<script>
+  async function deleteDev(dev) {
+    if (!confirm("Ar tikrai ištrinti " + dev.vardas + "?")) return;
+
+    try {
+      const res = await fetch(`/api/programuotojai/${dev._id}`, {
+        method: "DELETE",
+      });
+      if (res.ok) {
+        window.location.href = "/";
+      } else {
+        alert("Nepavyko ištrinti (klaida " + res.status + ")");
+      }
+    } catch (err) {
+      console.error(err);
+      alert("Serverio klaida");
+    }
+  }
+</script>
+
 <!-- Create React Component -->
 <script type="text/babel">
   var Devs = React.createClass({
@@ -30,13 +50,18 @@
             <span class="edit">
               <a href={`/api/edit/${dev._id}`}>Edit</a>
             </span>
+            <span className="delete">
+              <a href="#" onClick={() => deleteDev(dev)}>
+                Delete
+              </a>
+            </span>
           </li>
         );
       });
 
       return (
         <div id="dev-container">
-          <form id="search" onSubmit={this.handleSubmit}>
+          <form class="formMain" id="search" onSubmit={this.handleSubmit}>
             <label>Ilguma:</label>
             <input type="number" ref="lng" placeholder="ilguma" required />
             <label>Platuma:</label>
@@ -74,4 +99,5 @@
   });
   ReactDOM.render(<Devs />, document.getElementById("devs"));
 </script>
+
 <%- include('partials/forma'); -%> <%- include('partials/footer'); -%>

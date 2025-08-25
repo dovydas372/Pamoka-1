@@ -1,0 +1,28 @@
+<%- include('partials/header'); -%> <%- include('partials/navBar'); -%>
+<div class="title">Banko saskaitos:</div>
+<div class="accounts">
+  <div class="mainContainer">
+    <ul>
+      <% if(accounts.length === 0) { %>
+      <li>No accounts found</li>
+      <% } else { %> <% accounts.forEach(account => { %>
+      <li>
+        <a href="/account/<%= account._id %>">
+          Vardas: <%= account.name %> | Pavardė: <%= account.surname %> |
+          Sąskaita: <%= account.accountNr %>
+        </a>
+        <button
+          type="button"
+          class="deleteBtn"
+          data-id="<%= account._id %>"
+          data-name="<%= account.name %>"
+          data-surname="<%= account.surname %>"
+        >
+          delete
+        </button>
+      </li>
+      <% }) } %>
+    </ul>
+  </div>
+</div>
+<%- include('partials/script'); -%> <%- include('partials/footer'); -%>

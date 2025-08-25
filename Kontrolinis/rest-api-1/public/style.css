@@ -1,95 +1,212 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap");
 
-body{
-    font-family: Raleway;
-    color: #555;
-    background: #ff5252;
-    margin: 10px 30px;
+body {
+  font-family: Raleway;
+  color: #555;
+  background: #ff5252;
+  margin: 10px 30px;
 }
-#homepage{
-    max-width: 800px;
-    margin: 60px auto;
-    padding: 10px 20px;
-    background: #fdfdfd;
-    border-radius: 4px;
-    box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
+#homepage {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 10px 20px;
+  background: #fdfdfd;
+  border-radius: 4px;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
 }
-input[type="number"]{
-    display: block;
-    width: 300px;
-    margin: 20px 0;
-    padding: 10px;
-    border-radius: 4px;
-    border: 1px solid #ddd;
+input[type="number"] {
+  display: block;
+  width: 300px;
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
 }
-label{
-    font-weight: bold;
+label {
+  font-weight: bold;
 }
-.title{
-    color: #fff;
-    text-align: center;
-    font-size: 48px;
+.title {
+  color: #fff;
+  text-align: center;
+  font-size: 48px;
 }
-#homepage h2{
-    text-align: center;
+#homepage h2 {
+  text-align: center;
 }
-form{
-    max-width: 350px;
-    margin: 30px auto;
+.formMain {
+  max-width: 350px;
+  margin: 30px auto;
 }
-input[type="submit"]{
-    background: #555;
-     color: #fff;
-     border: 0;
-     padding: 10px;
-     font-size: 18px;
-     width: 200px;
-     margin: 0 auto;
-     display: block;
-     cursor: pointer;
-     border-radius: 4px;
- }
-ul{
-    margin: 0;
-    padding: 0;
+input[type="submit"] {
+  background: #555;
+  color: #fff;
+  border: 0;
+  padding: 10px;
+  font-size: 18px;
+  width: 200px;
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+  border-radius: 4px;
 }
-li{
-    padding: 15px 0;
-    background: #eee;
-    list-style-type: none;
-    font-size: 18px;
-    font-weight: bold;
-    margin: 10px 0;
-    border-radius: 4px;
+ul {
+  margin: 0;
+  padding: 0;
 }
-span{
-    display: inline-block;
-    margin: 0 20px;
+li {
+  padding: 15px 0;
+  background: #eee;
+  list-style-type: none;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+  border-radius: 4px;
 }
-span.dist{
-    color: green;
-    float: right;
+span {
+  display: inline-block;
+  margin: 0 20px;
 }
-span.true{
-    border-radius: 10px;
-    width: 10px;
-    height: 10px;
-    background: green;
+span.dist {
+  color: green;
+  float: right;
 }
-span.false{
-    border-radius: 10px;
-    width: 10px;
-    height: 10px;
-    background: #ff5252;
+span.true {
+  border-radius: 10px;
+  width: 10px;
+  height: 10px;
+  background: green;
 }
-button{
-    float: right;
-    background: green;
-    border: 0;
-    padding: 5px 10px;
-    color: #fff;
-    display: inline-block;
-    border-radius: 4px;
-    cursor: pointer;
+span.false {
+  border-radius: 10px;
+  width: 10px;
+  height: 10px;
+  background: #ff5252;
 }
-button.false{display: none;}
+button {
+  float: right;
+  background: green;
+  border: 0;
+  padding: 5px 10px;
+  color: #fff;
+  display: inline-block;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button.false {
+  display: none;
+}
+
+/*forma create*/
+
+.formaCreate {
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  height: 100%;
+  max-height: 420px;
+  max-width: fit-content;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.formaCreate label {
+  font-weight: 600;
+
+  color: #333;
+}
+
+.formaCreate input[type="text"],
+.formaCreate input[type="number"] {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.2s;
+}
+
+.formaCreate input[type="text"]:focus,
+.formaCreate input[type="number"]:focus {
+  border-color: #0077ff;
+  outline: none;
+}
+
+.formaCreate input[type="checkbox"] {
+  margin-right: 6px;
+}
+
+.formaCreate button {
+  width: 100%;
+
+  background: #0077ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.formaCreate button:hover {
+  background: #005fcc;
+}
+
+/*form edit*/
+
+.editForma {
+  max-width: 420px;
+  margin: 40px auto;
+  padding: 50px 50px 90px 50px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.editForma label {
+  display: block;
+  margin-top: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.editForma input[type="text"],
+.editForma input[type="number"] {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.2s;
+  margin-bottom: 12px;
+}
+
+.editForma input[type="text"]:focus,
+.editForma input[type="number"]:focus {
+  border-color: #0077ff;
+  outline: none;
+}
+
+.editForma input[type="checkbox"] {
+  margin-right: 6px;
+}
+
+.editForma button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 16px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.editForma button:hover {
+  background: #218838;
+}
