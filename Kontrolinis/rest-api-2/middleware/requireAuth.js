@@ -2,22 +2,19 @@ import jwt from "jsonwebtoken";
 import User from "../models/User.js";
 
 const requireAuth = async (req, res, next) => {
-  //patikriname ar user autentikuotas
-  const { authorization } = req.headers;
+  const token = req.cookies.jwt;
 
-  if (!authorization) {
+  if (!token) {
     return res.redirect("/login");
   }
-  const token = authorization.split(" ")[1];
 
   try {
     const { _id } = jwt.verify(token, process.env.SECRET);
-
     req.user = await User.findOne({ _id }).select("_id");
     next();
-  } catch (error) {
-    console.log(error);
-    res.status(401).json({ error: "Užklausa nepatvirtinta." });
+  } catch (err) {
+    console.log(err);
+    res.redirect("/login");
   }
 };
 

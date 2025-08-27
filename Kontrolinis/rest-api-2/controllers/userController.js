@@ -1,4 +1,4 @@
-import User from "../models/userModel.js";
+import User from "../models/User.js";
 import jwt from "jsonwebtoken";
 
 const createToken = (_id) => {
@@ -12,7 +12,12 @@ export const loginUser = async (req, res) => {
   try {
     const user = await User.login(email, password);
     const token = createToken(user._id);
-    res.status(200).json({ email, token });
+    res.cookie("jwt", token, {
+      httpOnly: true,
+      maxAge: 3 * 24 * 60 * 60 * 1000,
+      secure: false,
+    });
+    res.redirect("/");
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
@@ -25,8 +30,20 @@ export const signupUser = async (req, res) => {
   try {
     const user = await User.signup(email, password);
     const token = createToken(user._id);
-    res.status(200).json({ email, token });
+    res.cookie("jwt", token, {
+      httpOnly: true,
+      maxAge: 3 * 24 * 60 * 60 * 1000,
+      secure: false,
+    });
+    res.redirect("/");
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
+};
+
+//logout
+
+export const logoutUser = (req, res) => {
+  res.cookie("jwt", "", { maxAge: 1 });
+  res.redirect("/login");
 };

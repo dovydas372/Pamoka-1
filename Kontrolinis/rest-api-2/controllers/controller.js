@@ -78,3 +78,19 @@ export const account_delete = (req, res) => {
       res.status(500).send({ message: "Error deleting account" });
     });
 };
+
+export const login_get = (req, res) => {
+  const token = req.cookies?.jwt;
+  if (token) {
+    return res.redirect("/");
+  }
+  res.render("login", { title: "Login" });
+};
+
+export const signup_get = (req, res) => {
+  const token = req.cookies?.jwt;
+  if (token) {
+    return res.redirect("/");
+  }
+  res.render("signup", { title: "Signup" });
+};

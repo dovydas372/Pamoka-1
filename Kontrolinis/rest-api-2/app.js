@@ -4,7 +4,8 @@ import { fileURLToPath } from "url";
 import mongoose from "mongoose";
 import cookieParser from "cookie-parser";
 import { setUser } from "./middleware/setUser.js";
-
+import dotenv from "dotenv";
+dotenv.config();
 import routes from "./routes/routes.js";
 const app = express();
 
