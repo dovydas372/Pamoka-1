@@ -3,7 +3,7 @@ import * as controller from "../controller/controller.js";
 import requireAuth from "../middleware/requireAuth.js";
 
 const router = express.Router();
-router.use(requireAuth);
+// router.use(requireAuth);
 
 // paimti visas programas
 router.get("/programs", controller.getPrograms);
