@@ -9,9 +9,12 @@ const Home = () => {
   const { pratimai, dispatch } = useWorkoutContext();
   useEffect(() => {
     const fetchPratimus = async () => {
-      const response = await fetch("/api/pratimai", {
-        headers: { Authorization: `Bearer ${user.token}` },
-      });
+      const response = await fetch(
+        `${process.env.REACT_APP_API_URL}/api/pratimai`,
+        {
+          headers: { Authorization: `Bearer ${user.token}` },
+        }
+      );
       const json = await response.json();
       if (response.ok) {
         dispatch({ type: "SET_WORKOUTS", payload: json });
