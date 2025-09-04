@@ -19,14 +19,17 @@ const WorkoutForm = () => {
       return;
     }
     const pratimas = { title, load, reps };
-    const response = await fetch("/api/pratimai", {
-      method: "POST",
-      body: JSON.stringify(pratimas),
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${user.token}`,
-      },
-    });
+    const response = await fetch(
+      `${process.env.REACT_APP_API_URL}/api/pratimai`,
+      {
+        method: "POST",
+        body: JSON.stringify(pratimas),
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${user.token}`,
+        },
+      }
+    );
     const json = await response.json();
     if (!response.ok) {
       setError(json.error);

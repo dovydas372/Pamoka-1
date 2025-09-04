@@ -6,10 +6,13 @@ const WorkoutDetails = ({ pratimas }) => {
   const { dispatch } = useWorkoutContext();
   const { user } = useAuthContext();
   const handleClick = async () => {
-    const response = await fetch("/api/pratimai/" + pratimas._id, {
-      method: "DELETE",
-      headers: { Authorization: `Bearer ${user.token}` },
-    });
+    const response = await fetch(
+      `${process.env.REACT_APP_API_URL}/api/pratimai/` + pratimas._id,
+      {
+        method: "DELETE",
+        headers: { Authorization: `Bearer ${user.token}` },
+      }
+    );
 
     const json = await response.json();
 

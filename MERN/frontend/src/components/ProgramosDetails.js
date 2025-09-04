@@ -7,10 +7,13 @@ const ProgramaDetails = ({ programa }) => {
   const { user } = useAuthContext();
 
   const handleClick = async () => {
-    const response = await fetch("/api/programs/" + programa._id, {
-      method: "DELETE",
-      headers: { Authorization: `Bearer ${user.token}` },
-    });
+    const response = await fetch(
+      `${process.env.REACT_APP_API_URL}/api/programs/` + programa._id,
+      {
+        method: "DELETE",
+        headers: { Authorization: `Bearer ${user.token}` },
+      }
+    );
 
     const json = await response.json();
 
