@@ -1,0 +1,32 @@
+<%- include('partials/header'); -%> <%- include('partials/navBar'); -%>
+
+<div class="login-container">
+  <h2>Prisijungimas</h2>
+  <form action="/login" method="POST" class="login-form">
+    <div class="form-group">
+      <label for="email">El. paštas:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Įveskite el. paštą"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="password">Slaptažodis:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Įveskite slaptažodį"
+        required
+      />
+    </div>
+
+    <button type="submit" class="login-btn">Prisijungti</button>
+  </form>
+</div>
+
+<%- include('partials/footer'); -%>

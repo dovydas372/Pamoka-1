@@ -1,0 +1,19 @@
+<%- include('partials/header'); -%> <%- include('partials/navBar'); -%>
+<div class="title">Banko saskaita:</div>
+<div class="accountDetails">
+  <div class="accountDetailsCont">
+    <ul class="singleAccount">
+      <li><strong>Vardas:</strong> <%= account.name %></li>
+      <li><strong>Pavardė:</strong> <%= account.surname %></li>
+      <li><strong>Sąskaita:</strong> <%= account.accountNr %></li>
+      <li><strong>Bankas:</strong> <%= account.bank %></li>
+      <li>
+        <strong>Balansas:</strong> <%= account.balance %> <%= account.currency
+        %>
+      </li>
+      <a href="/accountEdit/<%= account._id %>">edit</a>
+    </ul>
+  </div>
+</div>
+
+<%- include('partials/footer'); -%>
