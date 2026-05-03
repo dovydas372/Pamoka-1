@@ -35,7 +35,7 @@ const Content = () => {
     if (
       issaugotiFilmai.some(
         (isaugotasFilmas) =>
-          isaugotasFilmas[0].pavadinimas == filmai[index].pavadinimas
+          isaugotasFilmas[0].pavadinimas == filmai[index].pavadinimas,
       )
     ) {
       console.log("Filmas jau pridėtas.");

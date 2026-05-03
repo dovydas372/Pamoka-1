@@ -1,0 +1,93 @@
+{
+  "filmai": [
+    {
+      "pavadinimas": "Pradžia",
+      "rezisierius": "Christopher Nolan",
+      "isleidimo_metai": 2010,
+      "zanrai": [
+        "Veiksmo",
+        "Mokslinė fantastika",
+        "Trileris"
+      ],
+      "imdb_ivertinimas": 8.8,
+      "id": "4213"
+    },
+    {
+      "pavadinimas": "Keršytojai: Pabaigos žaidimas",
+      "rezisierius": "Anthony Russo, Joe Russo",
+      "isleidimo_metai": 2019,
+      "zanrai": [
+        "Veiksmo",
+        "Nuotykių",
+        "Fantastika"
+      ],
+      "imdb_ivertinimas": 8.4,
+      "id": "f891"
+    },
+    {
+      "pavadinimas": "Žalioji mylia",
+      "rezisierius": "Frank Darabont",
+      "isleidimo_metai": 1999,
+      "zanrai": [
+        "Drama",
+        "Fantastika",
+        "Kriminalinis"
+      ],
+      "imdb_ivertinimas": 8.6,
+      "id": "00ae"
+    },
+    {
+      "pavadinimas": "Parazitas",
+      "rezisierius": "Bong Joon-ho",
+      "isleidimo_metai": 2019,
+      "zanrai": [
+        "Drama",
+        "Trileris"
+      ],
+      "imdb_ivertinimas": 8.5,
+      "id": "f110"
+    },
+    {
+      "pavadinimas": "Matrica",
+      "rezisierius": "Lana Wachowski, Lilly Wachowski",
+      "isleidimo_metai": 1999,
+      "zanrai": [
+        "Veiksmo",
+        "Mokslinė fantastika"
+      ],
+      "imdb_ivertinimas": 8.7,
+      "id": "19bb"
+    }
+  ],
+  "Mano megstamiausi": [
+    {
+      "0": {
+        "pavadinimas": "Pradžia",
+        "rezisierius": "Christopher Nolan",
+        "isleidimo_metai": 2010,
+        "zanrai": [
+          "Veiksmo",
+          "Mokslinė fantastika",
+          "Trileris"
+        ],
+        "imdb_ivertinimas": 8.8,
+        "id": "4213"
+      },
+      "id": "1047"
+    },
+    {
+      "0": {
+        "pavadinimas": "Matrica",
+        "rezisierius": "Lana Wachowski, Lilly Wachowski",
+        "isleidimo_metai": 1999,
+        "zanrai": [
+          "Veiksmo",
+          "Mokslinė fantastika"
+        ],
+        "imdb_ivertinimas": 8.7,
+        "id": "19bb"
+      },
+      "id": "dc09"
+    }
+  ]
+}
