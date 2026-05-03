@@ -1,0 +1,68 @@
+<%- include('partials/header'); -%> <%- include('partials/navBar'); -%>
+
+<div class="accountCreate">
+  <h2>Sukurti naują banko sąskaitą</h2>
+
+  <form action="/account/create" method="POST" class="accountForm">
+    <div class="form-group">
+      <label for="name">Vardas:</label>
+      <input type="text" id="name" name="name" required />
+    </div>
+
+    <div class="form-group">
+      <label for="surname">Pavardė:</label>
+      <input type="text" id="surname" name="surname" required />
+    </div>
+
+    <div class="form-group">
+      <label for="accountNr">Sąskaitos Nr:</label>
+      <input type="text" id="accountNr" name="accountNr" readonly required />
+    </div>
+    <button type="button" onclick="fillAccountNr()">
+      sugeneruoti sas. nr.
+    </button>
+
+    <div class="form-group">
+      <label for="bank">Bankas:</label>
+      <select id="bank" name="bank" required>
+        <option value="">Pasirinkite banką</option>
+        <option value="SEB">SEB</option>
+        <option value="Swedbank">Swedbank</option>
+        <option value="Citadele">Citadele</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="balance">Balansas:</label>
+      <input type="number" id="balance" name="balance" step="any" value="0" />
+    </div>
+
+    <div class="form-group">
+      <label for="currency">Valiuta:</label>
+      <select id="currency" name="currency" required>
+        <option value="">Pasirinkite valiutą</option>
+        <option value="EUR">EUR</option>
+        <option value="USD">USD</option>
+        <option value="GBP">GBP</option>
+      </select>
+    </div>
+
+    <button type="submit">Sukurti sąskaitą</button>
+  </form>
+</div>
+
+<script>
+  function generateAccountNr() {
+    let accountNr = "LT";
+    for (let i = 0; i < 16; i++) {
+      accountNr += Math.floor(Math.random() * 10);
+    }
+    return accountNr;
+  }
+
+  function fillAccountNr() {
+    const accountInput = document.getElementById("accountNr");
+    accountInput.value = generateAccountNr();
+  }
+</script>
+<%- include('partials/footer'); -%>

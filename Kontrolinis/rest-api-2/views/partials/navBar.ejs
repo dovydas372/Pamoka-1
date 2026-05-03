@@ -1,0 +1,15 @@
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="/" class="logo">BankApp</a>
+    <ul class="nav-links">
+      <% if (user) { %>
+      <li><a href="/">Home</a></li>
+      <li><a href="/account/create">Sukurti sąskaitą</a></li>
+      <li><a href="/logout">Atsijungti</a></li>
+      <% } else { %>
+      <li><a href="/login">Prisijungti</a></li>
+      <li><a href="/signup">Registruotis</a></li>
+      <% } %>
+    </ul>
+  </div>
+</nav>

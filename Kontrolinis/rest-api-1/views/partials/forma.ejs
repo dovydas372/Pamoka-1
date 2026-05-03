@@ -1,0 +1,47 @@
+<div class="formaCreate">
+  <form action="api/programuotojai" method="POST">
+    <div>
+      <label for="vardas">Vardas:</label>
+      <input type="text" id="vardas" name="vardas" required />
+    </div>
+
+    <div>
+      <label>Technologijos:</label><br />
+
+      <input type="checkbox" id="js" name="tech" value="JavaScript" />
+      <label for="js">JavaScript</label><br />
+
+      <input type="checkbox" id="node" name="tech" value="Node.js" />
+      <label for="node">Node.js</label><br />
+
+      <input type="checkbox" id="react" name="tech" value="React" />
+      <label for="react">React</label><br />
+
+      <input type="checkbox" id="vue" name="tech" value="Vue" />
+      <label for="vue">Vue</label><br />
+
+      <input type="checkbox" id="python" name="tech" value="Python" />
+      <label for="python">Python</label><br />
+
+      <input type="checkbox" id="java" name="tech" value="Java" />
+      <label for="java">Java</label><br />
+    </div>
+
+    <div>
+      <label for="longitude">longitude:</label>
+      <input
+        type="number"
+        step="any"
+        id="longitude"
+        name="longitude"
+        required
+      />
+    </div>
+    <div>
+      <label for="latitude">latitude:</label>
+      <input type="number" step="any" id="latitude" name="latitude" required />
+    </div>
+
+    <button type="submit">Siųsti</button>
+  </form>
+</div>

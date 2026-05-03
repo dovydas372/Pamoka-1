@@ -1,0 +1,35 @@
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const deleteButtons = document.querySelectorAll(".deleteBtn");
+
+    deleteButtons.forEach((btn) => {
+      btn.addEventListener("click", async () => {
+        const accountId = btn.dataset.id;
+        const accountName = btn.dataset.name;
+        const accountSurname = btn.dataset.surname;
+
+        if (
+          !confirm(
+            "Ar tikrai ištrinti " + accountName + " " + accountSurname + "?"
+          )
+        )
+          return;
+
+        try {
+          const res = await fetch(`/accountDelete/${accountId}`, {
+            method: "DELETE",
+          });
+
+          if (res.ok) {
+            window.location.href = "/";
+          } else {
+            alert("Nepavyko ištrinti (klaida " + res.status + ")");
+          }
+        } catch (err) {
+          console.error(err);
+          alert("Serverio klaida");
+        }
+      });
+    });
+  });
+</script>

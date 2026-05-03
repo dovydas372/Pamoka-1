@@ -10,7 +10,17 @@ const Routes = require("./routes/Routes");
 const dbUri =
   "mongodb+srv://dovydas372:dovydas372@node1.4u7tomw.mongodb.net/Projektas";
 
-mongoose.connect(dbUri).then(() => app.listen(3000));
+app.listen(3000, "0.0.0.0", () => {
+  console.log("Server running on port 3000");
+});
+
+mongoose.connect(dbUri);
+// .then(() => {
+//   app.listen(3000, "0.0.0.0", () => {
+//     console.log("Server running on port 3000");
+//   });
+// })
+// .catch((err) => console.error("DB connection error:", err));
 
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "assets")));

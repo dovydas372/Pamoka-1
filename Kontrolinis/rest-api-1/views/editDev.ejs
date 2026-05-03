@@ -1,0 +1,46 @@
+<%- include('partials/header'); -%>
+
+<form
+  class="editForma"
+  action="/api/programuotojai/<%= dev._id %>"
+  method="POST"
+>
+  <label>Vardas:</label>
+  <input type="text" name="vardas" value="<%= dev.vardas %>" required />
+
+  <label>Technologijos:</label><br />
+  <input type="checkbox" name="tech" value="JavaScript" <%=
+  dev.tech.includes("JavaScript") ? "checked" : "" %>> JavaScript<br />
+  <input type="checkbox" name="tech" value="Node.js" <%=
+  dev.tech.includes("Node.js") ? "checked" : "" %>> Node.js<br />
+  <input type="checkbox" name="tech" value="React" <%=
+  dev.tech.includes("React") ? "checked" : "" %>> React<br />
+  <input type="checkbox" name="tech" value="Vue" <%= dev.tech.includes("Vue") ?
+  "checked" : "" %>> Vue<br />
+  <input type="checkbox" name="tech" value="Python" <%=
+  dev.tech.includes("Python") ? "checked" : "" %>> Python<br />
+  <input type="checkbox" name="tech" value="Java" <%= dev.tech.includes("Java")
+  ? "checked" : "" %>> Java<br />
+
+  <label>Ilguma:</label>
+  <input
+    type="number"
+    name="longitude"
+    value="<%= dev.location.coordinates[0] %>"
+    step="any"
+    required
+  />
+
+  <label>Platuma:</label>
+  <input
+    type="number"
+    name="latitude"
+    value="<%= dev.location.coordinates[1] %>"
+    step="any"
+    required
+  />
+
+  <button type="submit">Išsaugoti</button>
+</form>
+
+<%- include('partials/footer'); -%>
